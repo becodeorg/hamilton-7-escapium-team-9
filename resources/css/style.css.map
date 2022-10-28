@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/base/_typographie.scss","../scss/pages/_about.scss"],"names":[],"mappings":";AACQ;AAKA;ACJR;EAEQ;IACI;IACA;IACA;;EACA;IACI;;EACA;IACI;;EAGR;IACI;;EACA;IACI;IACA;IACA;IACA;IACA;;EAEJ;IACI;IACA;IACA","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/base/_typographie.scss","../scss/pages/_about.scss"],"names":[],"mappings":";AAcQ;AAZR;EACI;EACA;;ACFJ;EAEQ;IACI;IACA;IACA;;EACA;IACI;;EAEA;IACI;;EAGR;IACI;;EACA;IACI;IACA;IACA;IACA;IACA;;EAEJ;IACI;IACA;IACA","file":"style.css"}

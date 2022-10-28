@@ -1,6 +1,14 @@
 //Monserat
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&family=Open+Sans:wght@400;700;800&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&family=Open+Sans:wght@400;700;800&display=swap');
+@font-face{
+    font-family: "Montserat";
+    src:url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&family=Open+Sans:wght@400;700;800&display=swap');
 
+}
+@mixin Montserat{
+    // font-family: "Montserat";
+    color:red;
+}
 
 
 //Hind
