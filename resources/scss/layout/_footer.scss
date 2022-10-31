@@ -7,16 +7,22 @@
 
 .footer{
     background-color: $darkest_background;
-    @include Hind;
+    font-family: "Hind";
     color: $global_font_color;
-    .white{color: $white_title;}
+    .white{
+        color: $white_title;}
     .footer__title{
-        @include Montserat;
+        font-family: "Monserrat";
+        font-weight: 700;
+    }
+    .footer__box{
+        padding: 10px;
     }
 
     .copyright{
         @include flex_column;
         @include center;
+
     }
 
     .links{
@@ -25,14 +31,16 @@
     
     .link .link:visited{
         @include nolinkchange;
+    
 }
+
 }
 
 @media only screen and (max-width: $mobile-max-width) {
     .footer__grid{
     @include grid_1_5_footer;
 }
-
+@include hidesocial;
     
 
 }
@@ -40,7 +48,9 @@
 @media only screen and (min-width:413px) and (max-width:$tablet-max-width){
     .footer__grid{
     @include grid_4_2_footer;
+    
 }
+@include hidesocial;
 }
 
 

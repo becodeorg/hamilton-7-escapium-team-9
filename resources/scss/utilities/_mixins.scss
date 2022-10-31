@@ -1,9 +1,10 @@
 @use "../base/_typographie.scss";
+@use "./colors" as *; 
 
 
 
 @mixin Montserat{
-    font-family: "Montserrat";
+    font-family: "Montserat";
     
 }
 
@@ -14,4 +15,10 @@
 @mixin nolinkchange{
     text-decoration: none;
     color:$global_font_color;
+}
+
+@mixin hidesocial{
+    .fa-tripadvisor .fa-google-plus-official{
+    visibility: hidden;
+    }
 }
