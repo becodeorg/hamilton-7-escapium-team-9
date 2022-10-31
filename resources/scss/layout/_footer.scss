@@ -13,7 +13,29 @@
         @include Montserat;
         color: $white_title;
     }
+    .sociallink{
+        color:$white_title;
+    }
 
+    .copyright{
+        @include flex_column;
+        @include center;
+    }
+
+    .links{
+        @include flex_column;
+    }
+    
+    .link{
+        text-decoration: none;
+        color:$global_font_color;
+    }
+    .link:visited{
+        text-decoration: none;
+        color:$global_font_color;
+    }
+    
+    
 }
 
 @media only screen and (max-width: $mobile-max-width) {
@@ -39,6 +61,8 @@
     
 }
 }
+
+
 
 
 

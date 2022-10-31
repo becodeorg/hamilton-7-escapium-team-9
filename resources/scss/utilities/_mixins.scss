@@ -10,3 +10,8 @@
 @mixin Hind{
     font-family:"Hind";
 }
+
+@mixin nolinkchange{
+    text-decoration: none;
+    color:$global_font_color;
+}
