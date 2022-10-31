@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&family=Open+Sans:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&display=swap");
 @font-face {
@@ -8,15 +9,233 @@
   font-family: "Hind";
   src: url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&display=swap");
 }
+@media (min-width: 769px) and (max-width: 1920px) {
+  .How {
+    background-color: #222222;
+  }
+  .How .How__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+  }
+  .How .How__header hr {
+    padding: 0;
+    margin: 0;
+    width: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .How .How__header .How__title {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 44px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .How .How__blocs {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+  }
+  .How .How__blocs .How__bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .How .How__blocs .How__bloc i {
+    color: white;
+    font-size: 35px;
+  }
+  .How .How__blocs .How__bloc h3 {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 32px;
+  }
+  .How .How__blocs .How__bloc p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 16px;
+    width: 80%;
+    text-align: center;
+  }
+}
+@media (min-width: 413px) and (max-width: 768px) {
+  .How {
+    background-color: #222222;
+  }
+  .How .How__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .How .How__header hr {
+    padding: 0;
+    margin: 0;
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .How .How__header .How__title {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 19px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .How .How__blocs {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+  }
+  .How .How__blocs .How__bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .How .How__blocs .How__bloc i {
+    color: white;
+    font-size: 35px;
+  }
+  .How .How__blocs .How__bloc h3 {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 21px;
+  }
+  .How .How__blocs .How__bloc p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+  }
+}
 @media (max-width: 412px) {
+  .How {
+    background-color: #222222;
+  }
+  .How .How__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .How .How__header hr {
+    padding: 0;
+    margin: 0;
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .How .How__header .How__title {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 19px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .How .How__blocs {
+    display: flex;
+    flex-direction: column;
+  }
+  .How .How__blocs .How__bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .How .How__blocs .How__bloc i {
+    color: white;
+    font-size: 35px;
+  }
+  .How .How__blocs .How__bloc h3 {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 21px;
+  }
+  .How .How__blocs .How__bloc p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 1920px) {
+  .FAQ .accordion-div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+}
+.FAQ .accordion {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  background-color: white;
+}
+.FAQ .accordion:hover {
+  color: red;
+}
+.FAQ .accordion:before {
+  content: "+";
+  color: #777;
+  font-weight: bold;
+  float: left;
+  margin-right: 20px;
+  background-color: #f6f6f6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 100%;
+}
+.FAQ .active:before {
+  content: "−";
+}
+.FAQ span {
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin-top: 50px;
+}
+.FAQ .panel {
+  font-family: "Hind";
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+@media (min-width: 769px) and (max-width: 1920px) {
+  header {
+    background-image: url(../images/slide-1.jpg);
+    background-position: center;
+    background-position: top;
+  }
   header .header__title {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 90px;
   }
   header .header__title h1 {
     font-family: "Montserrat";
-    color: black;
+    color: white;
+    font-size: 120px;
   }
   header .header__title h1 i {
     color: red;
@@ -35,14 +254,657 @@
     display: inline-block;
     margin: 0 0.25rem;
     content: ">";
-  }
-  header .header__title .header__breadcrumb li:not(:last-child)::after a {
-    color: white;
-    text-decoration: none;
+    padding-left: 10px;
   }
   header .header__title .header__breadcrumb li {
     font-family: "Hind";
     text-transform: uppercase;
+    font-size: 15px;
+    padding-right: 10px;
+    color: #717171;
+  }
+  header .header__title .header__breadcrumb li a {
+    color: white;
+    text-decoration: none;
+  }
+  .video {
+    margin-bottom: 0;
+    padding: 0;
+    background-color: #1B1B1B;
+  }
+  .video video {
+    width: 100%;
+    object-fit: cover;
+  }
+  .certificate {
+    background-color: #1B1B1B;
+    padding-bottom: 80px;
+  }
+  .certificate .certificate__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+  }
+  .certificate .certificate__header hr {
+    padding: 0;
+    margin: 0;
+    width: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .certificate .certificate__header .certificate__title {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 44px;
+    padding-top: 30px;
+  }
+  .certificate .certificate__bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .certificate .certificate__bloc img {
+    padding: 19px;
+    width: 20%;
+  }
+  .team {
+    background-color: #222222;
+    padding-bottom: 80px;
+  }
+  .team .team__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+  }
+  .team .team__header hr {
+    padding: 0;
+    margin: 0;
+    width: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team .team__header .team__title {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 44px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .team .team__bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .team .team__bloc .bloc__member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  .team .team__bloc .bloc__member h2 {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 44px;
+    margin-bottom: 0;
+    padding-top: 15px;
+  }
+  .team .team__bloc .bloc__member p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 16px;
+    margin-top: 0;
+  }
+  .team .team__bloc .bloc__member img {
+    width: 80%;
+  }
+  .WhatPeopleSay {
+    background-color: #1B1B1B;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header hr {
+    padding: 0;
+    margin: 0;
+    width: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header .WhatPeopleSay__title {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 44px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header a {
+    font-family: "Montserrat";
+    text-decoration: none;
+    color: #F60B0E;
+    font-size: 10px;
+    border-bottom: 1px solid #F60B0E;
+  }
+  .WhatPeopleSay .WhatPeopleSay__bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .WhatPeopleSay .WhatPeopleSay__bloc p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 16px;
+    width: 80%;
+    text-align: center;
+  }
+  .WhatPeopleSay .WhatPeopleSay__bloc .bloc__author {
+    font-family: "Hind";
+    text-transform: uppercase;
+    color: #717171;
+    font-size: 16px;
+  }
+  .WhatPeopleSay .WhatPeopleSay__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .WhatPeopleSay .WhatPeopleSay__button a {
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .WhatPeopleSay .WhatPeopleSay__button p {
+    font-size: 50px;
+    color: #717171;
+  }
+  .FAQ {
+    background-color: white;
+  }
+  .FAQ .FAQ__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+  }
+  .FAQ .FAQ__header hr {
+    padding: 0;
+    margin: 0;
+    width: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .FAQ .FAQ__header .FAQ__title {
+    font-family: "Montserrat";
+    color: black;
+    font-size: 44px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .FAQ .FAQ__header p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+@media (min-width: 413px) and (max-width: 768px) {
+  header {
+    background-image: url(../images/slide-1.jpg);
+    background-position: center;
+    background-position: top;
+  }
+  header .header__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+  header .header__title h1 {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 32px;
+  }
+  header .header__title h1 i {
+    color: red;
+  }
+  header .header__title .header__breadcrumb {
+    padding: 0 0.5rem;
+  }
+  header .header__title .header__breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  header .header__title .header__breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 0.25rem;
+    content: ">";
+    padding-left: 10px;
+  }
+  header .header__title .header__breadcrumb li {
+    font-family: "Hind";
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-right: 10px;
+    color: #717171;
+  }
+  header .header__title .header__breadcrumb li a {
+    color: white;
+    text-decoration: none;
+  }
+  .video {
+    margin-bottom: 0;
+    padding: 0;
+    background-color: #1B1B1B;
+  }
+  .video video {
+    width: 100%;
+    object-fit: cover;
+  }
+  .certificate {
+    background-color: #1B1B1B;
+  }
+  .certificate .certificate__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .certificate .certificate__header hr {
+    padding: 0;
+    margin: 0;
+    width: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .certificate .certificate__header .certificate__title {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 19px;
+    padding-top: 30px;
+  }
+  .certificate .certificate__bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .certificate .certificate__bloc img {
+    padding: 19px;
+    width: 20%;
+  }
+  .team {
+    background-color: #222222;
+  }
+  .team .team__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .team .team__header hr {
+    padding: 0;
+    margin: 0;
+    width: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team .team__header .team__title {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 19px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .team .team__bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .team .team__bloc .bloc__member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  .team .team__bloc .bloc__member h2 {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 19px;
+    margin-bottom: 0;
+    padding-top: 15px;
+  }
+  .team .team__bloc .bloc__member p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 14px;
+    margin-top: 0;
+  }
+  .team .team__bloc .bloc__member img {
+    width: 80%;
+  }
+  .WhatPeopleSay {
+    background-color: #1B1B1B;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header hr {
+    padding: 0;
+    margin: 0;
+    width: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header .WhatPeopleSay__title {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 19px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header a {
+    font-family: "Montserrat";
+    text-decoration: none;
+    color: #F60B0E;
+    font-size: 10px;
+    border-bottom: 1px solid #F60B0E;
+  }
+  .WhatPeopleSay .WhatPeopleSay__bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .WhatPeopleSay .WhatPeopleSay__bloc p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+  }
+  .WhatPeopleSay .WhatPeopleSay__bloc .bloc__author {
+    font-family: "Hind";
+    text-transform: uppercase;
+    color: #717171;
+    font-size: 14px;
+  }
+  .WhatPeopleSay .WhatPeopleSay__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .WhatPeopleSay .WhatPeopleSay__button a {
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .WhatPeopleSay .WhatPeopleSay__button p {
+    font-size: 50px;
+    color: #717171;
+  }
+  .FAQ {
+    background-color: white;
+  }
+  .FAQ .FAQ__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .FAQ .FAQ__header hr {
+    padding: 0;
+    margin: 0;
+    width: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .FAQ .FAQ__header .FAQ__title {
+    font-family: "Montserrat";
+    color: black;
+    font-size: 19px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .FAQ .FAQ__header p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media (max-width: 412px) {
+  header {
+    background-image: url(../images/slide-1.jpg);
+    background-position: center;
+    background-position: top;
+  }
+  header .header__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+  header .header__title h1 {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 32px;
+  }
+  header .header__title h1 i {
+    color: red;
+  }
+  header .header__title .header__breadcrumb {
+    padding: 0 0.5rem;
+  }
+  header .header__title .header__breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  header .header__title .header__breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 0.25rem;
+    content: ">";
+    padding-left: 10px;
+  }
+  header .header__title .header__breadcrumb li {
+    font-family: "Hind";
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-right: 10px;
+    color: #717171;
+  }
+  header .header__title .header__breadcrumb li a {
+    color: white;
+    text-decoration: none;
+  }
+  .video {
+    margin-bottom: 0;
+    padding: 0;
+    background-color: #1B1B1B;
+  }
+  .video video {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .certificate {
+    background-color: #1B1B1B;
+  }
+  .certificate .certificate__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .certificate .certificate__header hr {
+    padding: 0;
+    margin: 0;
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .certificate .certificate__header .certificate__title {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 19px;
+    padding-top: 30px;
+  }
+  .certificate .certificate__bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .certificate .certificate__bloc img {
+    padding: 20px;
+  }
+  .team {
+    background-color: #222222;
+  }
+  .team .team__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .team .team__header hr {
+    padding: 0;
+    margin: 0;
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team .team__header .team__title {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 19px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .team .team__bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team .team__bloc .bloc__member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  .team .team__bloc .bloc__member h2 {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 19px;
+    margin-bottom: 0;
+    padding-top: 15px;
+  }
+  .team .team__bloc .bloc__member p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 14px;
+    margin-top: 0;
+  }
+  .WhatPeopleSay {
+    background-color: #1B1B1B;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header hr {
+    padding: 0;
+    margin: 0;
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header .WhatPeopleSay__title {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 19px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header a {
+    font-family: "Montserrat";
+    text-decoration: none;
+    color: #F60B0E;
+    font-size: 10px;
+    border-bottom: 1px solid #F60B0E;
+  }
+  .WhatPeopleSay .WhatPeopleSay__bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .WhatPeopleSay .WhatPeopleSay__bloc p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+  }
+  .WhatPeopleSay .WhatPeopleSay__bloc .bloc__author {
+    font-family: "Hind";
+    text-transform: uppercase;
+    color: #717171;
+    font-size: 14px;
+  }
+  .WhatPeopleSay .WhatPeopleSay__button {
+    display: none;
+  }
+  .FAQ {
+    background-color: white;
+  }
+  .FAQ .FAQ__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .FAQ .FAQ__header hr {
+    padding: 0;
+    margin: 0;
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .FAQ .FAQ__header .FAQ__title {
+    font-family: "Montserrat";
+    color: black;
+    font-size: 19px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .FAQ .FAQ__header p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 14px;
+    text-align: center;
   }
 }
 
