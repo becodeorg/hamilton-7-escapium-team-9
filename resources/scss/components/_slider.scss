@@ -1,0 +1,253 @@
+@use "../base/_typographie.scss" as *;
+@use "../layout/_flex.scss" as *;
+@use "../utilities/_mixins.scss" as *;
+@use "../utilities/_colors.scss" as *;
+@use "../utilities/_variables.scss" as *;
+
+.multi-item-carousel .carousel-inner > .item {
+    transition: 500ms ease-in-out left;
+  
+    }
+    .multi-item-carousel .carousel-inner .active.left {
+    left: -33%;
+    }
+    .multi-item-carousel .carousel-inner .active.right {
+    left: 33%;
+    }
+    .multi-item-carousel .carousel-inner .next {
+    left: 33%;
+    }
+    .multi-item-carousel .carousel-inner .prev {
+    left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+    .multi-item-carousel .carousel-inner > .item {
+    transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out all;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    -webkit-transform: none!important;
+    transform: none!important;
+    }
+    }
+    .multi-item-carousel .carouse-control.left,
+    .multi-item-carousel .carouse-control.right {
+    background-image: none;
+    }
+    
+    a.left.carousel-control{
+        top:100%;
+        width:90% ;
+       font-size: 80px;
+    }
+    a.right.carousel-control{
+        top:100% ;
+        width:90% ;
+        font-size: 80px;
+    }
+
+    
+  
+
+@media (min-width:769px) and (max-width:1920px){
+.WhatPeopleSay{
+    background-color: $darkest_background;
+    padding-bottom: 150px;
+    .WhatPeopleSay__header{ 
+        @include flexcolumn();
+        align-items: center;
+        padding-top: 120px;
+        padding-bottom: 100px; 
+        hr{
+            padding: 0;
+            margin: 0;
+            width:2%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .WhatPeopleSay__title{
+            @include Montserat();
+            color:white;  
+            font-size: $desktop-font-size-h2;      
+            padding-top: 30px;   
+            text-transform: capitalize;
+        }
+        a{
+            @include Montserat();
+            text-decoration: none;
+            color: $red;
+            font-size: 10px;
+            border-bottom: 1px solid $red;
+        }
+    }
+   
+     
+    .WhatPeopleSay__bloc{
+      
+        display: none;
+        padding: 80px;
+        text-align: center;
+        align-items: center;
+        
+       p{
+            @include Hind();
+            color:$global_font_color;
+            font-size: $desktop-font-size-p;
+            width: 80%;
+            text-align: center;
+       }
+       .bloc__author{
+        @include Hind();
+            text-transform: uppercase;
+            color:$global_font_color;
+            font-size: $desktop-font-size-p;
+       }
+       
+    }
+    // .WhatPeopleSay__button{
+     
+    //     align-items: center;
+    //     justify-content: center;
+    //     a{
+    //         font-size: 50px;
+    //         text-decoration: none;
+    //         color: white;
+    //         padding-left: 20px;
+    //         padding-right: 20px;
+    //         padding-bottom: 20px;
+    //     }
+    //     p{
+    //         font-size: 50px;
+    //         color:$global_font_color;
+    //     }
+        
+          
+        
+         
+    // }
+    }
+}
+   
+  
+
+
+
+
+@media (min-width:413px) and (max-width:768px){
+    .WhatPeopleSay{
+        background-color: $darkest_background;
+        .WhatPeopleSay__header{ 
+            @include flexcolumn();
+            align-items: center;
+            padding-top: 20px; 
+            hr{
+                padding: 0;
+                margin: 0;
+                width:2%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .WhatPeopleSay__title{
+                @include Montserat();
+                color:white;  
+                font-size: $mobile-font-size-h2;      
+                padding-top: 30px;   
+                text-transform: capitalize;
+            }
+            a{
+                @include Montserat();
+                text-decoration: none;
+                color: $red;
+                font-size: 10px;
+                border-bottom: 1px solid $red;
+            }
+        }
+        .WhatPeopleSay__bloc{
+            @include flexcolumn();
+            align-items: center;
+           p{
+                @include Hind();
+                color:$global_font_color;
+                font-size: $mobile-font-size-p;
+                width: 80%;
+                text-align: center;
+           }
+           .bloc__author{
+            @include Hind();
+                text-transform: uppercase;
+                color:$global_font_color;
+                font-size: $mobile-font-size-p;
+           }
+        }
+        .WhatPeopleSay__button{
+            @include flexrow();
+            align-items: center;
+            justify-content: center;
+            a{
+                font-size: 50px;
+                text-decoration: none;
+                color: white;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+            }
+            p{
+                font-size: 50px;
+                color:$global_font_color;
+            }
+        }
+    }
+}
+
+@media (max-width:412px) {
+.WhatPeopleSay{
+    background-color: $darkest_background;
+    .WhatPeopleSay__header{ 
+        @include flexcolumn();
+        align-items: center;
+        padding-top: 20px; 
+        hr{
+            padding: 0;
+            margin: 0;
+            width:8%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .WhatPeopleSay__title{
+            @include Montserat();
+            color:white;  
+            font-size: $mobile-font-size-h2;      
+            padding-top: 30px;   
+            text-transform: capitalize;
+        }
+        a{
+            @include Montserat();
+            text-decoration: none;
+            color: $red;
+            font-size: 10px;
+            border-bottom: 1px solid $red;
+        }
+    }
+    .WhatPeopleSay__bloc{
+        @include flexcolumn();
+        align-items: center;
+       p{
+            @include Hind();
+            color:$global_font_color;
+            font-size: $mobile-font-size-p;
+            width: 80%;
+            text-align: center;
+       }
+       .bloc__author{
+        @include Hind();
+            text-transform: uppercase;
+            color:$global_font_color;
+            font-size: $mobile-font-size-p;
+       }
+    }
+    .WhatPeopleSay__button{
+        display: none;
+       
+    }
+}
+}

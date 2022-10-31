@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link href="resources/css/style.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <script src="https://kit.fontawesome.com/d6da04fe60.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/resources/js/index.js" defer></script>
 </head>
@@ -52,10 +53,19 @@
     </div>
 
     <div class="video">
-        <video controls poster="/resources/images/video-placeholder.jpg">
-            <source src="/resources/images/video.mp4" type="video/mp4">
-            Votre explorateur ne supporte pas la balise video.
+        <!-- <video controls poster="/resources/images/video-placeholder.jpg"> -->
+            <div  class="placeholder"></div>
+            <a href="#" onclick="toggle();"><img  class ="play" src="/resources/images/red-play-button-icon.webp"></a>
+
+            <div class="video1">
+            <video src="/resources/images/video.mp4" controls="true">
+         
           </video>
+          <img src="/resources/images/close.png" onclick="toggle();" class="close" >
+        </div>
+         
+          
+          
     </div>
 
     <div class="certificate">
@@ -104,15 +114,64 @@
             <h2 class="WhatPeopleSay__title"> What people say</h2>
             <a href="#">Read all testimonials</a>
         </div>
+            
+               
+                <!-- <div class="WhatPeopleSay__bloc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit distinctio labore iusto iste mollitia, vero, alias hic nobis, aut rerum numquam sunt blanditiis voluptatibus doloremque expedita quos maxime culpa? Eaque!</p>
+                    <img src="/resources/images/comment-avatar-2.png">
+                    <p class="bloc__author">Tiffany</p>
+                </div> -->
+                
+                <div class="container">
 
-        <div class="WhatPeopleSay__bloc">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit distinctio labore iusto iste mollitia, vero, alias hic nobis, aut rerum numquam sunt blanditiis voluptatibus doloremque expedita quos maxime culpa? Eaque!</p>
-            <img src="/resources/images/comment-avatar-2.png">
-            <p class="bloc__author">Tiffany</p>
-        </div>
-        <div class="WhatPeopleSay__button">
-           <p><a href="#">←</a>/<a href="#">→</a></p>
-        </div>
+                    <div class="row">
+                    <div class="col-md-12">
+                    <div class="carousel slide multi-item-carousel" id="theCarousel">
+                    <div class="carousel-inner">
+                    <div class="item active">
+                    <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?perth,australia" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                    <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?fremantle,australia" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                    <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?west-australia" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                    <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?perth" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                    <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?quokka,perth" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                    <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?margaretriver,australia" class="img-responsive"></a></div>
+                    </div>
+                    <!-- add more items here -->
+                    <!-- Example item start: -->
+                    <div class="item">
+                    <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?perth,australia&r=7" class="img-responsive"></a></div>
+                    </div>
+                    <!-- Example item end -->
+                    </div>
+                   
+                    <a class="left carousel-control" href="#theCarousel" data-slide="prev">←</a>
+             
+                    <a class="right carousel-control" href="#theCarousel" data-slide="next">→</a>
+                    
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+              
+<!--    
+                <div class="WhatPeopleSay__button">
+                    <p> <a class="left carousel-control" href="#theCarousel" data-slide="prev">←</a>/  <a class="right carousel-control" href="#theCarousel" data-slide="next">→</a></p>
+                    </div> -->
+            
+
+            
+      
+       
 
         
     </div>
@@ -163,6 +222,7 @@
 
     </div>
   
-    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 </body>
 </html>
