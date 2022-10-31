@@ -1,4 +1,7 @@
-@use "../base/_typographie.scss";
+@use "../base/_typographie.scss" as *;
+@use "../utilities/_mixins" as *;
+
+
 
 @media (max-width:412px) {
     header{
@@ -7,8 +10,9 @@
             flex-direction: column;
             align-items: center;
             h1{
+                @include Montserat();
                 color: black; 
-                // @include Montserat;
+               
                 i{
                     color: red;
                 }  
