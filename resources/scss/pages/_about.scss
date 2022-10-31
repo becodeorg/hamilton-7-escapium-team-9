@@ -1,13 +1,27 @@
-@use "../base/_typographie.scss";
+@use "../base/_typographie.scss" as *;
+@use "../utilities/_mixins.scss" as *;
+@use "../utilities/_colors.scss" as *;
+@use "../utilities/_variables.scss" as *;
+@use "../layout/_flex.scss" as *;
+@use "../components/_How.scss" as *;
+@use "../components/_FAQ.scss" as *;
 
-@media (max-width:412px) {
+@media (min-width:769px) and (max-width:1920px){
     header{
+        background-image: url(../images/slide-1.jpg);
+        background-position: center;
+        background-position: top;
         .header__title{
             display:flex;
             flex-direction: column;
             align-items: center;
+            padding-top: 50px;
+            padding-bottom: 90px;
             h1{
-                color: black;  
+                @include Montserat();
+                color: white; 
+                font-size: $desktop-font-size-h1;
+               
                 i{
                     color: red;
                 }  
@@ -24,10 +38,656 @@
                 li:not(:last-child)::after {
                     display: inline-block;
                     margin: 0 .25rem;
-                    content: "→";
+                    content: ">";
+                    padding-left: 10px;
+                    
+                }
+                li{
+                    @include Hind();
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    padding-right: 10px;
+                    color : $global_font_color;
+                    a{
+                        color:white;
+                        text-decoration: none;
+                    }
                 }
                                 }
                     }
+        }
+        .video{
+            margin-bottom: 0;
+            padding: 0;
+            background-color: $darkest_background;
+            video{
+                width:100% ;
+              
+                object-fit: cover;
+            }
+            }
+            .certificate{
+                background-color: $darkest_background;
+                padding-bottom: 80px;
+                .certificate__header{ 
+                    @include flexcolumn();
+                    align-items: center;
+                    padding-top: 120px; 
+                    hr{
+                        padding: 0;
+                        margin: 0;
+                        width:2%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .certificate__title{
+                        @include Montserat();
+                        color:white;  
+                        font-size: $desktop-font-size-h2;      
+                        padding-top: 30px;   
+                    }
+                }
+                .certificate__bloc{
+                    @include flexrow();
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        padding: 19px;
+                        width:20%
+                    }
+                }
+            }
+            .team{
+                background-color: $dark_background;
+                padding-bottom: 80px;
+                .team__header{ 
+                    @include flexcolumn();
+                    align-items: center;
+                    padding-top: 120px; 
+                    hr{
+                        padding: 0;
+                        margin: 0;
+                        width:2%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .team__title{
+                        @include Montserat();
+                        color:white;  
+                        font-size: $desktop-font-size-h2;      
+                        padding-top: 30px;   
+                        text-transform: capitalize;
+                    }
+                }
+                .team__bloc{
+                    @include flexrow();
+                    align-items: center;
+                    justify-content: center;
+                    
+                    .bloc__member{
+                        @include flexcolumn();
+                        align-items: center;
+                        padding: 30px;
+                        h2{
+                            @include Montserat();
+                            color:white;  
+                            font-size: $desktop-font-size-h2; 
+                            margin-bottom: 0;
+                            padding-top: 15px;
+                        }
+                        p{
+                            @include Hind();
+                            color:$global_font_color;
+                            font-size: $desktop-font-size-p;
+                            margin-top: 0;
+                        }
+                        img{
+                            width:80%;
+                        }
+                    }
+                }
+            }
+            .WhatPeopleSay{
+                background-color: $darkest_background;
+                .WhatPeopleSay__header{ 
+                    @include flexcolumn();
+                    align-items: center;
+                    padding-top: 120px; 
+                    hr{
+                        padding: 0;
+                        margin: 0;
+                        width:2%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .WhatPeopleSay__title{
+                        @include Montserat();
+                        color:white;  
+                        font-size: $desktop-font-size-h2;      
+                        padding-top: 30px;   
+                        text-transform: capitalize;
+                    }
+                    a{
+                        @include Montserat();
+                        text-decoration: none;
+                        color: $red;
+                        font-size: 10px;
+                        border-bottom: 1px solid $red;
+                    }
+                }
+                .WhatPeopleSay__bloc{
+                    @include flexcolumn();
+                    align-items: center;
+                   p{
+                        @include Hind();
+                        color:$global_font_color;
+                        font-size: $desktop-font-size-p;
+                        width: 80%;
+                        text-align: center;
+                   }
+                   .bloc__author{
+                    @include Hind();
+                        text-transform: uppercase;
+                        color:$global_font_color;
+                        font-size: $desktop-font-size-p;
+                   }
+                }
+                .WhatPeopleSay__button{
+                    @include flexrow();
+                    align-items: center;
+                    justify-content: center;
+                    a{
+                        font-size: 50px;
+                        text-decoration: none;
+                        color: white;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        padding-bottom: 20px;
+                    }
+                    p{
+                        font-size: 50px;
+                        color:$global_font_color;
+                    }
+                }
+            }
+            .FAQ{
+                background-color: white;
+                .FAQ__header{ 
+                    @include flexcolumn();
+                    align-items: center;
+                    padding-top: 120px; 
+                    hr{
+                        padding: 0;
+                        margin: 0;
+                        width:2%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        
+                    }
+                    .FAQ__title{
+                        @include Montserat();
+                        color:black;  
+                        font-size: $desktop-font-size-h2;      
+                        padding-top: 30px;   
+                        text-transform: capitalize;
+                    }
+                    p{
+                        @include Hind();
+                        color:$global_font_color;
+                        font-size: $desktop-font-size-p;
+                        text-align: center;
+                    }
+                }
+            }
+        
+        
+}
+
+
+@media (min-width:413px) and (max-width:768px){
+    header{
+        background-image: url(../images/slide-1.jpg);
+        background-position: center;
+        background-position: top;
+        .header__title{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            padding-bottom: 90px;
+            h1{
+                @include Montserat();
+                color: white; 
+                font-size: $mobile-font-size-h1;
+               
+                i{
+                    color: red;
+                }  
+            }
+            .header__breadcrumb {
+                padding: 0 .5rem;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                 }
+                li:not(:last-child)::after {
+                    display: inline-block;
+                    margin: 0 .25rem;
+                    content: ">";
+                    padding-left: 10px;
+                    
+                }
+                li{
+                    @include Hind();
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    padding-right: 10px;
+                    color : $global_font_color;
+                    a{
+                        color:white;
+                        text-decoration: none;
+                    }
+                }
+                                }
+                    }
+        }
+        .video{
+            margin-bottom: 0;
+            padding: 0;
+            background-color: $darkest_background;
+            video{
+                width: 100%;
+                
+            object-fit: cover;
+            }
+            }
+            .certificate{
+                background-color: $darkest_background;
+                .certificate__header{ 
+                    @include flexcolumn();
+                    align-items: center;
+                    padding-top: 20px; 
+                    hr{
+                        padding: 0;
+                        margin: 0;
+                        width:2%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .certificate__title{
+                        @include Montserat();
+                        color:white;  
+                        font-size: $mobile-font-size-h2;      
+                        padding-top: 30px;   
+                    }
+                }
+                .certificate__bloc{
+                    @include flexrow();
+                    align-items: center;
+                    img{
+                        padding: 19px;
+                        width:20%
+                    }
+                }
+            }
+            .team{
+                background-color: $dark_background;
+                .team__header{ 
+                    @include flexcolumn();
+                    align-items: center;
+                    padding-top: 20px; 
+                    hr{
+                        padding: 0;
+                        margin: 0;
+                        width:2%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .team__title{
+                        @include Montserat();
+                        color:white;  
+                        font-size: $mobile-font-size-h2;      
+                        padding-top: 30px;   
+                        text-transform: capitalize;
+                    }
+                }
+                .team__bloc{
+                    @include flexrow();
+                    align-items: center;
+            
+                    .bloc__member{
+                        @include flexcolumn();
+                        align-items: center;
+                        padding-bottom: 30px;
+                        h2{
+                            @include Montserat();
+                            color:white;  
+                            font-size: $mobile-font-size-h2; 
+                            margin-bottom: 0;
+                            padding-top: 15px;
+                        }
+                        p{
+                            @include Hind();
+                            color:$global_font_color;
+                            font-size: $mobile-font-size-p;
+                            margin-top: 0;
+                        }
+                        img{
+                            width:80%;
+                        }
+                    }
+                }
+            }
+            .WhatPeopleSay{
+                background-color: $darkest_background;
+                .WhatPeopleSay__header{ 
+                    @include flexcolumn();
+                    align-items: center;
+                    padding-top: 20px; 
+                    hr{
+                        padding: 0;
+                        margin: 0;
+                        width:2%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .WhatPeopleSay__title{
+                        @include Montserat();
+                        color:white;  
+                        font-size: $mobile-font-size-h2;      
+                        padding-top: 30px;   
+                        text-transform: capitalize;
+                    }
+                    a{
+                        @include Montserat();
+                        text-decoration: none;
+                        color: $red;
+                        font-size: 10px;
+                        border-bottom: 1px solid $red;
+                    }
+                }
+                .WhatPeopleSay__bloc{
+                    @include flexcolumn();
+                    align-items: center;
+                   p{
+                        @include Hind();
+                        color:$global_font_color;
+                        font-size: $mobile-font-size-p;
+                        width: 80%;
+                        text-align: center;
+                   }
+                   .bloc__author{
+                    @include Hind();
+                        text-transform: uppercase;
+                        color:$global_font_color;
+                        font-size: $mobile-font-size-p;
+                   }
+                }
+                .WhatPeopleSay__button{
+                    @include flexrow();
+                    align-items: center;
+                    justify-content: center;
+                    a{
+                        font-size: 50px;
+                        text-decoration: none;
+                        color: white;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        padding-bottom: 20px;
+                    }
+                    p{
+                        font-size: 50px;
+                        color:$global_font_color;
+                    }
+                }
+            }
+            .FAQ{
+                background-color: white;
+                .FAQ__header{ 
+                    @include flexcolumn();
+                    align-items: center;
+                    padding-top: 20px; 
+                    hr{
+                        padding: 0;
+                        margin: 0;
+                        width:2%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        
+                    }
+                    .FAQ__title{
+                        @include Montserat();
+                        color:black;  
+                        font-size: $mobile-font-size-h2;      
+                        padding-top: 30px;   
+                        text-transform: capitalize;
+                    }
+                    p{
+                        @include Hind();
+                        color:$global_font_color;
+                        font-size: $mobile-font-size-p;
+                        text-align: center;
+                    }
+                }
+            }
+        
+        
+     
+}
+
+@media (max-width:412px) {
+    header{
+        background-image: url(../images/slide-1.jpg);
+        background-position: center;
+        background-position: top;
+        .header__title{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            padding-bottom: 90px;
+            h1{
+                @include Montserat();
+                color: white; 
+                font-size: $mobile-font-size-h1;
+               
+                i{
+                    color: red;
+                }  
+            }
+            .header__breadcrumb {
+                padding: 0 .5rem;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                 }
+                li:not(:last-child)::after {
+                    display: inline-block;
+                    margin: 0 .25rem;
+                    content: ">";
+                    padding-left: 10px;
+                    
+                }
+                li{
+                    @include Hind();
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    padding-right: 10px;
+                    color : $global_font_color;
+                    a{
+                        color:white;
+                        text-decoration: none;
+                    }
+                }
+                                }
+                    }
+        }
+        .video{
+            margin-bottom: 0;
+            padding: 0;
+            background-color: $darkest_background;
+            video{
+                width:100%;
+                height: 300px;
+            object-fit: cover;
+            }
+            }
+        .certificate{
+            background-color: $darkest_background;
+            .certificate__header{ 
+                @include flexcolumn();
+                align-items: center;
+                padding-top: 20px; 
+                hr{
+                    padding: 0;
+                    margin: 0;
+                    width:8%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .certificate__title{
+                    @include Montserat();
+                    color:white;  
+                    font-size: $mobile-font-size-h2;      
+                    padding-top: 30px;   
+                }
+            }
+            .certificate__bloc{
+                @include flexcolumn();
+                align-items: center;
+                img{
+                    padding: 20px;
+                }
+            }
+        }
+        .team{
+            background-color: $dark_background;
+            .team__header{ 
+                @include flexcolumn();
+                align-items: center;
+                padding-top: 20px; 
+                hr{
+                    padding: 0;
+                    margin: 0;
+                    width:8%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .team__title{
+                    @include Montserat();
+                    color:white;  
+                    font-size: $mobile-font-size-h2;      
+                    padding-top: 30px;   
+                    text-transform: capitalize;
+                }
+            }
+            .team__bloc{
+                @include flexcolumn();
+                align-items: center;
+                .bloc__member{
+                    @include flexcolumn();
+                    align-items: center;
+                    padding-bottom: 30px;
+                    h2{
+                        @include Montserat();
+                        color:white;  
+                        font-size: $mobile-font-size-h2; 
+                        margin-bottom: 0;
+                        padding-top: 15px;
+                    }
+                    p{
+                        @include Hind();
+                        color:$global_font_color;
+                        font-size: $mobile-font-size-p;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        .WhatPeopleSay{
+            background-color: $darkest_background;
+            .WhatPeopleSay__header{ 
+                @include flexcolumn();
+                align-items: center;
+                padding-top: 20px; 
+                hr{
+                    padding: 0;
+                    margin: 0;
+                    width:8%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .WhatPeopleSay__title{
+                    @include Montserat();
+                    color:white;  
+                    font-size: $mobile-font-size-h2;      
+                    padding-top: 30px;   
+                    text-transform: capitalize;
+                }
+                a{
+                    @include Montserat();
+                    text-decoration: none;
+                    color: $red;
+                    font-size: 10px;
+                    border-bottom: 1px solid $red;
+                }
+            }
+            .WhatPeopleSay__bloc{
+                @include flexcolumn();
+                align-items: center;
+               p{
+                    @include Hind();
+                    color:$global_font_color;
+                    font-size: $mobile-font-size-p;
+                    width: 80%;
+                    text-align: center;
+               }
+               .bloc__author{
+                @include Hind();
+                    text-transform: uppercase;
+                    color:$global_font_color;
+                    font-size: $mobile-font-size-p;
+               }
+            }
+            .WhatPeopleSay__button{
+                display: none;
+               
+            }
+        }
+        .FAQ{
+            background-color: white;
+            .FAQ__header{ 
+                @include flexcolumn();
+                align-items: center;
+                padding-top: 20px; 
+                hr{
+                    padding: 0;
+                    margin: 0;
+                    width:8%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    
+                }
+                .FAQ__title{
+                    @include Montserat();
+                    color:black;  
+                    font-size: $mobile-font-size-h2;      
+                    padding-top: 30px;   
+                    text-transform: capitalize;
+                }
+                p{
+                    @include Hind();
+                    color:$global_font_color;
+                    font-size: $mobile-font-size-p;
+                    text-align: center;
+                }
+            }
         }
     
     
