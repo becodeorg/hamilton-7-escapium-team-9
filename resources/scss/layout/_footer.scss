@@ -2,22 +2,22 @@
 @use "../utilities/variables" as *;
 @use "./grid" as *;
 @use "../utilities/mixins" as *;
+@use "./flex"as *;
 
 
 .footer{
     background-color: $darkest_background;
+    @include Hind;
     color: $global_font_color;
     .footer__title{
         @include Montserat;
         color: $white_title;
-        
     }
 
 }
 
 @media only screen and (max-width: $mobile-max-width) {
     .footer__grid{
-    background-color: rebeccapurple;
     @include grid_1_5_footer;
 }
 
@@ -25,9 +25,8 @@
 
 }
 
-@media only screen and (min-width:$mobile-max-width) and (max-width:$desktop-min-width) {
+@media only screen and (min-width:413px) and (max-width:$tablet-max-width){
     .footer__grid{
-    background-color: blue;
     @include grid_4_2_footer;
 }
 }
@@ -36,7 +35,6 @@
 
 @media only screen and (min-width: $desktop-min-width) {
     .footer__grid{
-    background-color: red;
     @include grid_4_2_footer;
     
 }
