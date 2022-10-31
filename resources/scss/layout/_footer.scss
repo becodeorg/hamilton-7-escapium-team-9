@@ -9,12 +9,9 @@
     background-color: $darkest_background;
     @include Hind;
     color: $global_font_color;
+    .white{color: $white_title;}
     .footer__title{
         @include Montserat;
-        color: $white_title;
-    }
-    .sociallink{
-        color:$white_title;
     }
 
     .copyright{
@@ -26,16 +23,9 @@
         @include flex_column;
     }
     
-    .link{
-        text-decoration: none;
-        color:$global_font_color;
-    }
-    .link:visited{
-        text-decoration: none;
-        color:$global_font_color;
-    }
-    
-    
+    .link .link:visited{
+        @include nolinkchange;
+}
 }
 
 @media only screen and (max-width: $mobile-max-width) {
@@ -61,8 +51,4 @@
     
 }
 }
-
-
-
-
 
