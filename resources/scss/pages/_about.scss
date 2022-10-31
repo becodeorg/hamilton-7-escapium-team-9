@@ -29,7 +29,15 @@
                 li:not(:last-child)::after {
                     display: inline-block;
                     margin: 0 .25rem;
-                    content: "→";
+                    content: ">";
+                    a{
+                        color:white;
+                        text-decoration: none;
+                    }
+                }
+                li{
+                    @include Hind();
+                    text-transform: uppercase;
                 }
                                 }
                     }
