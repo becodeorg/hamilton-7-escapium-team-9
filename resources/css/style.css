@@ -69,6 +69,11 @@ table {
 .footer .footer__box {
   padding: 10px;
 }
+.footer .footer__box .redline {
+  height: 1px;
+  background-color: #F60B0E;
+  border: none;
+}
 .footer .copyright {
   display: flex;
   flex-direction: column;

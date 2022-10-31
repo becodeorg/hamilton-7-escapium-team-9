@@ -17,6 +17,12 @@
     }
     .footer__box{
         padding: 10px;
+        .redline{
+        height: 1px;
+        width: 5px;
+        background-color: $red;
+        border: none;
+        }
     }
 
     .copyright{
