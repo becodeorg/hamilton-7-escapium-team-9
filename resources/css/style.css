@@ -9,7 +9,7 @@
   font-family: "Hind";
   src: url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&display=swap");
 }
-@media (min-width: 769px) and (max-width: 1920px) {
+@media (min-width: 769px) {
   .How {
     background-color: #222222;
   }
@@ -28,6 +28,7 @@
   }
   .How .How__header .How__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 44px;
     padding-top: 30px;
@@ -51,6 +52,7 @@
   }
   .How .How__blocs .How__bloc h3 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 32px;
   }
@@ -81,6 +83,7 @@
   }
   .How .How__header .How__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     padding-top: 30px;
@@ -104,6 +107,7 @@
   }
   .How .How__blocs .How__bloc h3 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 21px;
   }
@@ -134,6 +138,7 @@
   }
   .How .How__header .How__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     padding-top: 30px;
@@ -156,6 +161,7 @@
   }
   .How .How__blocs .How__bloc h3 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 21px;
   }
@@ -167,11 +173,11 @@
     text-align: center;
   }
 }
-@media (min-width: 769px) and (max-width: 1920px) {
+@media (min-width: 769px) {
   .FAQ .accordion-div {
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 50%;
   }
 }
 .FAQ .accordion {
@@ -208,6 +214,7 @@
 .FAQ span {
   font-family: "Montserrat";
   font-weight: bold;
+  font-weight: bold;
   margin-top: 50px;
 }
 .FAQ .panel {
@@ -219,7 +226,296 @@
   transition: max-height 0.2s ease-out;
 }
 
-@media (min-width: 769px) and (max-width: 1920px) {
+@media (min-width: 769px) {
+  .WhatPeopleSay {
+    background-color: #1B1B1B;
+    padding-bottom: 150px;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header hr {
+    padding: 0;
+    margin: 0;
+    width: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header .WhatPeopleSay__title {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+    font-size: 44px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header a {
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-decoration: none;
+    color: #F60B0E;
+    font-size: 20px;
+    border-bottom: 1px solid #F60B0E;
+  }
+  .WhatPeopleSay .slideshow-container {
+    position: relative;
+    background: #1B1B1B;
+  }
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc {
+    display: none;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 16px;
+    text-align: center;
+  }
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc .bloc__author {
+    font-family: "Hind";
+    text-transform: uppercase;
+    color: #717171;
+    font-size: 16px;
+    padding-top: 50px;
+  }
+  .WhatPeopleSay .slideshow-container .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    left: 39%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .WhatPeopleSay .slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .WhatPeopleSay .slideshow-container .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 413px) and (max-width: 768px) {
+  .WhatPeopleSay {
+    background-color: #1B1B1B;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header hr {
+    padding: 0;
+    margin: 0;
+    width: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header .WhatPeopleSay__title {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+    font-size: 19px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header a {
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-decoration: none;
+    color: #F60B0E;
+    font-size: 10px;
+    border-bottom: 1px solid #F60B0E;
+  }
+  .WhatPeopleSay .slideshow-container {
+    position: relative;
+    background: #1B1B1B;
+  }
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc {
+    display: none;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 14px;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc .bloc__author {
+    font-family: "Hind";
+    text-transform: uppercase;
+    color: #717171;
+    font-size: 14px;
+  }
+  .WhatPeopleSay .slideshow-container .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    left: 32%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .WhatPeopleSay .slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .WhatPeopleSay .slideshow-container .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 412px) {
+  .WhatPeopleSay {
+    background-color: #1B1B1B;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header hr {
+    padding: 0;
+    margin: 0;
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header .WhatPeopleSay__title {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+    font-size: 19px;
+    padding-top: 30px;
+    text-transform: capitalize;
+  }
+  .WhatPeopleSay .WhatPeopleSay__header a {
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-decoration: none;
+    color: #F60B0E;
+    font-size: 10px;
+    border-bottom: 1px solid #F60B0E;
+  }
+  .WhatPeopleSay .slideshow-container {
+    position: relative;
+    background: #1B1B1B;
+  }
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc {
+    display: none;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc .bloc__author {
+    font-family: "Hind";
+    text-transform: uppercase;
+    color: #717171;
+    font-size: 14px;
+  }
+  .WhatPeopleSay .slideshow-container .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .WhatPeopleSay .slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 85%;
+    left: 55%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .WhatPeopleSay .slideshow-container .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 769px) {
   header {
     background-image: url(../images/slide-1.jpg);
     background-position: center;
@@ -234,6 +530,7 @@
   }
   header .header__title h1 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 120px;
   }
@@ -268,13 +565,56 @@
     text-decoration: none;
   }
   .video {
-    margin-bottom: 0;
-    padding: 0;
-    background-color: #1B1B1B;
+    position: relative;
   }
-  .video video {
+  .video .video1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.95);
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .video .video1 video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+  }
+  .video .video1.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .video .placeholder {
+    background-image: url("../../resources/images/video-placeholder.jpg");
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .video a img.play {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 10%;
+  }
+  .video .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
   }
   .certificate {
     background-color: #1B1B1B;
@@ -295,6 +635,7 @@
   }
   .certificate .certificate__header .certificate__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 44px;
     padding-top: 30px;
@@ -328,6 +669,7 @@
   }
   .team .team__header .team__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 44px;
     padding-top: 30px;
@@ -347,6 +689,7 @@
   }
   .team .team__bloc .bloc__member h2 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 44px;
     margin-bottom: 0;
@@ -360,72 +703,6 @@
   }
   .team .team__bloc .bloc__member img {
     width: 80%;
-  }
-  .WhatPeopleSay {
-    background-color: #1B1B1B;
-  }
-  .WhatPeopleSay .WhatPeopleSay__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 120px;
-  }
-  .WhatPeopleSay .WhatPeopleSay__header hr {
-    padding: 0;
-    margin: 0;
-    width: 2%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .WhatPeopleSay .WhatPeopleSay__header .WhatPeopleSay__title {
-    font-family: "Montserrat";
-    color: white;
-    font-size: 44px;
-    padding-top: 30px;
-    text-transform: capitalize;
-  }
-  .WhatPeopleSay .WhatPeopleSay__header a {
-    font-family: "Montserrat";
-    text-decoration: none;
-    color: #F60B0E;
-    font-size: 10px;
-    border-bottom: 1px solid #F60B0E;
-  }
-  .WhatPeopleSay .WhatPeopleSay__bloc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .WhatPeopleSay .WhatPeopleSay__bloc p {
-    font-family: "Hind";
-    color: #717171;
-    font-size: 16px;
-    width: 80%;
-    text-align: center;
-  }
-  .WhatPeopleSay .WhatPeopleSay__bloc .bloc__author {
-    font-family: "Hind";
-    text-transform: uppercase;
-    color: #717171;
-    font-size: 16px;
-  }
-  .WhatPeopleSay .WhatPeopleSay__button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .WhatPeopleSay .WhatPeopleSay__button a {
-    font-size: 50px;
-    text-decoration: none;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-  }
-  .WhatPeopleSay .WhatPeopleSay__button p {
-    font-size: 50px;
-    color: #717171;
   }
   .FAQ {
     background-color: white;
@@ -445,6 +722,7 @@
   }
   .FAQ .FAQ__header .FAQ__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: black;
     font-size: 44px;
     padding-top: 30px;
@@ -455,6 +733,11 @@
     color: #717171;
     font-size: 16px;
     text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .video1 video {
+    max-width: 90%;
   }
 }
 @media (min-width: 413px) and (max-width: 768px) {
@@ -472,6 +755,7 @@
   }
   header .header__title h1 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 32px;
   }
@@ -506,13 +790,56 @@
     text-decoration: none;
   }
   .video {
-    margin-bottom: 0;
-    padding: 0;
-    background-color: #1B1B1B;
+    position: relative;
   }
-  .video video {
+  .video .video1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.95);
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .video .video1 video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+  }
+  .video .video1.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .video .placeholder {
+    background-image: url("../../resources/images/video-placeholder.jpg");
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .video a img.play {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 10%;
+  }
+  .video .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
   }
   .certificate {
     background-color: #1B1B1B;
@@ -532,6 +859,7 @@
   }
   .certificate .certificate__header .certificate__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     padding-top: 30px;
@@ -563,6 +891,7 @@
   }
   .team .team__header .team__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     padding-top: 30px;
@@ -581,6 +910,7 @@
   }
   .team .team__bloc .bloc__member h2 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     margin-bottom: 0;
@@ -594,72 +924,6 @@
   }
   .team .team__bloc .bloc__member img {
     width: 80%;
-  }
-  .WhatPeopleSay {
-    background-color: #1B1B1B;
-  }
-  .WhatPeopleSay .WhatPeopleSay__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-  }
-  .WhatPeopleSay .WhatPeopleSay__header hr {
-    padding: 0;
-    margin: 0;
-    width: 2%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .WhatPeopleSay .WhatPeopleSay__header .WhatPeopleSay__title {
-    font-family: "Montserrat";
-    color: white;
-    font-size: 19px;
-    padding-top: 30px;
-    text-transform: capitalize;
-  }
-  .WhatPeopleSay .WhatPeopleSay__header a {
-    font-family: "Montserrat";
-    text-decoration: none;
-    color: #F60B0E;
-    font-size: 10px;
-    border-bottom: 1px solid #F60B0E;
-  }
-  .WhatPeopleSay .WhatPeopleSay__bloc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .WhatPeopleSay .WhatPeopleSay__bloc p {
-    font-family: "Hind";
-    color: #717171;
-    font-size: 14px;
-    width: 80%;
-    text-align: center;
-  }
-  .WhatPeopleSay .WhatPeopleSay__bloc .bloc__author {
-    font-family: "Hind";
-    text-transform: uppercase;
-    color: #717171;
-    font-size: 14px;
-  }
-  .WhatPeopleSay .WhatPeopleSay__button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .WhatPeopleSay .WhatPeopleSay__button a {
-    font-size: 50px;
-    text-decoration: none;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-  }
-  .WhatPeopleSay .WhatPeopleSay__button p {
-    font-size: 50px;
-    color: #717171;
   }
   .FAQ {
     background-color: white;
@@ -679,6 +943,7 @@
   }
   .FAQ .FAQ__header .FAQ__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: black;
     font-size: 19px;
     padding-top: 30px;
@@ -706,6 +971,7 @@
   }
   header .header__title h1 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 32px;
   }
@@ -740,14 +1006,56 @@
     text-decoration: none;
   }
   .video {
-    margin-bottom: 0;
-    padding: 0;
-    background-color: #1B1B1B;
+    position: relative;
   }
-  .video video {
+  .video .video1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.95);
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .video .video1 video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+  }
+  .video .video1.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .video .placeholder {
+    background-image: url("../../resources/images/video-placeholder.jpg");
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .video a img.play {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 10%;
+  }
+  .video .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
   }
   .certificate {
     background-color: #1B1B1B;
@@ -767,6 +1075,7 @@
   }
   .certificate .certificate__header .certificate__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     padding-top: 30px;
@@ -797,6 +1106,7 @@
   }
   .team .team__header .team__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     padding-top: 30px;
@@ -815,6 +1125,7 @@
   }
   .team .team__bloc .bloc__member h2 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     margin-bottom: 0;
@@ -825,57 +1136,6 @@
     color: #717171;
     font-size: 14px;
     margin-top: 0;
-  }
-  .WhatPeopleSay {
-    background-color: #1B1B1B;
-  }
-  .WhatPeopleSay .WhatPeopleSay__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-  }
-  .WhatPeopleSay .WhatPeopleSay__header hr {
-    padding: 0;
-    margin: 0;
-    width: 8%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .WhatPeopleSay .WhatPeopleSay__header .WhatPeopleSay__title {
-    font-family: "Montserrat";
-    color: white;
-    font-size: 19px;
-    padding-top: 30px;
-    text-transform: capitalize;
-  }
-  .WhatPeopleSay .WhatPeopleSay__header a {
-    font-family: "Montserrat";
-    text-decoration: none;
-    color: #F60B0E;
-    font-size: 10px;
-    border-bottom: 1px solid #F60B0E;
-  }
-  .WhatPeopleSay .WhatPeopleSay__bloc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .WhatPeopleSay .WhatPeopleSay__bloc p {
-    font-family: "Hind";
-    color: #717171;
-    font-size: 14px;
-    width: 80%;
-    text-align: center;
-  }
-  .WhatPeopleSay .WhatPeopleSay__bloc .bloc__author {
-    font-family: "Hind";
-    text-transform: uppercase;
-    color: #717171;
-    font-size: 14px;
-  }
-  .WhatPeopleSay .WhatPeopleSay__button {
-    display: none;
   }
   .FAQ {
     background-color: white;
@@ -895,6 +1155,7 @@
   }
   .FAQ .FAQ__header .FAQ__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: black;
     font-size: 19px;
     padding-top: 30px;

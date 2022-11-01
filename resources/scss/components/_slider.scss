@@ -1,0 +1,355 @@
+@use "../base/_typographie.scss" as *;
+@use "../layout/_flex.scss" as *;
+@use "../utilities/_mixins.scss" as *;
+@use "../utilities/_colors.scss" as *;
+@use "../utilities/_variables.scss" as *;
+
+
+
+@media (min-width:769px){
+.WhatPeopleSay{
+    background-color: $darkest_background;
+    padding-bottom: 150px;
+    .WhatPeopleSay__header{ 
+        @include flexcolumn();
+        align-items: center;
+        padding-top: 120px;
+        padding-bottom: 100px; 
+        hr{
+            padding: 0;
+            margin: 0;
+            width:2%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .WhatPeopleSay__title{
+            @include Montserat();
+            color:white;  
+            font-size: $desktop-font-size-h2;      
+            padding-top: 30px;   
+            text-transform: capitalize;
+        }
+        a{
+            @include Montserat();
+            text-decoration: none;
+            color: $red;
+            font-size: 20px;
+            border-bottom: 1px solid $red;
+        }
+    }
+    .slideshow-container {
+        position: relative;
+        background: $darkest_background;
+      
+   
+     
+    .WhatPeopleSay__bloc{
+        display: none;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+        align-items: center;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+       p{
+            @include Hind();
+            color:$global_font_color;
+            font-size: $desktop-font-size-p;
+            text-align: center;
+       }
+       .bloc__author{
+        @include Hind();
+            text-transform: uppercase;
+            color:$global_font_color;
+            font-size: $desktop-font-size-p;
+            padding-top: 50px;
+       }
+       
+    }
+    .prev {
+        cursor: pointer;
+        position: absolute;
+        top: 60%;
+        left:39%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 80px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+   .next {
+        cursor: pointer;
+        position: absolute;
+        top: 60%;
+        left:55%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 80px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+  
+      .next {
+        position: absolute;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        margin-right: 10px;
+      }
+      
+      
+}
+    // .WhatPeopleSay__button{
+     
+    //     align-items: center;
+    //     justify-content: center;
+    //     a{
+    //         font-size: 50px;
+    //         text-decoration: none;
+    //         color: white;
+    //         padding-left: 20px;
+    //         padding-right: 20px;
+    //         padding-bottom: 20px;
+    //     }
+    //     p{
+    //         font-size: 50px;
+    //         color:$global_font_color;
+    //     }
+        
+          
+        
+         
+    // }
+    }
+}
+   
+  
+
+
+
+
+@media (min-width:413px) and (max-width:768px){
+    .WhatPeopleSay{
+        background-color: $darkest_background;
+        .WhatPeopleSay__header{ 
+            @include flexcolumn();
+            align-items: center;
+            padding-top: 20px; 
+            hr{
+                padding: 0;
+                margin: 0;
+                width:2%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .WhatPeopleSay__title{
+                @include Montserat();
+                color:white;  
+                font-size: $mobile-font-size-h2;      
+                padding-top: 30px;   
+                text-transform: capitalize;
+            }
+            a{
+                @include Montserat();
+                text-decoration: none;
+                color: $red;
+                font-size: 10px;
+                border-bottom: 1px solid $red;
+            }
+        }
+        .slideshow-container {
+            position: relative;
+            background: $darkest_background;
+          
+       
+        .WhatPeopleSay__bloc{
+            display: none;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+        align-items: center;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+           p{
+                @include Hind();
+                color:$global_font_color;
+                font-size: $mobile-font-size-p;
+                text-align: center;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+           }
+           .bloc__author{
+                 @include Hind();
+                text-transform: uppercase;
+                color:$global_font_color;
+                font-size: $mobile-font-size-p;
+            
+           }
+        }
+        .prev {
+            cursor: pointer;
+            position: absolute;
+            top: 60%;
+            left:32%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 50px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          }
+       .next {
+            cursor: pointer;
+            position: absolute;
+            top: 60%;
+            left:55%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 50px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          }
+          
+      
+          .next {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            margin-right: 10px;
+          }
+          
+    }
+        // .WhatPeopleSay__button{
+        //     @include flexrow();
+        //     align-items: center;
+        //     justify-content: center;
+        //     a{
+        //         font-size: 50px;
+        //         text-decoration: none;
+        //         color: white;
+        //         padding-left: 20px;
+        //         padding-right: 20px;
+        //         padding-bottom: 20px;
+        //     }
+        //     p{
+        //         font-size: 50px;
+        //         color:$global_font_color;
+        //     }
+        // }
+    }
+}
+
+@media (max-width:412px) {
+.WhatPeopleSay{
+    background-color: $darkest_background;
+    .WhatPeopleSay__header{ 
+        @include flexcolumn();
+        align-items: center;
+        padding-top: 20px; 
+        hr{
+            padding: 0;
+            margin: 0;
+            width:8%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .WhatPeopleSay__title{
+            @include Montserat();
+            color:white;  
+            font-size: $mobile-font-size-h2;      
+            padding-top: 30px;   
+            text-transform: capitalize;
+        }
+        a{
+            @include Montserat();
+            text-decoration: none;
+            color: $red;
+            font-size: 10px;
+            border-bottom: 1px solid $red;
+        }
+    }
+    .slideshow-container {
+        position: relative;
+        background: $darkest_background;
+      
+    .WhatPeopleSay__bloc{
+        display: none;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+        align-items: center;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+       p{
+            @include Hind();
+            color:$global_font_color;
+            font-size: $mobile-font-size-p;
+            width: 100%;
+            text-align: center;
+       }
+       .bloc__author{
+        @include Hind();
+            text-transform: uppercase;
+            color:$global_font_color;
+            font-size: $mobile-font-size-p;
+       }
+    }
+    .prev {
+        cursor: pointer;
+        position: absolute;
+        top: 85%;
+        left:20%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+   .next {
+        cursor: pointer;
+        position: absolute;
+        top: 85%;
+        left:55%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+  
+      .next {
+        position: absolute;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        margin-right: 10px;
+      }
+    
+}
+    // .WhatPeopleSay__button{
+    //     display: none;
+       
+    // }
+}
+}
