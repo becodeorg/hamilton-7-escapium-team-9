@@ -65,6 +65,9 @@ table {
 .footer .footer__title {
   font-family: "Monserrat";
   font-weight: 700;
+  text-align: left;
+  padding: 1rem;
+  padding-left: 0rem;
 }
 .footer .footer__box {
   padding: 10px;
@@ -73,6 +76,8 @@ table {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  padding: 1rem;
+  padding-left: 0rem;
 }
 .footer .footer__box .footer__head .redline {
   height: 1px;

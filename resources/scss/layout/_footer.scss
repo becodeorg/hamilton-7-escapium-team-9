@@ -9,18 +9,23 @@
     background-color: $darkest_background;
     font-family: "Hind";
     color: $global_font_color;
+
     .white{
         color: $white_title;}
     .footer__title{
         font-family: "Monserrat";
         font-weight: 700;
+        text-align: left;
+        padding: $footer-padding;
+        padding-left: 0rem;
     }
     .footer__box{
         padding: 10px;
-        
+
         .footer__head{
             @include flex_row;
-            
+            padding: $footer-padding;
+            padding-left: 0rem;
             .redline{
                 height: 1px;
                 width: 20%;
