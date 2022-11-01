@@ -17,11 +17,17 @@
     }
     .footer__box{
         padding: 10px;
-        .redline{
-        height: 1px;
-        width: 5px;
-        background-color: $red;
-        border: none;
+        
+        .footer__head{
+            @include flex_row;
+            
+            .redline{
+                height: 1px;
+                width: 20%;
+                margin-right:70%;
+                background-color: $red;
+                border: none;
+            }
         }
     }
 

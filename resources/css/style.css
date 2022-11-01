@@ -69,8 +69,15 @@ table {
 .footer .footer__box {
   padding: 10px;
 }
-.footer .footer__box .redline {
+.footer .footer__box .footer__head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.footer .footer__box .footer__head .redline {
   height: 1px;
+  width: 20%;
+  margin-right: 70%;
   background-color: #F60B0E;
   border: none;
 }
