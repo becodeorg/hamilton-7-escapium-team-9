@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resources/css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d6da04fe60.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/resources/js/index.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async="false" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDkUybIS8OzyDU9gVKqBrqUbO60ram-q0-39Fxo&libraries=places&callback=initMap"></script>
+          <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="header__title">
+            <h1>contacts<i>.</i></h1>
+
+            <nav aria-label="Breadcrumb" class="header__breadcrumb">
+                <ul>
+                    <li><a href="#">Home</a></li>                    
+                    <li><span aria-current="page">contact</span></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="GetInTouch">
+            <div class="GetInTouch__header">
+                <h2>Get In Touch</h2>
+                <p>If you are interested in working with us, please get in touch</p>
+            </div>
+
+            <div class="GetInTouch__info">
+                <div class="info__com">
+                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                    <p>2390 RoadHill St, suite 100 North Donwtown,ny 82153</p>
+                </div>
+
+                <div class="info__com">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <p>+1800 900 1248</p>
+                </div>
+
+                <div class="info__mail">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <p>info@escapium.com</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form">
+
+            <h2>Contact Form</h2>
+            <div class="info">
+                <input type="text" name="firstname" id="firstname" placeholder="Name"/>       
+ 
+                 <input type="email" name="email" id="email" placeholder="Email Address"/>
+            </div>
+            <input type="textarea" name="msg" id="msg" placeholder="Your Message" />
+            
+            <button onclick="check()">Send Message</button>
+     
+            <section id="Success" style="visibility: hidden;">
+                Formulaire Sent !
+            </section>
+        </div>
+    </main>
+    <div id="map"></div>
+    
+    <script async defer
+    src=
+"https://maps.googleapis.com/maps/api/js?key=AIzaSyDDkUybIS8OzyDU9gVKqBrqUbO60ram-q0&callback=initMap">
+    </script>
+</body>
+</html>
