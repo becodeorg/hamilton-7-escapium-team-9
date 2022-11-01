@@ -46,10 +46,24 @@
         @include flex_column;
     }
     
-    .link .link:visited{
+    .link{
+        padding-bottom: $spaceing_lines;
         @include nolinkchange;
+        &:visited{
+            color: $red;
+        }
+
+
     
 }
+    .hours{
+        ul{
+            *{
+        padding-bottom: $spaceing_lines;
+    }
+        }
+
+    }
 
 }
 

@@ -11,10 +11,11 @@
       grid-area: 1 / 2 / 2 / 3;
   }
   .social{
-      grid-area: 1 / 3 / 2 / 4;
-  }
-  .hours{
       grid-area: 1 / 4 / 2 / 5;
+  }
+  
+  .hours{
+    grid-area: 1 / 3 / 2 / 4;
   }
   .copyright{
       grid-area: 2 / 1 / 3 / 5;
@@ -35,10 +36,10 @@
         grid-area: 2 / 1 / 3 / 2;
     }
     .social{
-        grid-area: 3 / 1 / 4 / 2;
+        grid-area: 4 / 1 / 5 / 2;
     }
     .hours{
-        grid-area: 4 / 1 / 5 / 2;
+        grid-area: 3 / 1 / 4 / 2;
     }
     .copyright{
         grid-area: 5 / 1 / 6 / 2;
