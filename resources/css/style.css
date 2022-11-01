@@ -9,7 +9,7 @@
   font-family: "Hind";
   src: url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&display=swap");
 }
-@media (min-width: 769px) and (max-width: 1920px) {
+@media (min-width: 769px) {
   .How {
     background-color: #222222;
   }
@@ -28,6 +28,7 @@
   }
   .How .How__header .How__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 44px;
     padding-top: 30px;
@@ -51,6 +52,7 @@
   }
   .How .How__blocs .How__bloc h3 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 32px;
   }
@@ -81,6 +83,7 @@
   }
   .How .How__header .How__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     padding-top: 30px;
@@ -104,6 +107,7 @@
   }
   .How .How__blocs .How__bloc h3 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 21px;
   }
@@ -134,6 +138,7 @@
   }
   .How .How__header .How__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     padding-top: 30px;
@@ -156,6 +161,7 @@
   }
   .How .How__blocs .How__bloc h3 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 21px;
   }
@@ -167,11 +173,11 @@
     text-align: center;
   }
 }
-@media (min-width: 769px) and (max-width: 1920px) {
+@media (min-width: 769px) {
   .FAQ .accordion-div {
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 50%;
   }
 }
 .FAQ .accordion {
@@ -208,6 +214,7 @@
 .FAQ span {
   font-family: "Montserrat";
   font-weight: bold;
+  font-weight: bold;
   margin-top: 50px;
 }
 .FAQ .panel {
@@ -219,54 +226,7 @@
   transition: max-height 0.2s ease-out;
 }
 
-.multi-item-carousel .carousel-inner > .item {
-  transition: 500ms ease-in-out left;
-}
-
-.multi-item-carousel .carousel-inner .active.left {
-  left: -33%;
-}
-
-.multi-item-carousel .carousel-inner .active.right {
-  left: 33%;
-}
-
-.multi-item-carousel .carousel-inner .next {
-  left: 33%;
-}
-
-.multi-item-carousel .carousel-inner .prev {
-  left: -33%;
-}
-
-@media all and (transform-3d), (-webkit-transform-3d) {
-  .multi-item-carousel .carousel-inner > .item {
-    transition: 500ms ease-in-out left;
-    transition: 500ms ease-in-out all;
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
-    -webkit-transform: none !important;
-    transform: none !important;
-  }
-}
-.multi-item-carousel .carouse-control.left,
-.multi-item-carousel .carouse-control.right {
-  background-image: none;
-}
-
-a.left.carousel-control {
-  top: 100%;
-  width: 90%;
-  font-size: 80px;
-}
-
-a.right.carousel-control {
-  top: 100%;
-  width: 90%;
-  font-size: 80px;
-}
-
-@media (min-width: 769px) and (max-width: 1920px) {
+@media (min-width: 769px) {
   .WhatPeopleSay {
     background-color: #1B1B1B;
     padding-bottom: 150px;
@@ -287,6 +247,7 @@ a.right.carousel-control {
   }
   .WhatPeopleSay .WhatPeopleSay__header .WhatPeopleSay__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 44px;
     padding-top: 30px;
@@ -294,29 +255,72 @@ a.right.carousel-control {
   }
   .WhatPeopleSay .WhatPeopleSay__header a {
     font-family: "Montserrat";
+    font-weight: bold;
     text-decoration: none;
     color: #F60B0E;
-    font-size: 10px;
+    font-size: 20px;
     border-bottom: 1px solid #F60B0E;
   }
-  .WhatPeopleSay .WhatPeopleSay__bloc {
+  .WhatPeopleSay .slideshow-container {
+    position: relative;
+    background: #1B1B1B;
+  }
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc {
     display: none;
-    padding: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     text-align: center;
     align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .WhatPeopleSay .WhatPeopleSay__bloc p {
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc p {
     font-family: "Hind";
     color: #717171;
     font-size: 16px;
-    width: 80%;
     text-align: center;
   }
-  .WhatPeopleSay .WhatPeopleSay__bloc .bloc__author {
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc .bloc__author {
     font-family: "Hind";
     text-transform: uppercase;
     color: #717171;
     font-size: 16px;
+    padding-top: 50px;
+  }
+  .WhatPeopleSay .slideshow-container .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    left: 39%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .WhatPeopleSay .slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .WhatPeopleSay .slideshow-container .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 10px;
   }
 }
 @media (min-width: 413px) and (max-width: 768px) {
@@ -338,6 +342,7 @@ a.right.carousel-control {
   }
   .WhatPeopleSay .WhatPeopleSay__header .WhatPeopleSay__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     padding-top: 30px;
@@ -345,46 +350,74 @@ a.right.carousel-control {
   }
   .WhatPeopleSay .WhatPeopleSay__header a {
     font-family: "Montserrat";
+    font-weight: bold;
     text-decoration: none;
     color: #F60B0E;
     font-size: 10px;
     border-bottom: 1px solid #F60B0E;
   }
-  .WhatPeopleSay .WhatPeopleSay__bloc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .WhatPeopleSay .slideshow-container {
+    position: relative;
+    background: #1B1B1B;
   }
-  .WhatPeopleSay .WhatPeopleSay__bloc p {
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc {
+    display: none;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc p {
     font-family: "Hind";
     color: #717171;
     font-size: 14px;
-    width: 80%;
     text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .WhatPeopleSay .WhatPeopleSay__bloc .bloc__author {
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc .bloc__author {
     font-family: "Hind";
     text-transform: uppercase;
     color: #717171;
     font-size: 14px;
   }
-  .WhatPeopleSay .WhatPeopleSay__button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .WhatPeopleSay .WhatPeopleSay__button a {
-    font-size: 50px;
-    text-decoration: none;
+  .WhatPeopleSay .slideshow-container .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    left: 32%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-  }
-  .WhatPeopleSay .WhatPeopleSay__button p {
+    font-weight: bold;
     font-size: 50px;
-    color: #717171;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .WhatPeopleSay .slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .WhatPeopleSay .slideshow-container .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 10px;
   }
 }
 @media (max-width: 412px) {
@@ -406,6 +439,7 @@ a.right.carousel-control {
   }
   .WhatPeopleSay .WhatPeopleSay__header .WhatPeopleSay__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     padding-top: 30px;
@@ -413,34 +447,75 @@ a.right.carousel-control {
   }
   .WhatPeopleSay .WhatPeopleSay__header a {
     font-family: "Montserrat";
+    font-weight: bold;
     text-decoration: none;
     color: #F60B0E;
     font-size: 10px;
     border-bottom: 1px solid #F60B0E;
   }
-  .WhatPeopleSay .WhatPeopleSay__bloc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .WhatPeopleSay .slideshow-container {
+    position: relative;
+    background: #1B1B1B;
   }
-  .WhatPeopleSay .WhatPeopleSay__bloc p {
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc {
+    display: none;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc p {
     font-family: "Hind";
     color: #717171;
     font-size: 14px;
-    width: 80%;
+    width: 100%;
     text-align: center;
   }
-  .WhatPeopleSay .WhatPeopleSay__bloc .bloc__author {
+  .WhatPeopleSay .slideshow-container .WhatPeopleSay__bloc .bloc__author {
     font-family: "Hind";
     text-transform: uppercase;
     color: #717171;
     font-size: 14px;
   }
-  .WhatPeopleSay .WhatPeopleSay__button {
-    display: none;
+  .WhatPeopleSay .slideshow-container .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .WhatPeopleSay .slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 85%;
+    left: 55%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .WhatPeopleSay .slideshow-container .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 10px;
   }
 }
-@media (min-width: 769px) and (max-width: 1920px) {
+@media (min-width: 769px) {
   header {
     background-image: url(../images/slide-1.jpg);
     background-position: center;
@@ -455,6 +530,7 @@ a.right.carousel-control {
   }
   header .header__title h1 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 120px;
   }
@@ -559,6 +635,7 @@ a.right.carousel-control {
   }
   .certificate .certificate__header .certificate__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 44px;
     padding-top: 30px;
@@ -592,6 +669,7 @@ a.right.carousel-control {
   }
   .team .team__header .team__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 44px;
     padding-top: 30px;
@@ -611,6 +689,7 @@ a.right.carousel-control {
   }
   .team .team__bloc .bloc__member h2 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 44px;
     margin-bottom: 0;
@@ -643,6 +722,7 @@ a.right.carousel-control {
   }
   .FAQ .FAQ__header .FAQ__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: black;
     font-size: 44px;
     padding-top: 30px;
@@ -675,6 +755,7 @@ a.right.carousel-control {
   }
   header .header__title h1 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 32px;
   }
@@ -778,6 +859,7 @@ a.right.carousel-control {
   }
   .certificate .certificate__header .certificate__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     padding-top: 30px;
@@ -809,6 +891,7 @@ a.right.carousel-control {
   }
   .team .team__header .team__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     padding-top: 30px;
@@ -827,6 +910,7 @@ a.right.carousel-control {
   }
   .team .team__bloc .bloc__member h2 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     margin-bottom: 0;
@@ -859,6 +943,7 @@ a.right.carousel-control {
   }
   .FAQ .FAQ__header .FAQ__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: black;
     font-size: 19px;
     padding-top: 30px;
@@ -886,6 +971,7 @@ a.right.carousel-control {
   }
   header .header__title h1 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 32px;
   }
@@ -989,6 +1075,7 @@ a.right.carousel-control {
   }
   .certificate .certificate__header .certificate__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     padding-top: 30px;
@@ -1019,6 +1106,7 @@ a.right.carousel-control {
   }
   .team .team__header .team__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     padding-top: 30px;
@@ -1037,6 +1125,7 @@ a.right.carousel-control {
   }
   .team .team__bloc .bloc__member h2 {
     font-family: "Montserrat";
+    font-weight: bold;
     color: white;
     font-size: 19px;
     margin-bottom: 0;
@@ -1066,6 +1155,7 @@ a.right.carousel-control {
   }
   .FAQ .FAQ__header .FAQ__title {
     font-family: "Montserrat";
+    font-weight: bold;
     color: black;
     font-size: 19px;
     padding-top: 30px;

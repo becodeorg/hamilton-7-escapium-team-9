@@ -7,7 +7,7 @@
 @use "../components/_FAQ.scss" as *;
 @use "../components/_slider.scss" as *;
 
-@media (min-width:769px) and (max-width:1920px){
+@media (min-width:769px){
     header{
         background-image: url(../images/slide-1.jpg);
         background-position: center;
