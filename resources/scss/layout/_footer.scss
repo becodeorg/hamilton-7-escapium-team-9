@@ -6,7 +6,7 @@
 
 
 .footer{
-    background-color: $darkest_background;
+    background-image:url(../images/slide-3.jpg);
     font-family: "Hind";
     color: $global_font_color;
 
@@ -20,6 +20,7 @@
         padding-left: 0rem;
     }
     .footer__box{
+        @include transparent-background;
         padding: 10px;
 
         .footer__head{

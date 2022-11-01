@@ -22,3 +22,8 @@
     visibility: hidden;
     }
 }
+
+@mixin transparent-background{
+    opacity: 0.75;
+    background-color: $darkest_background;
+}

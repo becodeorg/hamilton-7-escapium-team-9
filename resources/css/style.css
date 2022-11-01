@@ -55,7 +55,7 @@ table {
 }
 
 .footer {
-  background-color: #1B1B1B;
+  background-image: url(../images/slide-3.jpg);
   font-family: "Hind";
   color: #717171;
 }
@@ -70,6 +70,8 @@ table {
   padding-left: 0rem;
 }
 .footer .footer__box {
+  opacity: 0.75;
+  background-color: #1B1B1B;
   padding: 10px;
 }
 .footer .footer__box .footer__head {
