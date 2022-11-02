@@ -1,3 +1,7 @@
+@use "../utilities/colors" as *;
+@use "../base/typographie";
+@use "../layout/flex";
+
 header{
     background-image:url("/resources/images/slide-1.jpg");
 }
@@ -5,4 +9,37 @@ header{
 body{
     background-color: $darkest_background;
     background-size:cover;  
+
+}
+.blogs__card{ 
+    padding-inline: 1em;
+    padding-block: 2em;
+
+}
+.blogs__card-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: $dark_background;
+    padding: 0;
+    margin:0;
+    color: $white_background;
+}
+.blogs__card-underimage{
+    padding-inline: 1em;
+    padding-block: 2em;
+}
+.h1 {
+    font-weight: bold;
+}
+
+.blogs__card-image{ 
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+.blogs__card-icones{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }

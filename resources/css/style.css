@@ -37,5 +37,49 @@
     content: "→";
   }
 }
+header {
+  background-image: url("/resources/images/slide-1.jpg");
+}
+
+body {
+  background-color: #1B1B1B;
+  background-size: cover;
+}
+
+.blogs__card {
+  padding-inline: 1em;
+  padding-block: 2em;
+}
+
+.blogs__card-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #222222;
+  padding: 0;
+  margin: 0;
+  color: #fefefe;
+}
+
+.blogs__card-underimage {
+  padding-inline: 1em;
+  padding-block: 2em;
+}
+
+.h1 {
+  font-weight: bold;
+}
+
+.blogs__card-image {
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.blogs__card-icones {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 /*# sourceMappingURL=style.css.map */
