@@ -1,0 +1,145 @@
+@use "../base/_typographie.scss" as *;
+@use "../utilities/_mixins.scss" as *;
+@use "../utilities/_colors.scss" as *;
+@use "../utilities/_variables.scss" as *;
+@use "../layout/_flex.scss" as *;
+@use "../components/_slider.scss" as *;
+
+header{
+    background-image: url(../images/slide-1.jpg);
+    @include hero_base;
+}
+
+
+
+@media (min-width:769px){
+    header{
+        .header__title{
+            padding-top: 50px;
+            padding-bottom: 90px;
+            h1{
+                font-size: $desktop-font-size-h1;
+                
+            }
+            .header__breadcrumb {
+                padding: 0 .5rem;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                 }
+                li:not(:last-child)::after {
+                    display: inline-block;
+                    margin: 0 .25rem;
+                    content: ">";
+                    padding-left: 10px;
+                    
+                }
+                li{
+                    @include Hind();
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    padding-right: 10px;
+                    color : $global_font_color;
+                    a{
+                        color:white;
+                        text-decoration: none;
+                    }
+                }
+                                }
+                    }
+        }
+    }        
+
+
+@media (min-width:413px) and (max-width:768px){
+    header{
+        .header__title{
+            padding-top: 50px;
+            padding-bottom: 90px;
+            h1{
+                font-size: $mobile-font-size-h1;
+            
+            }
+            .header__breadcrumb {
+                padding: 0 .5rem;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                li:not(:last-child)::after {
+                    display: inline-block;
+                    margin: 0 .25rem;
+                    content: ">";
+                    padding-left: 10px;
+                    
+                }
+
+                li{
+                    @include Hind();
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    padding-right: 10px;
+                    color : $global_font_color;
+                    a{
+                        color:white;
+                        text-decoration: none;
+                    }
+                }
+                                }
+                    }
+        }
+    }          
+
+@media (max-width:412px) {
+    header{
+        .header__title{
+            padding-top: 50px;
+            padding-bottom: 90px;
+            h1{
+                font-size: $mobile-font-size-h1;
+
+            }
+
+            .header__breadcrumb {
+                padding: 0 .5rem;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                li:not(:last-child)::after {
+                    display: inline-block;
+                    margin: 0 .25rem;
+                    content: ">";
+                    padding-left: 10px;
+                    
+                }
+
+                li{
+                    @include Hind();
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    padding-right: 10px;
+                    color : $global_font_color;
+                    a{
+                        color:white;
+                        text-decoration: none;
+                    }
+                }
+                                }
+                    }
+        }
+        .roomspecs{
+            @include flexrow;
+        }
+}
