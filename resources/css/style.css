@@ -1990,5 +1990,448 @@ body {
     background-color: grey;
   }
 }
+@media (min-width: 769px) {
+  .featuredRooms {
+    background-color: #1B1B1B;
+  }
+  .featuredRooms .featuredRooms__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .featuredRooms .featuredRooms__header hr {
+    padding: 0;
+    margin: 0;
+    width: 7%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .featuredRooms .featuredRooms__header .featuredRooms__title {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+    font-size: 19px;
+    padding-top: 10px;
+  }
+  .featuredRooms .featuredRooms__bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 50px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__pic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: flex-end;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__pic img {
+    width: 30%;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__pic .bigpic {
+    width: 50%;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text {
+    background-color: #222222;
+    width: 30%;
+    padding-bottom: 50px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__rate {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__rate .red {
+    color: #F60B0E;
+    padding: 2px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__rate .grey {
+    color: #717171;
+    padding: 2px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__title {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+    padding-left: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__players {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__players i {
+    color: white;
+    padding-right: 15px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__players p {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 12px;
+    color: #717171;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__time i {
+    color: white;
+    padding-right: 15px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__time p {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 12px;
+    color: #717171;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__place {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__place i {
+    color: white;
+    padding-right: 15px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__place p {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 12px;
+    color: #717171;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__desc {
+    padding-left: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__desc p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 14px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__button {
+    padding-top: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__button a {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #F60B0E;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 40px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__button a:hover {
+    background-color: white;
+    color: #F60B0E;
+  }
+}
+@media (min-width: 413px) and (max-width: 768px) {
+  .featuredRooms {
+    background-color: #1B1B1B;
+  }
+  .featuredRooms .featuredRooms__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .featuredRooms .featuredRooms__header hr {
+    padding: 0;
+    margin: 0;
+    width: 7%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .featuredRooms .featuredRooms__header .featuredRooms__title {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+    font-size: 19px;
+    padding-top: 10px;
+  }
+  .featuredRooms .featuredRooms__bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__pic img {
+    width: 90%;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text {
+    background-color: #222222;
+    width: 90%;
+    padding-bottom: 50px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__rate {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__rate .red {
+    color: #F60B0E;
+    padding: 2px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__rate .grey {
+    color: #717171;
+    padding: 2px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__title {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+    padding-left: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__players {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__players i {
+    color: white;
+    padding-right: 15px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__players p {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 12px;
+    color: #717171;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__time i {
+    color: white;
+    padding-right: 15px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__time p {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 12px;
+    color: #717171;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__place {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__place i {
+    color: white;
+    padding-right: 15px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__place p {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 12px;
+    color: #717171;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__desc {
+    padding-left: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__desc p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 14px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__button {
+    padding-top: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__button a {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #F60B0E;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 40px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__button a:hover {
+    background-color: white;
+    color: #F60B0E;
+  }
+}
+@media (max-width: 412px) {
+  .featuredRooms {
+    background-color: #1B1B1B;
+  }
+  .featuredRooms .featuredRooms__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .featuredRooms .featuredRooms__header hr {
+    padding: 0;
+    margin: 0;
+    width: 7%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .featuredRooms .featuredRooms__header .featuredRooms__title {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+    font-size: 19px;
+    padding-top: 10px;
+  }
+  .featuredRooms .featuredRooms__bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__pic img {
+    width: 90%;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text {
+    background-color: #222222;
+    width: 90%;
+    padding-bottom: 50px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__rate {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__rate .red {
+    color: #F60B0E;
+    padding: 2px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__rate .grey {
+    color: #717171;
+    padding: 2px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__title {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+    padding-left: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__players {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__players i {
+    color: white;
+    padding-right: 15px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__players p {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 12px;
+    color: #717171;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__time i {
+    color: white;
+    padding-right: 15px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__time p {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 12px;
+    color: #717171;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__place {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__place i {
+    color: white;
+    padding-right: 15px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__elem .title__place p {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 12px;
+    color: #717171;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__desc {
+    padding-left: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__desc p {
+    font-family: "Hind";
+    color: #717171;
+    font-size: 14px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__button {
+    padding-top: 20px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__button a {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #F60B0E;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 40px;
+  }
+  .featuredRooms .featuredRooms__bloc .bloc__text .bloc__button a:hover {
+    background-color: white;
+    color: #F60B0E;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
