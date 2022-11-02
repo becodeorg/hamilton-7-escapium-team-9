@@ -1,6 +1,61 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&family=Open+Sans:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&family=Open+Sans:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&family=Open+Sans:wght@400;700;800&display=swap");
@@ -9,443 +64,6 @@
   font-family: "Hind";
   src: url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&display=swap");
 }
-@media (min-width: 769px) {
-  main {
-    padding-bottom: 100px;
-  }
-  main .form {
-    background-color: #222222;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    text-decoration: none;
-    width: 30%;
-  }
-  main .form h2 {
-    font-family: "Montserrat";
-    font-weight: bold;
-    color: white;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    margin: 0;
-  }
-  main .form .info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  main .form .info input[type=text] {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #717171;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
-    font-family: "Hind";
-    color: white;
-    width: 50%;
-  }
-  main .form .info input[type=email] {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #717171;
-    padding-bottom: 20px;
-    margin-left: 40px;
-    margin-bottom: 50px;
-    font-family: "Hind";
-    color: white;
-    width: 50%;
-  }
-  main .form input[type=textarea] {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #717171;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
-    font-family: "Hind";
-    color: white;
-  }
-  main .form button {
-    font-family: "Hind";
-    color: white;
-    background-color: #F60B0E;
-    padding: 15px;
-    border-radius: 50px;
-    border: none;
-    transition: 0.5s ease-in-out;
-  }
-  main .form button:hover {
-    color: #F60B0E;
-    background-color: white;
-    padding: 15px;
-    border-radius: 50px;
-    border: 1px solid #F60B0E;
-    transition: 0.5s ease-in-out;
-  }
-  main .form #Success {
-    color: white;
-    font-family: "Hind";
-    padding-top: 20px;
-  }
-}
-@media (min-width: 413px) and (max-width: 768px) {
-  main .form {
-    background-color: #222222;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    text-decoration: none;
-    width: 50%;
-  }
-  main .form h2 {
-    font-family: "Montserrat";
-    font-weight: bold;
-    color: white;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    margin: 0;
-  }
-  main .form .info {
-    display: flex;
-    flex-direction: row;
-  }
-  main .form .info input[type=text] {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #717171;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
-    font-family: "Hind";
-    color: white;
-  }
-  main .form .info input[type=email] {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #717171;
-    padding-bottom: 20px;
-    margin-left: 40px;
-    margin-bottom: 50px;
-    font-family: "Hind";
-    color: white;
-  }
-  main .form input[type=textarea] {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #717171;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
-    font-family: "Hind";
-    color: white;
-  }
-  main .form button {
-    font-family: "Hind";
-    color: white;
-    background-color: #F60B0E;
-    padding: 15px;
-    border-radius: 50px;
-    border: none;
-    transition: 0.5s ease-in-out;
-  }
-  main .form button:hover {
-    color: #F60B0E;
-    background-color: white;
-    padding: 15px;
-    border-radius: 50px;
-    border: 1px solid #F60B0E;
-    transition: 0.5s ease-in-out;
-  }
-  main .form #Success {
-    color: white;
-    font-family: "Hind";
-    padding-top: 20px;
-  }
-}
-@media (max-width: 412px) {
-  main .form {
-    background-color: #222222;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    text-decoration: none;
-  }
-  main .form h2 {
-    font-family: "Montserrat";
-    font-weight: bold;
-    color: white;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    margin: 0;
-  }
-  main .form .info {
-    display: flex;
-    flex-direction: column;
-  }
-  main .form .info input[type=text] {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #717171;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
-    font-family: "Hind";
-    color: white;
-  }
-  main .form .info input[type=email] {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #717171;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
-    font-family: "Hind";
-    color: white;
-  }
-  main .form input[type=textarea] {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #717171;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
-    font-family: "Hind";
-    color: white;
-  }
-  main .form button {
-    font-family: "Hind";
-    color: white;
-    background-color: #F60B0E;
-    padding: 15px;
-    border-radius: 50px;
-    border: none;
-    transition: 0.5s ease-in-out;
-  }
-  main .form button:hover {
-    color: #F60B0E;
-    background-color: white;
-    padding: 15px;
-    border-radius: 50px;
-    border: 1px solid #F60B0E;
-    transition: 0.5s ease-in-out;
-  }
-  main .form #Success {
-    color: white;
-    font-family: "Hind";
-    padding-top: 20px;
-  }
-}
-@media (min-width: 769px) {
-  .How {
-    background-color: #222222;
-  }
-  .How .How__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 120px;
-  }
-  .How .How__header hr {
-    padding: 0;
-    margin: 0;
-    width: 2%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .How .How__header .How__title {
-    font-family: "Montserrat";
-    font-weight: bold;
-    color: white;
-    font-size: 44px;
-    padding-top: 30px;
-    text-transform: capitalize;
-  }
-  .How .How__blocs {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 50px;
-  }
-  .How .How__blocs .How__bloc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-  }
-  .How .How__blocs .How__bloc i {
-    color: white;
-    font-size: 35px;
-  }
-  .How .How__blocs .How__bloc h3 {
-    font-family: "Montserrat";
-    font-weight: bold;
-    color: white;
-    font-size: 32px;
-  }
-  .How .How__blocs .How__bloc p {
-    font-family: "Hind";
-    color: #717171;
-    font-size: 16px;
-    width: 80%;
-    text-align: center;
-  }
-}
-@media (min-width: 413px) and (max-width: 768px) {
-  .How {
-    background-color: #222222;
-  }
-  .How .How__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-  }
-  .How .How__header hr {
-    padding: 0;
-    margin: 0;
-    width: 8%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .How .How__header .How__title {
-    font-family: "Montserrat";
-    font-weight: bold;
-    color: white;
-    font-size: 19px;
-    padding-top: 30px;
-    text-transform: capitalize;
-  }
-  .How .How__blocs {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 50px;
-  }
-  .How .How__blocs .How__bloc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-  }
-  .How .How__blocs .How__bloc i {
-    color: white;
-    font-size: 35px;
-  }
-  .How .How__blocs .How__bloc h3 {
-    font-family: "Montserrat";
-    font-weight: bold;
-    color: white;
-    font-size: 21px;
-  }
-  .How .How__blocs .How__bloc p {
-    font-family: "Hind";
-    color: #717171;
-    font-size: 14px;
-    width: 80%;
-    text-align: center;
-  }
-}
-@media (max-width: 412px) {
-  .How {
-    background-color: #222222;
-  }
-  .How .How__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-  }
-  .How .How__header hr {
-    padding: 0;
-    margin: 0;
-    width: 8%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .How .How__header .How__title {
-    font-family: "Montserrat";
-    font-weight: bold;
-    color: white;
-    font-size: 19px;
-    padding-top: 30px;
-    text-transform: capitalize;
-  }
-  .How .How__blocs {
-    display: flex;
-    flex-direction: column;
-  }
-  .How .How__blocs .How__bloc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-  }
-  .How .How__blocs .How__bloc i {
-    color: white;
-    font-size: 35px;
-  }
-  .How .How__blocs .How__bloc h3 {
-    font-family: "Montserrat";
-    font-weight: bold;
-    color: white;
-    font-size: 21px;
-  }
-  .How .How__blocs .How__bloc p {
-    font-family: "Hind";
-    color: #717171;
-    font-size: 14px;
-    width: 80%;
-    text-align: center;
-  }
-}
-@media (min-width: 769px) {
-  .FAQ .accordion-div {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-}
-.FAQ .accordion {
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-  background-color: white;
-}
-.FAQ .accordion:hover {
-  color: red;
-}
-.FAQ .accordion:before {
-  content: "+";
-  color: #777;
-  font-weight: bold;
-  float: left;
-  margin-right: 20px;
-  background-color: #f6f6f6;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 100%;
-}
-.FAQ .active:before {
-  content: "−";
-}
-.FAQ span {
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-weight: bold;
-  margin-top: 50px;
-}
-.FAQ .panel {
-  font-family: "Hind";
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
 @media (min-width: 769px) {
   .WhatPeopleSay {
     background-color: #1B1B1B;
@@ -735,260 +353,6 @@
     margin-right: 10px;
   }
 }
-#map {
-  width: 100%;
-  height: 400px;
-  background-color: grey;
-}
-
-@media (min-width: 769px) {
-  header {
-    background-image: url(../images/slide-1.jpg);
-    background-position: center;
-    background-position: top;
-  }
-  header .header__title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 90px;
-  }
-  header .header__title h1 {
-    font-family: "Montserrat";
-    font-weight: bold;
-    color: white;
-    font-size: 120px;
-  }
-  header .header__title h1 i {
-    color: red;
-  }
-  header .header__title .header__breadcrumb {
-    padding: 0 0.5rem;
-  }
-  header .header__title .header__breadcrumb ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  header .header__title .header__breadcrumb li:not(:last-child)::after {
-    display: inline-block;
-    margin: 0 0.25rem;
-    content: ">";
-    padding-left: 10px;
-  }
-  header .header__title .header__breadcrumb li {
-    font-family: "Hind";
-    text-transform: uppercase;
-    font-size: 15px;
-    padding-right: 10px;
-    color: #717171;
-  }
-  header .header__title .header__breadcrumb li a {
-    color: white;
-    text-decoration: none;
-  }
-  main {
-    display: flex;
-    flex-direction: row;
-    background-color: #222222;
-    justify-content: center;
-  }
-  main .GetInTouch {
-    background-color: #222222;
-    width: 30%;
-  }
-  main .GetInTouch .GetInTouch__header {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-  }
-  main .GetInTouch .GetInTouch__header h2 {
-    font-family: "Montserrat";
-    font-weight: bold;
-    color: white;
-    padding-top: 50px;
-    margin: 0;
-  }
-  main .GetInTouch .GetInTouch__header p {
-    font-family: "Hind";
-    color: #717171;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    margin: 0;
-  }
-  main .GetInTouch .GetInTouch__info {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-  }
-  main .GetInTouch .GetInTouch__info .info__com {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 30px;
-  }
-  main .GetInTouch .GetInTouch__info .info__com i {
-    color: white;
-    font-size: 40px;
-  }
-  main .GetInTouch .GetInTouch__info .info__com p {
-    font-family: "Hind";
-    color: #717171;
-    margin: 0;
-    padding-left: 50px;
-  }
-  main .GetInTouch .GetInTouch__info .info__mail {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 30px;
-  }
-  main .GetInTouch .GetInTouch__info .info__mail i {
-    color: white;
-    font-size: 40px;
-  }
-  main .GetInTouch .GetInTouch__info .info__mail p {
-    font-family: "Hind";
-    color: white;
-    margin: 0;
-    padding-left: 50px;
-  }
-}
-@media (min-width: 413px) and (max-width: 768px) {
-  main {
-    display: flex;
-    flex-direction: row;
-  }
-  main .GetInTouch {
-    background-color: #222222;
-    width: 50%;
-  }
-  main .GetInTouch .GetInTouch__header {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-  }
-  main .GetInTouch .GetInTouch__header h2 {
-    font-family: "Montserrat";
-    font-weight: bold;
-    color: white;
-    padding-top: 50px;
-    margin: 0;
-  }
-  main .GetInTouch .GetInTouch__header p {
-    font-family: "Hind";
-    color: #717171;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    margin: 0;
-  }
-  main .GetInTouch .GetInTouch__info {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-  }
-  main .GetInTouch .GetInTouch__info .info__com {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 30px;
-  }
-  main .GetInTouch .GetInTouch__info .info__com i {
-    color: white;
-    font-size: 40px;
-  }
-  main .GetInTouch .GetInTouch__info .info__com p {
-    font-family: "Hind";
-    color: #717171;
-    margin: 0;
-    padding-left: 50px;
-  }
-  main .GetInTouch .GetInTouch__info .info__mail {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 30px;
-  }
-  main .GetInTouch .GetInTouch__info .info__mail i {
-    color: white;
-    font-size: 40px;
-  }
-  main .GetInTouch .GetInTouch__info .info__mail p {
-    font-family: "Hind";
-    color: white;
-    margin: 0;
-    padding-left: 50px;
-  }
-}
-@media (max-width: 412px) {
-  .GetInTouch {
-    background-color: #222222;
-  }
-  .GetInTouch .GetInTouch__header {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-  }
-  .GetInTouch .GetInTouch__header h2 {
-    font-family: "Montserrat";
-    font-weight: bold;
-    color: white;
-    padding-top: 50px;
-    margin: 0;
-  }
-  .GetInTouch .GetInTouch__header p {
-    font-family: "Hind";
-    color: #717171;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    margin: 0;
-  }
-  .GetInTouch .GetInTouch__info {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-  }
-  .GetInTouch .GetInTouch__info .info__com {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 30px;
-  }
-  .GetInTouch .GetInTouch__info .info__com i {
-    color: white;
-    font-size: 40px;
-  }
-  .GetInTouch .GetInTouch__info .info__com p {
-    font-family: "Hind";
-    color: #717171;
-    margin: 0;
-    padding-left: 50px;
-  }
-  .GetInTouch .GetInTouch__info .info__mail {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 30px;
-  }
-  .GetInTouch .GetInTouch__info .info__mail i {
-    color: white;
-    font-size: 40px;
-  }
-  .GetInTouch .GetInTouch__info .info__mail p {
-    font-family: "Hind";
-    color: white;
-    margin: 0;
-    padding-left: 50px;
-  }
-  #map {
-    width: 100%;
-    height: 400px;
-    background-color: grey;
-  }
-}
 header {
   background-image: url(../images/slide-1.jpg);
   background-position: center;
@@ -1007,6 +371,31 @@ header .header__title h1 {
 header .header__title h1 i {
   color: #F60B0E;
 }
+header .header__title .header__breadcrumb {
+  padding: 0 0.5rem;
+}
+header .header__title .header__breadcrumb ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header .header__title .header__breadcrumb li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 0.25rem;
+  content: ">";
+  padding-left: 10px;
+}
+header .header__title .header__breadcrumb li {
+  font-family: "Hind";
+  text-transform: uppercase;
+  color: #717171;
+}
+header .header__title .header__breadcrumb li a {
+  color: white;
+  text-decoration: none;
+}
 
 @media (min-width: 769px) {
   header .header__title {
@@ -1042,6 +431,11 @@ header .header__title h1 i {
   header .header__title .header__breadcrumb li a {
     color: white;
     text-decoration: none;
+  }
+  .roomspecs {
+    display: flex;
+    flex-direction: row;
+    color: #717171;
   }
 }
 @media (min-width: 413px) and (max-width: 768px) {
@@ -1114,10 +508,6 @@ header .header__title h1 i {
   header .header__title .header__breadcrumb li a {
     color: white;
     text-decoration: none;
-  }
-  .roomspecs {
-    display: flex;
-    flex-direction: row;
   }
 }
 

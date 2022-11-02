@@ -12,6 +12,7 @@ header{
 
 
 
+
 @media (min-width:769px){
     header{
         .header__title{
@@ -19,40 +20,17 @@ header{
             padding-bottom: 90px;
             h1{
                 font-size: $desktop-font-size-h1;
-                
             }
-            .header__breadcrumb {
-                padding: 0 .5rem;
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    list-style: none;
-                    margin: 0;
-                    padding: 0;
-                 }
-                li:not(:last-child)::after {
-                    display: inline-block;
-                    margin: 0 .25rem;
-                    content: ">";
-                    padding-left: 10px;
-                    
-                }
+            
                 li{
-                    @include Hind();
-                    text-transform: uppercase;
                     font-size: 15px;
                     padding-right: 10px;
-                    color : $global_font_color;
-                    a{
-                        color:white;
-                        text-decoration: none;
-                    }
                 }
                                 }
                     }
-        }
-    }        
 
+@include roomspecs;
+    }
 
 @media (min-width:413px) and (max-width:768px){
     header{
@@ -61,41 +39,18 @@ header{
             padding-bottom: 90px;
             h1{
                 font-size: $mobile-font-size-h1;
-            
             }
-            .header__breadcrumb {
-                padding: 0 .5rem;
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    list-style: none;
-                    margin: 0;
-                    padding: 0;
-                }
-
-                li:not(:last-child)::after {
-                    display: inline-block;
-                    margin: 0 .25rem;
-                    content: ">";
-                    padding-left: 10px;
-                    
-                }
 
                 li{
-                    @include Hind();
-                    text-transform: uppercase;
+
                     font-size: 12px;
                     padding-right: 10px;
-                    color : $global_font_color;
-                    a{
-                        color:white;
-                        text-decoration: none;
-                    }
                 }
                                 }
                     }
-        }
-    }          
+
+    @include roomspecs;
+}
 
 @media (max-width:412px) {
     header{
@@ -104,42 +59,15 @@ header{
             padding-bottom: 90px;
             h1{
                 font-size: $mobile-font-size-h1;
-
             }
 
-            .header__breadcrumb {
-                padding: 0 .5rem;
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    list-style: none;
-                    margin: 0;
-                    padding: 0;
-                }
-
-                li:not(:last-child)::after {
-                    display: inline-block;
-                    margin: 0 .25rem;
-                    content: ">";
-                    padding-left: 10px;
-                    
-                }
 
                 li{
-                    @include Hind();
-                    text-transform: uppercase;
                     font-size: 12px;
                     padding-right: 10px;
-                    color : $global_font_color;
-                    a{
-                        color:white;
-                        text-decoration: none;
-                    }
                 }
-                                }
-                    }
         }
-        .roomspecs{
-            @include flexrow;
-        }
+    }
+
+    @include roomspecs;
 }
