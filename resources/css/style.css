@@ -1,12 +1,11 @@
 /* Error: Undefined variable.
- *   ,
- * 7 |     font-family: $headings-font;
- *   |                  ^^^^^^^^^^^^^^
- *   '
- *   resources/scss/utilities/_mixins.scss 7:18   Montserat()
- *   resources/scss/components/_forms.scss 17:17  @use
- *   resources/scss/pages/_contact.scss 6:1       @use
- *   resources/scss/style.scss 2:1                root stylesheet */
+ *    ,
+ * 27 |                 color:$red;
+ *    |                       ^^^^
+ *    '
+ *   resources/scss/utilities/_mixins.scss 27:23  hero-base()
+ *   resources/scss/pages/_singleroom.scss 10:5   @use
+ *   resources/scss/style.scss 3:1                root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -16,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 7 \2502      font-family: $headings-font;\a   \2502                   ^^^^^^^^^^^^^^\a   \2575 \a   resources/scss/utilities/_mixins.scss 7:18   Montserat()\a   resources/scss/components/_forms.scss 17:17  @use\a   resources/scss/pages/_contact.scss 6:1       @use\a   resources/scss/style.scss 2:1                root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 27 \2502                  color:$red;\a    \2502                        ^^^^\a    \2575 \a   resources/scss/utilities/_mixins.scss 27:23  hero-base()\a   resources/scss/pages/_singleroom.scss 10:5   @use\a   resources/scss/style.scss 3:1                root stylesheet";
 }
