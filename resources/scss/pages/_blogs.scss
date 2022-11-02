@@ -1,45 +1,103 @@
 @use "../utilities/colors" as *;
-@use "../base/typographie";
-@use "../layout/flex";
+@use "../utilities/mixins" as *;
 
-header{
-    background-image:url("/resources/images/slide-1.jpg");
-}
+@use "../base/typographie" as *;
+@use "../layout/flex" as *;
 
 body{
     background-color: $darkest_background;
     background-size:cover;  
 
 }
+
+.header__second{
+        background-image: url(../resources/images/slide-3.jpg);
+        background-position: center;
+        background-position: top;
+        .header__title{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            padding-bottom: 90px;
+            h1{
+                @include Montserat();
+                color: white; 
+                font-size: $desktop-font-size-h1;
+               
+                i{
+                    color: red;
+                }  
+            }
+            .header__breadcrumb {
+                padding: 0 .5rem;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                 }
+                li:not(:last-child)::after {
+                    display: inline-block;
+                    margin: 0 .25rem;
+                    content: ">";
+                    padding-left: 10px;
+                    
+                }
+                li{
+                    @include Hind();
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    padding-right: 10px;
+                    color : $global_font_color;
+                    a{
+                        color:white;
+                        text-decoration: none;
+                    }
+                }
+                                }
+                    }
+        }
+
 .blogs__card{ 
     padding-inline: 1em;
     padding-block: 2em;
 
-}
-.blogs__card-container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: $dark_background;
-    padding: 0;
-    margin:0;
-    color: $white_background;
-}
-.blogs__card-underimage{
-    padding-inline: 1em;
-    padding-block: 2em;
-}
-.h1 {
-    font-weight: bold;
-}
 
-.blogs__card-image{ 
-    overflow: hidden;
-    max-width: 100%;
-    max-height: 100%;
-}
-.blogs__card-icones{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    .blogs__card-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: $dark_background;
+        padding: 0;
+        margin:0;
+        color: $white_background;
+
+        .blogs__card-image{ 
+            overflow: hidden;
+            max-width: 50%;
+            max-height: 50%;
+        }
+
+        .blogs__card-underimage{
+            padding-inline: 1em;
+            padding-block: 2em;
+
+            .h1 {
+                font-weight: bold;
+            }
+
+            .blogs__card-icones{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                }
+            .blogs__card-readmore{
+                background-color: $dark_background;
+                border-radius: 5em;
+                color: $white_background;
+            }
+        }
+    }
 }

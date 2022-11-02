@@ -1,85 +1,18 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&family=Open+Sans:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&display=swap");
-@font-face {
-  font-family: "Montserrat";
-  src: url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&family=Open+Sans:wght@400;700;800&display=swap");
-}
-@font-face {
-  font-family: "Hind";
-  src: url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&display=swap");
-}
-@media (max-width: 412px) {
-  header .header__title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  header .header__title h1 {
-    color: black;
-  }
-  header .header__title h1 i {
-    color: red;
-  }
-  header .header__title .header__breadcrumb {
-    padding: 0 0.5rem;
-  }
-  header .header__title .header__breadcrumb ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  header .header__title .header__breadcrumb li:not(:last-child)::after {
-    display: inline-block;
-    margin: 0 0.25rem;
-    content: "→";
-  }
-}
-header {
-  background-image: url("/resources/images/slide-1.jpg");
-}
+/* Error: Undefined variable.
+ *    ,
+ * 26 |                 font-size: $desktop-font-size-h1;
+ *    |                            ^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   resources/scss/pages/_blogs.scss 26:28  @use
+ *   resources/scss/style.scss 2:1           root stylesheet */
 
-body {
-  background-color: #1B1B1B;
-  background-size: cover;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 26 \2502                  font-size: $desktop-font-size-h1;\a    \2502                             ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   resources/scss/pages/_blogs.scss 26:28  @use\a   resources/scss/style.scss 2:1           root stylesheet";
 }
-
-.blogs__card {
-  padding-inline: 1em;
-  padding-block: 2em;
-}
-
-.blogs__card-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: #222222;
-  padding: 0;
-  margin: 0;
-  color: #fefefe;
-}
-
-.blogs__card-underimage {
-  padding-inline: 1em;
-  padding-block: 2em;
-}
-
-.h1 {
-  font-weight: bold;
-}
-
-.blogs__card-image {
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.blogs__card-icones {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-/*# sourceMappingURL=style.css.map */
