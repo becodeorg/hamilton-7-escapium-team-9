@@ -6,6 +6,7 @@
 
 
 .footer{
+
     background-image:url(../images/slide-3.jpg);
     font-family: "Hind";
     color: $global_font_color;
@@ -21,6 +22,7 @@
     }
     .footer__box{
         @include transparent-background;
+
         padding: 10px;
 
         .footer__head{
@@ -29,10 +31,13 @@
             padding-left: 0rem;
             .redline{
                 height: 1px;
-                width: 20%;
-                margin-right:70%;
+                width: 30px;
+                margin-right:80%;
                 background-color: $red;
                 border: none;
+            }
+            p{
+                margin-right: 10px;
             }
         }
     }
@@ -54,6 +59,7 @@
             color: $red;
         }
 
+        
 
     
 }
@@ -72,6 +78,16 @@
     .footer__grid{
     @include grid_1_5_footer;
 }
+.footer{
+    font-size: $mobile-font-size-p;
+    .footer__title{
+        font-size: $mobile-font-size-h3
+    }
+    .sociallink{
+        font-size: $mobile-font-size-h3;
+    }
+
+}
 @include hidesocial;
     
 
@@ -82,6 +98,14 @@
     @include grid_4_2_footer;
     
 }
+.footer{
+    font-size: $desktop-font-size-p;
+    .footer__title{
+        font-size: $desktop-font-size-h3
+    }
+
+}
+
 @include hidesocial;
 }
 
@@ -90,7 +114,20 @@
 @media only screen and (min-width: $desktop-min-width) {
     .footer__grid{
     @include grid_4_2_footer;
-    
 }
+.footer{
+    font-size: $desktop-font-size-p;
+    .footer__title{
+        font-size: $desktop-font-size-h3;
+
+    }
+    .sociallink{
+        font-size: $desktop-font-size-h3;
+    }
+
+
+}
+
+
 }
 
