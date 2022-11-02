@@ -37,7 +37,7 @@
   .How .How__blocs {
     display: flex;
     flex-direction: row;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
   .How .How__blocs .How__bloc {
     display: flex;
@@ -515,52 +515,400 @@
     margin-right: 10px;
   }
 }
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 @media (min-width: 769px) {
-  header {
+  .navbar {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 120px;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar ul a {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar ul a img {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar ul li {
+    list-style: none;
+    position: relative;
+  }
+  .navbar ul li .links {
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 23px;
+    padding: 20px;
+    color: #717171;
+    border-bottom: 1ps solid white;
+  }
+  .navbar ul li .links:before {
+    content: "/";
+    position: relative;
+    left: 45px;
+    top: 10px;
+    color: #F60B0E;
+    font-size: 45px;
+    margin-top: 45px;
+    visibility: hidden;
+  }
+  .navbar ul li .links:hover {
+    color: white;
+  }
+  .navbar ul li .links:hover:before {
+    content: "/";
+    position: relative;
+    left: 45px;
+    top: 10px;
+    color: #F60B0E;
+    font-size: 45px;
+    margin-bottom: 45px;
+    visibility: visible;
+  }
+  .navbar ul li .active {
+    color: white;
+  }
+  .navbar ul li .active:before {
+    content: "/";
+    position: relative;
+    left: 45px;
+    top: 10px;
+    color: #F60B0E;
+    font-size: 45px;
+    margin-bottom: 45px;
+    visibility: visible;
+  }
+  .navbar ul li .icon {
+    display: none;
+  }
+  .navbar .navbar__button li .fa-search {
+    font-size: 25px;
+    color: white;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .navbar .navbar__button li .fa-user-circle-o {
+    font-size: 25px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-left: 2px solid #717171;
+  }
+  .navbar .navbar__button .navbar__button {
+    border: 3px solid #717171;
+    padding: 15px;
+    border-radius: 30px;
+  }
+  .navbar .navbar__button .navbar__button a {
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.2s ease;
+  }
+  .navbar .navbar__button .navbar__button a:hover {
+    color: #F60B0E;
+    transition: 0.2s ease;
+  }
+  .navbar .navbar__button .navbar__sign a {
+    color: white;
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 20px;
+  }
+  .navbar .navbar__button .navbar__sign a:hover {
+    color: #F60B0E;
+    transition: 0.2s ease;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media (min-width: 413px) and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .hamburger-menu {
+    position: relative;
+    background-color: black;
+    height: 60px;
+  }
+  .hamburger-menu a {
+    width: 21%;
+  }
+  .hamburger-menu a img {
+    width: 21%;
+  }
+  .hamburger-menu #menu__toggle {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+  }
+  .hamburger-menu #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  .hamburger-menu #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  .hamburger-menu #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .hamburger-menu #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+  .hamburger-menu .menu__btn {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .hamburger-menu .menu__btn > span,
+.hamburger-menu .menu__btn > span::before,
+.hamburger-menu .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    width: 50px;
+    background-color: white;
+    transition-duration: 0.25s;
+  }
+  .hamburger-menu .menu__btn > span::before {
+    content: "";
+    top: -12px;
+  }
+  .hamburger-menu .menu__btn > span::after {
+    content: "";
+    top: 12px;
+  }
+  .hamburger-menu .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #1B1B1B;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.25s;
+  }
+  .hamburger-menu .menu__box .navbar__item {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid #717171;
+    position: relative;
+  }
+  .hamburger-menu .menu__box .navbar__item .links {
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+    padding-left: 20px;
+    color: white;
+    border-bottom: 1ps solid white;
+  }
+  .hamburger-menu .menu__box .navbar__item i {
+    position: absolute;
+    left: 240px;
+    color: white;
+  }
+  .hamburger-menu .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+  .hamburger-menu .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+}
+@media (max-width: 412px) {
+  .navbar {
+    display: none;
+  }
+  .hamburger-menu {
+    position: relative;
+    background-color: black;
+    height: 60px;
+  }
+  .hamburger-menu img {
+    width: 39%;
+  }
+  .hamburger-menu #menu__toggle {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+  }
+  .hamburger-menu #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  .hamburger-menu #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  .hamburger-menu #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .hamburger-menu #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+  .hamburger-menu .menu__btn {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .hamburger-menu .menu__btn > span,
+.hamburger-menu .menu__btn > span::before,
+.hamburger-menu .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    width: 50px;
+    background-color: #616161;
+    transition-duration: 0.25s;
+  }
+  .hamburger-menu .menu__btn > span::before {
+    content: "";
+    top: -12px;
+  }
+  .hamburger-menu .menu__btn > span::after {
+    content: "";
+    top: 12px;
+  }
+  .hamburger-menu .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #1B1B1B;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.25s;
+  }
+  .hamburger-menu .menu__box .navbar__item {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid #717171;
+    position: relative;
+  }
+  .hamburger-menu .menu__box .navbar__item .links {
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+    padding-left: 20px;
+    color: white;
+    border-bottom: 1ps solid white;
+  }
+  .hamburger-menu .menu__box .navbar__item i {
+    position: absolute;
+    left: 240px;
+    color: white;
+  }
+  .hamburger-menu .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+  .hamburger-menu .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+}
+@media (min-width: 769px) {
+  .header__second {
     background-image: url(../images/slide-1.jpg);
     background-position: center;
     background-position: top;
   }
-  header .header__title {
+  .header__second .header__title {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 90px;
   }
-  header .header__title h1 {
+  .header__second .header__title h1 {
     font-family: "Montserrat";
     font-weight: bold;
     color: white;
     font-size: 120px;
   }
-  header .header__title h1 i {
+  .header__second .header__title h1 i {
     color: red;
   }
-  header .header__title .header__breadcrumb {
+  .header__second .header__title .header__breadcrumb {
     padding: 0 0.5rem;
   }
-  header .header__title .header__breadcrumb ul {
+  .header__second .header__title .header__breadcrumb ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  header .header__title .header__breadcrumb li:not(:last-child)::after {
+  .header__second .header__title .header__breadcrumb li:not(:last-child)::after {
     display: inline-block;
     margin: 0 0.25rem;
     content: ">";
     padding-left: 10px;
   }
-  header .header__title .header__breadcrumb li {
+  .header__second .header__title .header__breadcrumb li {
     font-family: "Hind";
     text-transform: uppercase;
     font-size: 15px;
     padding-right: 10px;
     color: #717171;
   }
-  header .header__title .header__breadcrumb li a {
+  .header__second .header__title .header__breadcrumb li a {
     color: white;
     text-decoration: none;
   }
@@ -741,51 +1089,51 @@
   }
 }
 @media (min-width: 413px) and (max-width: 768px) {
-  header {
+  .header__second {
     background-image: url(../images/slide-1.jpg);
     background-position: center;
     background-position: top;
   }
-  header .header__title {
+  .header__second .header__title {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 90px;
   }
-  header .header__title h1 {
+  .header__second .header__title h1 {
     font-family: "Montserrat";
     font-weight: bold;
     color: white;
     font-size: 32px;
   }
-  header .header__title h1 i {
+  .header__second .header__title h1 i {
     color: red;
   }
-  header .header__title .header__breadcrumb {
+  .header__second .header__title .header__breadcrumb {
     padding: 0 0.5rem;
   }
-  header .header__title .header__breadcrumb ul {
+  .header__second .header__title .header__breadcrumb ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  header .header__title .header__breadcrumb li:not(:last-child)::after {
+  .header__second .header__title .header__breadcrumb li:not(:last-child)::after {
     display: inline-block;
     margin: 0 0.25rem;
     content: ">";
     padding-left: 10px;
   }
-  header .header__title .header__breadcrumb li {
+  .header__second .header__title .header__breadcrumb li {
     font-family: "Hind";
     text-transform: uppercase;
     font-size: 12px;
     padding-right: 10px;
     color: #717171;
   }
-  header .header__title .header__breadcrumb li a {
+  .header__second .header__title .header__breadcrumb li a {
     color: white;
     text-decoration: none;
   }
@@ -957,51 +1305,51 @@
   }
 }
 @media (max-width: 412px) {
-  header {
+  .header__second {
     background-image: url(../images/slide-1.jpg);
     background-position: center;
     background-position: top;
   }
-  header .header__title {
+  .header__second .header__title {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 90px;
   }
-  header .header__title h1 {
+  .header__second .header__title h1 {
     font-family: "Montserrat";
     font-weight: bold;
     color: white;
     font-size: 32px;
   }
-  header .header__title h1 i {
+  .header__second .header__title h1 i {
     color: red;
   }
-  header .header__title .header__breadcrumb {
+  .header__second .header__title .header__breadcrumb {
     padding: 0 0.5rem;
   }
-  header .header__title .header__breadcrumb ul {
+  .header__second .header__title .header__breadcrumb ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  header .header__title .header__breadcrumb li:not(:last-child)::after {
+  .header__second .header__title .header__breadcrumb li:not(:last-child)::after {
     display: inline-block;
     margin: 0 0.25rem;
     content: ">";
     padding-left: 10px;
   }
-  header .header__title .header__breadcrumb li {
+  .header__second .header__title .header__breadcrumb li {
     font-family: "Hind";
     text-transform: uppercase;
     font-size: 12px;
     padding-right: 10px;
     color: #717171;
   }
-  header .header__title .header__breadcrumb li a {
+  .header__second .header__title .header__breadcrumb li a {
     color: white;
     text-decoration: none;
   }
@@ -1395,51 +1743,51 @@
 }
 
 @media (min-width: 769px) {
-  header {
+  .header__second {
     background-image: url(../images/slide-1.jpg);
     background-position: center;
     background-position: top;
   }
-  header .header__title {
+  .header__second .header__title {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 90px;
   }
-  header .header__title h1 {
+  .header__second .header__title h1 {
     font-family: "Montserrat";
     font-weight: bold;
     color: white;
     font-size: 120px;
   }
-  header .header__title h1 i {
+  .header__second .header__title h1 i {
     color: red;
   }
-  header .header__title .header__breadcrumb {
+  .header__second .header__title .header__breadcrumb {
     padding: 0 0.5rem;
   }
-  header .header__title .header__breadcrumb ul {
+  .header__second .header__title .header__breadcrumb ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  header .header__title .header__breadcrumb li:not(:last-child)::after {
+  .header__second .header__title .header__breadcrumb li:not(:last-child)::after {
     display: inline-block;
     margin: 0 0.25rem;
     content: ">";
     padding-left: 10px;
   }
-  header .header__title .header__breadcrumb li {
+  .header__second .header__title .header__breadcrumb li {
     font-family: "Hind";
     text-transform: uppercase;
     font-size: 15px;
     padding-right: 10px;
     color: #717171;
   }
-  header .header__title .header__breadcrumb li a {
+  .header__second .header__title .header__breadcrumb li a {
     color: white;
     text-decoration: none;
   }

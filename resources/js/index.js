@@ -33,7 +33,7 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  // dots[slideIndex-1].className += " active"; 
 }
 //FAQ
 var acc = document.getElementsByClassName("accordion");
@@ -284,3 +284,29 @@ function initMap() {
   });
   
 }
+
+//HOMEPAGE
+//NAVBAR
+;(function($) {
+  $(function() {
+    $('nav ul li > a:not(:only-child)').click(function(e) {
+      $(this)
+        .siblings('.nav-dropdown')
+        .slideToggle()
+      $('.nav-dropdown')
+        .not($(this).siblings())
+        .hide()
+      e.stopPropagation()
+    })
+    $('html').click(function() {
+      $('.nav-dropdown').hide()
+    })
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active')
+    })
+  })
+})(jQuery)

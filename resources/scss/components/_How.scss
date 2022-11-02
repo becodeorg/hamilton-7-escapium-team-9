@@ -30,7 +30,7 @@
         }
         .How__blocs{
             @include flexrow();
-            padding-bottom: 50px;
+            padding-bottom: 100px;
         .How__bloc{
             @include flexcolumn();
             align-items: center;

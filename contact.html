@@ -9,11 +9,51 @@
     <script type="text/javascript" src="/resources/js/index.js" defer></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script async="false" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDkUybIS8OzyDU9gVKqBrqUbO60ram-q0-39Fxo&libraries=places&callback=initMap"></script>
-          <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
     <title>Contact</title>
 </head>
 <body>
-    <header>
+    <header class="header__second">
+        <nav class="navbar">
+            <ul>
+                <a href="/index.html"><img src="/resources/images/logo.png"></a>
+                <li class="navbar__item"><a class="links" href="/index.html">home</a></li>
+                <li class="navbar__item"><a class="links" href="about.html">about</a></li>
+                <li class="navbar__item"><a class="links" href="#">features</a></li>
+                <li class="navbar__item"><a class="links" href="rooms.html">rooms</a></li>
+                <li class="navbar__item"><a class="links" href="#">booking</a></li>
+                <li class="navbar__item"><a class="links" href="blogs.html">blog</a></li>
+                <li class="navbar__item"><a class="links active" href="contact.html">contacts</a></li>
+            </ul>
+            <ul class="navbar__button">
+                <li class="navbar__button"><a href="#">Book now</a></li>
+                <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                <li><i class="fa fa-user-circle-o" aria-hidden="true"></i></li>
+                <li class="navbar__sign"><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger-menu">
+            <img src="/resources/images/logo.png">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+            
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li class="navbar__item"><a class="links active" href="index.html">home</a></li>
+              <li class="navbar__item"><a class="links" href="about.html">about</a></li>
+              <li class="navbar__item"><a class="links" href="#">features</a><i class="fa fa-plus" aria-hidden="true"></i></li>
+              <li class="navbar__item"><a class="links" href="rooms.html">rooms</a><i class="fa fa-plus" aria-hidden="true"></i></li>
+              <li class="navbar__item"><a class="links" href="#">booking</a><i class="fa fa-plus" aria-hidden="true"></i></li>
+              <li class="navbar__item"><a class="links" href="blogs.html">blog</a><i class="fa fa-plus" aria-hidden="true"></i> </li>
+              <li class="navbar__item"><a class="links" href="contact.html">contacts</a></li>
+              <li class="navbar__item"><a class="links" href="#">Book now</a></li>
+              <li class="navbar__item"><a class="links" href="#">Sign in</a></li>
+            </ul>
+            </ul>
+          </div>
         <div class="header__title">
             <h1>contacts<i>.</i></h1>
 

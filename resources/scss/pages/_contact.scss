@@ -7,6 +7,7 @@
 @use "../components/_How.scss" as *;
 @use "../components/_FAQ.scss" as *;
 @use "../components/_slider.scss" as *;
+@use "../components/_navbar.scss" as *;
 
 #map {
     width: 100%;
@@ -16,7 +17,7 @@
   
 
 @media (min-width:769px){
- header{
+    .header__second{
     background-image: url(../images/slide-1.jpg);
     background-position: center;
     background-position: top;
