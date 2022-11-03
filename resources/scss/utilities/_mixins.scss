@@ -15,6 +15,11 @@
     
 }
 
+@mixin nolinkchange{
+    text-decoration: none;
+    color:$global_font_color;
+}
+
 @mixin hero ($bg_imageurl){
     header{
     background-image: $bg_imageurl;

@@ -3,8 +3,10 @@
 @use "../utilities/_colors.scss" as *;
 @use "../utilities/_variables.scss" as *;
 
-.booknow{
+.button{
     @include Hind();
+    text-align: center;
+    text-decoration: none;
     color:white;
     background-color: $red;
     padding: 15px;
@@ -13,7 +15,7 @@
     transition: 0.5s ease-in-out;
 }
 
-.booknow:hover{
+.button:hover{
     color:$red;
     background-color: white;
     padding: 15px;
