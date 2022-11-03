@@ -25,11 +25,17 @@ body{
 
 
 @media (min-width:769px){
-   
+  
+   .header__second{
+    position: sticky;
+    top:0;
+    z-index: 999;
+    
         .navbar{
-          background: rgb(0,0,0);
-          background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-            // z-index:-1;
+          // background: rgb(0,0,0);
+          // background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+          background-color: black;
+
             @include flexrow();
             justify-content: space-between;
             height: 120px;
@@ -160,6 +166,7 @@ body{
     .hamburger-menu{
         display: none;
     }
+}
 }
 
 @media (min-width:413px) and (max-width:768px){

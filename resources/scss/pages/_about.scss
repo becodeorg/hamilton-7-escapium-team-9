@@ -6,10 +6,10 @@
 @use "../components/_How.scss" as *;
 @use "../components/_FAQ.scss" as *;
 @use "../components/_slider.scss" as *;
-@use "../components/_navbar.scss" as *;
+@use "../components/navbar" as *;
 
 @media (min-width:769px){
-    .header__second{
+    .header__hero{
         background-image: url(../images/slide-1.jpg);
         background-position: center;
         background-position: top;
@@ -241,7 +241,7 @@
 }
 
 @media (min-width:413px) and (max-width:768px){
-    .header__second{
+    .header__hero{
         background-image: url(../images/slide-1.jpg);
         background-position: center;
         background-position: top;
@@ -464,7 +464,7 @@
 }
 
 @media (max-width:412px) {
-    .header__second{
+    .header__hero{
         background-image: url(../images/slide-1.jpg);
         background-position: center;
         background-position: top;
