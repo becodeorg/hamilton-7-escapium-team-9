@@ -58,7 +58,6 @@ body{
         color: white;
         font-size: $mobile-font-size-h2;
     }
-//
 }        
 
 @media (max-width:412px) {
@@ -84,6 +83,7 @@ body{
 }
 
 // header placement done
+
 
 .roomspecs{
     @include flexrow;
@@ -140,13 +140,31 @@ body{
     img{
         max-width: 100%;
         max-height: 100%;
-
     
     }
     .roomthumbnail{
         height: 40vh;
         width: 33vw;
         margin-left: 5px;
-        
+    }
+    .room{
+        .red{
+            color: red;
+        }
+        .roomspecs{
+            .spec{
+                .difficulty{
+                    .indicator{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                    }
+                    .difficulty__description{
+                        grid-area: 2/1/2/1;
+                    }
+                }
+            }
+    }
     }
 }

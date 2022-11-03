@@ -531,5 +531,17 @@ body {
   width: 33vw;
   margin-left: 5px;
 }
+.other-rooms .room .red {
+  color: red;
+}
+.other-rooms .room .roomspecs .spec .difficulty .indicator {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.other-rooms .room .roomspecs .spec .difficulty .difficulty__description {
+  grid-area: 2/1/2/1;
+}
 
 /*# sourceMappingURL=style.css.map */
