@@ -353,6 +353,25 @@ table {
     margin-right: 10px;
   }
 }
+.booknow {
+  font-family: "Hind";
+  color: white;
+  background-color: #F60B0E;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  transition: 0.5s ease-in-out;
+}
+
+.booknow:hover {
+  color: #F60B0E;
+  background-color: white;
+  padding: 15px;
+  border-radius: 50px;
+  border: 1px solid #F60B0E;
+  transition: 0.5s ease-in-out;
+}
+
 header {
   background-image: url(../images/slide-1.jpg);
   background-position: center;
@@ -395,12 +414,6 @@ header .header__title .header__breadcrumb li {
 header .header__title .header__breadcrumb li a {
   color: white;
   text-decoration: none;
-}
-
-.description, .locationspecs {
-  background-color: #1B1B1B;
-  font-family: "Hind";
-  color: #717171;
 }
 
 @media (min-width: 769px) {
@@ -447,6 +460,29 @@ header .header__title .header__breadcrumb li a {
   flex-direction: row;
   color: #717171;
   justify-content: center;
+}
+
+.description, .locationspecs {
+  font-family: "Hind";
+  color: #717171;
+}
+
+.desc_container {
+  display: grid;
+  grid-template-columns: 80vw, 20vw;
+  grid-template-rows: 30vh, 3vh;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: #1B1B1B;
+}
+.desc_container .description {
+  grid-area: 1/1/2/1;
+}
+.desc_container .locationspecs {
+  grid-area: 1/2/1/2;
+}
+.desc_container .booknow {
+  grid-area: 2/2/2/2;
 }
 
 /*# sourceMappingURL=style.css.map */

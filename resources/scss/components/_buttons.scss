@@ -1,0 +1,23 @@
+@use "../base/_typographie.scss" as *;
+@use "../utilities/_mixins.scss" as *;
+@use "../utilities/_colors.scss" as *;
+@use "../utilities/_variables.scss" as *;
+
+.booknow{
+    @include Hind();
+    color:white;
+    background-color: $red;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+
+.booknow:hover{
+    color:$red;
+    background-color: white;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid $red;
+    transition: 0.5s ease-in-out;
+}

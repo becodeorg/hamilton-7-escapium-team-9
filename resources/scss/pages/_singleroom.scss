@@ -4,19 +4,14 @@
 @use "../utilities/_variables.scss" as *;
 @use "../layout/_flex.scss" as *;
 @use "../components/_slider.scss" as *;
+@use "../components/buttons" as b;
 
 @include hero(url(../images/slide-1.jpg));
 
 
-.description, .locationspecs{
-    background-color: $darkest_background;
-    @include Hind();
-    color: $global_font_color;
-}
 
-// .booknow{
-//     text
-// }
+
+
 
 
 @media (min-width:769px){
@@ -34,6 +29,8 @@
                 }
             }
     }
+
+    
 }
 
 @media (min-width:413px) and (max-width:768px){
@@ -78,4 +75,30 @@
     @include flexrow;
     color: $global_font_color;
     justify-content: center;
-} 
+}
+
+.description, .locationspecs{
+    //background-color: $darkest_background;
+    @include Hind();
+    color: $global_font_color;
+}
+
+.desc_container{
+    display: grid;
+    grid-template-columns: 80vw,20vw;
+    grid-template-rows: 30vh, 3vh;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: $darkest_background;
+    .description{
+        grid-area: 1/1/2/1;
+    }
+    .locationspecs{
+        grid-area:1/2/1/2;
+    }
+    .booknow{
+        grid-area: 2/2/2/2;
+        
+    }
+
+}
