@@ -397,6 +397,12 @@ header .header__title .header__breadcrumb li a {
   text-decoration: none;
 }
 
+.description, .locationspecs {
+  background-color: #1B1B1B;
+  font-family: "Hind";
+  color: #717171;
+}
+
 @media (min-width: 769px) {
   header .header__title {
     padding-top: 50px;
@@ -405,37 +411,9 @@ header .header__title .header__breadcrumb li a {
   header .header__title h1 {
     font-size: 120px;
   }
-  header .header__title .header__breadcrumb {
-    padding: 0 0.5rem;
-  }
-  header .header__title .header__breadcrumb ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  header .header__title .header__breadcrumb li:not(:last-child)::after {
-    display: inline-block;
-    margin: 0 0.25rem;
-    content: ">";
-    padding-left: 10px;
-  }
-  header .header__title .header__breadcrumb li {
-    font-family: "Hind";
-    text-transform: uppercase;
+  header .header__title li {
     font-size: 15px;
     padding-right: 10px;
-    color: #717171;
-  }
-  header .header__title .header__breadcrumb li a {
-    color: white;
-    text-decoration: none;
-  }
-  .roomspecs {
-    display: flex;
-    flex-direction: row;
-    color: #717171;
   }
 }
 @media (min-width: 413px) and (max-width: 768px) {
@@ -446,32 +424,9 @@ header .header__title .header__breadcrumb li a {
   header .header__title h1 {
     font-size: 32px;
   }
-  header .header__title .header__breadcrumb {
-    padding: 0 0.5rem;
-  }
-  header .header__title .header__breadcrumb ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  header .header__title .header__breadcrumb li:not(:last-child)::after {
-    display: inline-block;
-    margin: 0 0.25rem;
-    content: ">";
-    padding-left: 10px;
-  }
-  header .header__title .header__breadcrumb li {
-    font-family: "Hind";
-    text-transform: uppercase;
+  header .header__title li {
     font-size: 12px;
     padding-right: 10px;
-    color: #717171;
-  }
-  header .header__title .header__breadcrumb li a {
-    color: white;
-    text-decoration: none;
   }
 }
 @media (max-width: 412px) {
@@ -482,33 +437,16 @@ header .header__title .header__breadcrumb li a {
   header .header__title h1 {
     font-size: 32px;
   }
-  header .header__title .header__breadcrumb {
-    padding: 0 0.5rem;
-  }
-  header .header__title .header__breadcrumb ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  header .header__title .header__breadcrumb li:not(:last-child)::after {
-    display: inline-block;
-    margin: 0 0.25rem;
-    content: ">";
-    padding-left: 10px;
-  }
-  header .header__title .header__breadcrumb li {
-    font-family: "Hind";
-    text-transform: uppercase;
+  header .header__title li {
     font-size: 12px;
     padding-right: 10px;
-    color: #717171;
   }
-  header .header__title .header__breadcrumb li a {
-    color: white;
-    text-decoration: none;
-  }
+}
+.roomspecs {
+  display: flex;
+  flex-direction: row;
+  color: #717171;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

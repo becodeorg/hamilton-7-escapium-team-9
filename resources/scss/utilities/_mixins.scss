@@ -1,6 +1,7 @@
 @use "../base/_typographie.scss";
 @use "../utilities/_variables.scss" as *;
 @use "../utilities/colors" as *;
+@use "../layout/flex" as *;
 
 
 
@@ -14,7 +15,9 @@
     
 }
 
-@mixin hero_base {
+@mixin hero ($bg_imageurl){
+    header{
+    background-image: $bg_imageurl;
     background-position: center;
     background-position: top;
     .header__title{
@@ -54,12 +57,7 @@
                     }
                 }
             
+            }
         }
-}
-}
-@mixin roomspecs{
-    .roomspecs{
-        @include flexrow;
-        color: $global_font_color;
-    }        
+    }
 }

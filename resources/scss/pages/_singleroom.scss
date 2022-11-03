@@ -5,12 +5,18 @@
 @use "../layout/_flex.scss" as *;
 @use "../components/_slider.scss" as *;
 
-header{
-    background-image: url(../images/slide-1.jpg);
-    @include hero_base;
+@include hero(url(../images/slide-1.jpg));
+
+
+.description, .locationspecs{
+    background-color: $darkest_background;
+    @include Hind();
+    color: $global_font_color;
 }
 
-
+// .booknow{
+//     text
+// }
 
 
 @media (min-width:769px){
@@ -26,11 +32,9 @@ header{
                     font-size: 15px;
                     padding-right: 10px;
                 }
-                                }
-                    }
-
-@include roomspecs;
+            }
     }
+}
 
 @media (min-width:413px) and (max-width:768px){
     header{
@@ -48,9 +52,7 @@ header{
                 }
                                 }
                     }
-
-    @include roomspecs;
-}
+}        
 
 @media (max-width:412px) {
     header{
@@ -68,6 +70,12 @@ header{
                 }
         }
     }
-
-    @include roomspecs;
 }
+
+// header placement done
+
+.roomspecs{
+    @include flexrow;
+    color: $global_font_color;
+    justify-content: center;
+} 
