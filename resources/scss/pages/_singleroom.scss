@@ -4,7 +4,9 @@
 @use "../utilities/_variables.scss" as *;
 @use "../layout/_flex.scss" as *;
 @use "../components/_slider.scss" as *;
-@use "../components/buttons" as b;
+@use "../components/image-overlay" as *;
+// @use "../components/buttons" as b;
+@use "../components/buttons";
 
 @include hero(url(../images/slide-1.jpg));
 
@@ -77,13 +79,20 @@ body{
         }
     }
     h2{
+        @include Hind();
         color: white;
         font-size: $mobile-font-size-h2;
     }
 }
 
 // header placement done
-
+.roomheader{
+    font-size: 20px;
+    
+    .red{
+        color:red;
+    }
+}
 
 .roomspecs{
     @include flexrow;
@@ -142,29 +151,18 @@ body{
         max-height: 100%;
     
     }
-    .roomthumbnail{
-        height: 40vh;
-        width: 33vw;
-        margin-left: 5px;
-    }
+    
     .room{
-        .red{
-            color: red;
+        position: relative;
+        display: inline-block;
+
+        .roomthumbnail{
+            display: block;
+            height: 40vh;
+            width: 33vw;
+            margin-left: 5px;
+            
         }
-        .roomspecs{
-            .spec{
-                .difficulty{
-                    .indicator{
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: nowrap;
-                        align-items: center;
-                    }
-                    .difficulty__description{
-                        grid-area: 2/1/2/1;
-                    }
-                }
-            }
-    }
+    @include img_overlay;
     }
 }

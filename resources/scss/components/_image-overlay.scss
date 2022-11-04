@@ -1,0 +1,46 @@
+@use "../base/_typographie.scss" as *;
+@use "../utilities/_mixins.scss" as *;
+@use "../utilities/_colors.scss" as *;
+@use "../utilities/_variables.scss" as *;
+@use "../layout/_flex.scss" as *;
+@use "../components/_slider.scss" as *;
+
+@mixin img_overlay{
+        .red{
+            color: red;
+        }
+        .roomspecs{
+            //this centers the text on the image
+            position: absolute;// this feels wrong
+            top: 95%;
+            left: 0;
+            right: 0;
+            transform: translate(0, -50%);
+            background-color: $darkest_background;
+            width: 33vw;
+            height: 10vh;
+            opacity: 60%;
+            //justify-content: center;
+            
+
+            .spec{
+
+                margin-right: 20px;
+                    .indicator{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        .fa-lock{
+                            margin-right: 5px;
+                        }
+                    }
+                    .description{
+                        grid-area: 2/1/2/1;
+                        justify-content: center;
+                }
+            }
+    }
+}

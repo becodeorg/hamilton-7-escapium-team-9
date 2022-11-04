@@ -469,10 +469,18 @@ body {
     padding-right: 10px;
   }
   h2 {
+    font-family: "Hind";
     color: white;
     font-size: 19px;
   }
 }
+.roomheader {
+  font-size: 20px;
+}
+.roomheader .red {
+  color: red;
+}
+
 .roomspecs {
   display: flex;
   flex-direction: row;
@@ -526,7 +534,12 @@ body {
   max-width: 100%;
   max-height: 100%;
 }
-.other-rooms .roomthumbnail {
+.other-rooms .room {
+  position: relative;
+  display: inline-block;
+}
+.other-rooms .room .roomthumbnail {
+  display: block;
   height: 40vh;
   width: 33vw;
   margin-left: 5px;
@@ -534,14 +547,34 @@ body {
 .other-rooms .room .red {
   color: red;
 }
-.other-rooms .room .roomspecs .spec .difficulty .indicator {
+.other-rooms .room .roomspecs {
+  position: absolute;
+  top: 95%;
+  left: 0;
+  right: 0;
+  transform: translate(0, -50%);
+  background-color: #1B1B1B;
+  width: 33vw;
+  height: 10vh;
+  opacity: 60%;
+}
+.other-rooms .room .roomspecs .spec {
+  margin-right: 20px;
+}
+.other-rooms .room .roomspecs .spec .indicator {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-.other-rooms .room .roomspecs .spec .difficulty .difficulty__description {
+.other-rooms .room .roomspecs .spec .indicator .fa-lock {
+  margin-right: 5px;
+}
+.other-rooms .room .roomspecs .spec .description {
   grid-area: 2/1/2/1;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
