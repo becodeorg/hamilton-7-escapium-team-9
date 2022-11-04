@@ -1,6 +1,18 @@
+<<<<<<< HEAD
 @use "pages/_about.scss";
 @use "pages/_contact.scss";
 @use "pages/_index.scss";
+=======
+
+@use "pages/_about.scss";
+@use "pages/blogs";
+@use "base/reset";
+
+@use "pages/_about.scss";
+@use "pages/_contact.scss";
+@use "pages/_index.scss";
+
+>>>>>>> 72984e1813d6d47201308ee5a8672669f6c0fb4f
 @use "base/reset";
 @use "layout/footer";
 
@@ -8,4 +20,7 @@
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 72984e1813d6d47201308ee5a8672669f6c0fb4f

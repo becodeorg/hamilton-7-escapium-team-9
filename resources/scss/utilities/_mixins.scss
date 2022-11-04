@@ -12,24 +12,16 @@
 @mixin Hind{
     font-family: $paragraphs-font;
     
-    font-family: "Montserat";
+    font-family: "Hind";
     
 }
+@use "../utilities/variables";
 
-@mixin Hind{
-    font-family:"Hind";
+@mixin Montserrat{
+    font-family: "Montserrat";
 }
 
-@mixin nolinkchange{
-    text-decoration: none;
-    color:$global_font_color;
-}
 
-@mixin hidesocial{
-    .fa-tripadvisor .fa-google-plus-official{
-    visibility: hidden;
-    }
-}
 
 @mixin transparent-background{
     opacity: 0.75;
