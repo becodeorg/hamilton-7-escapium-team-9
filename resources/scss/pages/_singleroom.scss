@@ -1,1 +1,168 @@
-@use "../components/navbar" as *;
+@use "../base/_typographie.scss" as *;
+@use "../utilities/_mixins.scss" as *;
+@use "../utilities/_colors.scss" as *;
+@use "../utilities/_variables.scss" as *;
+@use "../layout/_flex.scss" as *;
+@use "../components/_slider.scss" as *;
+@use "../components/image-overlay" as *;
+// @use "../components/buttons" as b;
+@use "../components/buttons";
+
+@include hero(url(../images/slide-1.jpg));
+
+body{
+    background-color: $darkest_background;
+}
+
+
+
+
+
+@media (min-width:769px){
+    header{
+        .header__title{
+            padding-top: 50px;
+            padding-bottom: 90px;
+            h1{
+                font-size: $desktop-font-size-h1;
+            }
+            
+                li{
+                    font-size: 15px;
+                    padding-right: 10px;
+                }
+            }
+    }
+    h2{
+        color: white;
+        font-size: $desktop-font-size-h2;
+    }
+    
+}
+
+@media (min-width:413px) and (max-width:768px){
+    header{
+        .header__title{
+            padding-top: 50px;
+            padding-bottom: 90px;
+            h1{
+                font-size: $mobile-font-size-h1;
+            }
+
+                li{
+
+                    font-size: 12px;
+                    padding-right: 10px;
+                }
+                                }
+                    }
+    h2{
+        color: white;
+        font-size: $mobile-font-size-h2;
+    }
+}        
+
+@media (max-width:412px) {
+    header{
+        .header__title{
+            padding-top: 50px;
+            padding-bottom: 90px;
+            h1{
+                font-size: $mobile-font-size-h1;
+            }
+
+
+                li{
+                    font-size: 12px;
+                    padding-right: 10px;
+                }
+        }
+    }
+    h2{
+        @include Hind();
+        color: white;
+        font-size: $mobile-font-size-h2;
+    }
+}
+
+// header placement done
+.roomheader{
+    font-size: 20px;
+    
+    .red{
+        color:red;
+    }
+}
+
+.roomspecs{
+    @include flexrow;
+    color: $global_font_color;
+    justify-content: center;
+}
+
+.description, .locationspecs{
+    //background-color: $darkest_background;
+    @include Hind();
+    color: $global_font_color;
+    p{
+        line-height:30px;
+        text-align: left;
+        margin-left: 5px;
+    }
+
+    li{
+        line-height: 30px;
+    }
+    
+}
+
+.desc_container{
+    display: grid;
+    grid-template-columns: 80vw,20vw;
+    grid-template-rows: 30vh, 3vh;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: $darkest_background;
+    .description{
+        grid-area: 1/1/2/1;
+    }
+    .locationspecs{
+        grid-area:1/2/1/2;
+        a[href^="mailto:"]{
+            @include nolinkchange;
+            color:$white_background
+        }
+    }
+    .button{
+        grid-area: 2/2/2/2;
+        
+    }
+
+}
+
+
+
+.other-rooms{
+    @include flexrow;
+    gap: 20px;
+    background-color: $darkest_background;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    
+    }
+    
+    .room{
+        position: relative;
+        display: inline-block;
+
+        .roomthumbnail{
+            display: block;
+            height: 40vh;
+            width: 33vw;
+            margin-left: 5px;
+            
+        }
+    @include img_overlay;
+    }
+}

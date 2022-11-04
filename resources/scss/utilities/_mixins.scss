@@ -39,3 +39,49 @@
     opacity: 0.75;
     background-color: $darkest_background;
 }
+@mixin hero ($bg_imageurl){
+    header{
+    background-image: $bg_imageurl;
+    background-position: center;
+    background-position: top;
+    .header__title{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            @include Montserat();
+            color: white; 
+            i{
+                color:$red;
+            }  
+        }
+    
+        .header__breadcrumb {
+            padding: 0 .5rem;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            li:not(:last-child)::after {
+                        display: inline-block;
+                        margin: 0 .25rem;
+                        content: ">";
+                        padding-left: 10px;
+                }
+                li{
+                    @include Hind();
+                    text-transform: uppercase;
+                    color : $global_font_color;
+                    a{
+                        color:white;
+                        text-decoration: none;
+                    }
+                }
+            
+            }
+        }
+    }
+}
