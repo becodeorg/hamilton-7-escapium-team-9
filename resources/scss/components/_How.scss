@@ -1,0 +1,158 @@
+@use "../base/_typographie.scss" as *;
+@use "../utilities/_mixins.scss" as *;
+@use "../utilities/_colors.scss" as *;
+@use "../utilities/_variables.scss" as *;
+@use "../layout/_flex.scss" as *;
+
+
+
+@media (min-width:769px){
+    .How{
+        background-color: $dark_background;
+        .How__header{ 
+            @include flexcolumn();
+            align-items: center;
+            padding-top: 120px; 
+            hr{
+                padding: 0;
+                margin: 0;
+                width:2%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .How__title{
+                @include Montserat();
+                color:white;  
+                font-size: $desktop-font-size-h2;      
+                padding-top: 30px;   
+                text-transform: capitalize;
+            }
+        }
+        .How__blocs{
+            @include flexrow();
+            padding-bottom: 100px;
+        .How__bloc{
+            @include flexcolumn();
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+        i{
+            color:white;
+            font-size: 35px;
+        }
+        h3{
+            @include Montserat();
+            color:white;
+            font-size: $desktop-font-size-h3;
+        }
+        p{
+            @include Hind();
+            color:$global_font_color;
+            font-size: $desktop-font-size-p;
+            width: 80%;
+            text-align: center;
+        }
+    }
+    }
+}
+}
+
+@media (min-width:413px) and (max-width:768px){
+    .How{
+        background-color: $dark_background;
+        .How__header{ 
+            @include flexcolumn();
+            align-items: center;
+            padding-top: 20px; 
+            hr{
+                padding: 0;
+                margin: 0;
+                width:8%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .How__title{
+                @include Montserat();
+                color:white;  
+                font-size: $mobile-font-size-h2;      
+                padding-top: 30px;   
+                text-transform: capitalize;
+            }
+        }
+        .How__blocs{
+            @include flexrow();
+            padding-bottom: 50px;
+        .How__bloc{
+            @include flexcolumn();
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+        i{
+            color:white;
+            font-size: 35px;
+        }
+        h3{
+            @include Montserat();
+            color:white;
+            font-size: $mobile-font-size-h3;
+        }
+        p{
+            @include Hind();
+            color:$global_font_color;
+            font-size: $mobile-font-size-p;
+            width: 80%;
+            text-align: center;
+        }
+    }
+    }
+}
+}
+@media (max-width:412px) {
+.How{
+    background-color: $dark_background;
+    .How__header{ 
+        @include flexcolumn();
+        align-items: center;
+        padding-top: 20px; 
+        hr{
+            padding: 0;
+            margin: 0;
+            width:8%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .How__title{
+            @include Montserat();
+            color:white;  
+            font-size: $mobile-font-size-h2;      
+            padding-top: 30px;   
+            text-transform: capitalize;
+        }
+    }
+    .How__blocs{
+        @include flexcolumn();
+    .How__bloc{
+        @include flexcolumn();
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+    i{
+        color:white;
+        font-size: 35px;
+    }
+    h3{
+        @include Montserat();
+        color:white;
+        font-size: $mobile-font-size-h3;
+    }
+    p{
+        @include Hind();
+        color:$global_font_color;
+        font-size: $mobile-font-size-p;
+        width: 80%;
+        text-align: center;
+    }
+}
+}
+}
+}

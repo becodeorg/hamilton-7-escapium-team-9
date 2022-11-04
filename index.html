@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resources/css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d6da04fe60.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./resources/js/index.js" defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Homepage</title>
+</head>
+<body>
+        <header class="header__second">
+            <nav class="navbar">
+                <ul>
+                    <a href="index.html"><img src="./resources/images/logo.png"></a>
+                    <li class="navbar__item"><a class="links active" href="index.html">home</a></li>
+                    <li class="navbar__item"><a class="links" href="about.html">about</a></li>
+                    <li class="navbar__item"><a class="links" href="#">features</a></li>
+                    <li class="navbar__item"><a class="links" href="rooms.html">rooms</a></li>
+                    <li class="navbar__item"><a class="links" href="#">booking</a></li>
+                    <li class="navbar__item"><a class="links" href="blogs.html">blog</a></li>
+                    <li class="navbar__item"><a class="links" href="contact.html">contacts</a></li>
+                </ul>
+                <ul class="navbar__button">
+                    <li class="navbar__button"><a href="#">Book now</a></li>
+                    <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-user-circle-o" aria-hidden="true"></i></li>
+                    <li class="navbar__sign"><a href="#">Sign in</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger-menu">
+                <a href="index.html"><img src="./resources/images/logo.png"></a>
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li class="navbar__item"><a class="links active" href="index.html">home</a></li>
+                  <li class="navbar__item"><a class="links" href="about.html">about</a></li>
+                  <li class="navbar__item"><a class="links" href="#">features</a><i class="fa fa-plus" aria-hidden="true"></i></li>
+                  <li class="navbar__item"><a class="links" href="rooms.html">rooms</a><i class="fa fa-plus" aria-hidden="true"></i></li>
+                  <li class="navbar__item"><a class="links" href="#">booking</a><i class="fa fa-plus" aria-hidden="true"></i></li>
+                  <li class="navbar__item"><a class="links" href="blogs.html">blog</a><i class="fa fa-plus" aria-hidden="true"></i> </li>
+                  <li class="navbar__item"><a class="links" href="contact.html">contacts</a></li>
+                  <li class="navbar__item"><a class="links" href="#">Book now</a></li>
+                  <li class="navbar__item"><a class="links" href="#">Sign in</a></li>
+                </ul>
+                </ul>
+              </div>
+        </header>
+        <!-- <div class="carousel">
+            <div class="slides">
+                <div class="slide1"></div>
+                <div class="slide2"></div>
+                <div class="slide3"></div>
+                <div class="slide4"></div>
+            </div>
+            <div class="slide__button">
+                <a onclick="carousel()">Change</a>
+                <a onclick="carousel2()">Change</a>
+                <a onclick="carousel3()">Change</a>
+                <a onclick="carousel4()">Change</a>
+            </div>
+        </div> -->
+        <div class="container">
+          
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li class="one active" data-target="#myCarousel" data-slide-to="0" ></li>
+                <li class="two" data-target="#myCarousel" data-slide-to="1"></li>
+                <li class="three" data-target="#myCarousel" data-slide-to="2"></li>
+                <li class="four" data-target="#myCarousel" data-slide-to="3"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+          
+                <div class="item active">
+                  <img src="./resources/images/slide-4.jpg" alt="Los Angeles" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h1>Escape <br>in 60 mins ?</h1>
+                   <a href="#">View our rooms</a>
+                  </div>
+                </div>
+          
+                <div class="item">
+                  <img src="./resources/images/slide-3.jpg" alt="Chicago" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h1>You Are <br>Locked In !</h1>
+                   <a href="#">View our rooms</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <img src="./resources/images/slide-2.jpg" alt="New York" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h1>Escape <br>in 60 mins ?</h1>
+                   <a href="#">View our rooms</a>
+                  </div>
+                </div>
+
+                <div class="item">
+                    <img src="./resources/images/slide-1.jpg" alt="New York" style="width:100%;">
+                    <div class="carousel-caption">
+                      <h1>The Clock <br> Is Ticking...</h1>
+                   <a href="#">View our rooms</a>
+                    </div>
+                  </div>
+            
+              </div>
+          
+              <!-- Left and right controls -->
+              
+            </div>
+          </div>
+          
+        
+
+
+        <div class="featuredRooms">
+            <div class="featuredRooms__header">
+                    <hr>
+                    <h2 class="featuredRooms__title"> Featured Rooms</h2>
+            </div>
+
+            <div class="featuredRooms__bloc">
+                <div class="bloc__pic">
+                    <img  class="bigpic" src="./resources/images/slide-2.jpg">
+                </div>
+                <div class="bloc__text">
+                    <div class="bloc__rate">
+                        <i class="fa fa-lock red" aria-hidden="true"></i>
+                        <i class="fa fa-lock red" aria-hidden="true"></i>
+                        <i class="fa fa-lock red" aria-hidden="true"></i>
+                        <i class="fa fa-lock grey" aria-hidden="true"></i>
+                        <i class="fa fa-lock grey" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="bloc__title">
+                        <h3>Magic Imporium</h3>
+                    </div>
+
+                    <div class="bloc__elem">
+                        <div class="title__players">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <p>2-3</p>
+                        </div>
+                        <div class="title__time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <p>60</p>
+                        </div>
+                        <div class="title__place">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p>NY 3031</p>
+                        </div>
+                    </div>
+
+                    <div class="bloc__desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem ipsum soluta omnis distinctio quam? Illo quam ducimus neque cumque commodi facilis sint. Ut, iure at nulla possimus repellat odit?</p>
+                    </div>
+
+                    <div class="bloc__button">
+                        <a href="#">Read More</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="featuredRooms__bloc1">
+                <div class="bloc__pic">
+                    <img src="./resources/images/room-2.jpg">
+                </div>
+                <div class="bloc__text">
+                    <div class="bloc__rate">
+                        <i class="fa fa-lock red" aria-hidden="true"></i>
+                        <i class="fa fa-lock red" aria-hidden="true"></i>
+                        <i class="fa fa-lock red" aria-hidden="true"></i>
+                        <i class="fa fa-lock red" aria-hidden="true"></i>
+                        <i class="fa fa-lock grey" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="bloc__title">
+                        <h3>The cure</h3>
+                    </div>
+
+                    <div class="bloc__elem">
+                        <div class="title__players">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <p>2-3</p>
+                        </div>
+                        <div class="title__time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <p>60</p>
+                        </div>
+                        <div class="title__place">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p>LA 19087</p>
+                        </div>
+                    </div>
+
+                    <div class="bloc__desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem ipsum soluta omnis distinctio quam? Illo quam ducimus neque cumque commodi facilis sint. Ut, iure at nulla possimus repellat odit?</p>
+                    </div>
+
+                    <div class="bloc__button">
+                        <a href="#">Read More</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="featuredRooms__bloc">
+                <div class="bloc__pic">
+                    <img src="./resources/images/room-3.jpg">
+                </div>
+                <div class="bloc__text">
+                    <div class="bloc__rate">
+                        <i class="fa fa-lock red" aria-hidden="true"></i>
+                        <i class="fa fa-lock red" aria-hidden="true"></i>
+                        <i class="fa fa-lock grey" aria-hidden="true"></i>
+                        <i class="fa fa-lock grey" aria-hidden="true"></i>
+                        <i class="fa fa-lock grey" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="bloc__title">
+                        <h3>Burlesque</h3>
+                    </div>
+
+                    <div class="bloc__elem">
+                        <div class="title__players">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <p>2-3</p>
+                        </div>
+                        <div class="title__time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <p>60</p>
+                        </div>
+                        <div class="title__place">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p>BH 3031</p>
+                        </div>
+                    </div>
+
+                    <div class="bloc__desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem ipsum soluta omnis distinctio quam? Illo quam ducimus neque cumque commodi facilis sint. Ut, iure at nulla possimus repellat odit?</p>
+                    </div>
+
+                    <div class="bloc__button">
+                        <a href="#">Read More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="featuredRooms__button">
+                <a href="#">View All Rooms</a>
+            </div>
+        </div>
+
+        <div class="How">
+            <div class="How__header">
+                <hr>
+                <h2 class="How__title"> How it works</h2>
+            </div>
+    
+            <div class="How__blocs">
+                <div class="How__bloc">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <h3>You Are Locked In</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus, quo quaerat placeat natus facilis tempora! Nulla placeat inventore </p>
+                </div>
+    
+                <div class="How__bloc">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <h3>The Clock Is Ticking</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus, quo quaerat placeat natus facilis tempora! Nulla placeat inventore </p>
+                </div>
+    
+                <div class="How__bloc">
+                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                    <h3>Feel The Atmosphere</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus, quo quaerat placeat natus facilis tempora! Nulla placeat inventore </p>
+                </div>
+            </div>
+    
+        </div>
+        
+    <div class="WhatPeopleSay">
+        <div class="WhatPeopleSay__header">
+            <hr>
+            <h2 class="WhatPeopleSay__title">Testimonials</h2>
+        </div>
+            
+              
+<div class="slideshow-container">
+
+    
+    <div class="WhatPeopleSay__bloc">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit distinctio labore iusto iste mollitia, vero, alias hic nobis, aut rerum numquam sunt blanditiis voluptatibus doloremque expedita quos maxime culpa? Eaque!</p>
+        <img src="./resources/images/comment-avatar-2.png">
+        <p class="bloc__author">Tiffany</p>
+    </div>
+  
+    <div class="WhatPeopleSay__bloc">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit distinctio labore iusto iste mollitia, vero, alias hic nobis, aut rerum numquam sunt blanditiis voluptatibus doloremque expedita quos maxime culpa? Eaque!</p>
+        <img src="./resources/images/comment-avatar-1.png">
+        <p class="bloc__author">Ron</p>
+    </div>
+  
+    <div class="WhatPeopleSay__bloc">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit distinctio labore iusto iste mollitia, vero, alias hic nobis, aut rerum numquam sunt blanditiis voluptatibus doloremque expedita quos maxime culpa? Eaque!</p>
+        <img src="./resources/images/comment-avatar-2.png">
+        <p class="bloc__author">Bobette</p>
+    </div>
+  
+   
+    <a class="prev" onclick="plusSlides(-1)"> ← </a>
+    <a class="next" onclick="plusSlides(1)"> → </a>
+  </div>
+          
+    </div>
+
+    <div class="blog__posts">
+        <div class="blog__header">
+            <hr>
+            <h2 class="blog__title">Latest Blog Posts</h2>
+            <a href="#">Browse All Blog Posts</a>
+        </div>
+    <div class="blogs">
+        <div class="blog">
+            <div class="posts__post">
+                <div class="post__pic">
+                    <div class="post__author">
+                        <img src="./resources/images/c3c95c15683498ce1cf96c1a61b662c9.png">
+                        <p>Andy Bernard</p>
+                    </div>
+                </div>
+                </div>
+                <div class="posts__desc">
+                    <div class="post__title">
+                        <p>Promotions</p>
+                        <hr>
+                        <h3>Kidnapped Game Now Open</h3>
+                        <p class="post__text">lorem  apadad asad adadipsum gras hisa paoz sjjzadhz az sd lrem ipsm</p>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="blog">
+        <div class="posts__post">
+            <div class="post__pic1">
+                <div class="post__author">
+                    <img src="./resources/images/betty-draper.png">
+                    <p>Betty Draper</p>
+                </div>
+            </div>
+            
+            <div class="posts__desc">
+                <div class="post__title">
+                    <p>Team building</p>
+                    <hr>
+                    <h3>Perfect for team building</h2>
+                    <p class="post__text">lorem  apadad asad adadipsum gras hisa paoz sjjzadhz az sd lrem ipsm</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="blog">
+        <div class="posts__post">
+            <div class="post__pic2">
+                <div class="post__author">
+                    <img src="./resources/images/c3c95c15683498ce1cf96c1a61b662c9.png">
+                    <p>Andy Bernard</p>
+                </div>
+            </div>
+        </div>
+            <div class="posts__desc">
+                <div class="post__title">
+                    <p>Corporate events</p>
+                    <hr>
+                    <h3>What is an escape room ?</h3>
+                    <p class="post__text">lorem  apadad asad adadipsum gras hisa paoz sjjzadhz az sd lrem ipsm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="WhoCanPlay">
+        <div class="img"></div>
+        <div class="WhoCanPlay__left">
+            <p>WHO CAN PLAY</p>
+            <hr>
+        </div>
+        <div class="WhoCanPlay__right">
+            <div class="right__item">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <p>FRIENDS & FAMILY</p>
+            </div>
+
+            <div class="right__item">
+                <i class="fa fa-suitcase" aria-hidden="true"></i>
+                <p>TEAM & CO-WORKERS</p>
+            </div>
+
+            <div class="right__item">
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <p>GAME LOVERS</p>
+            </div>
+
+            <div class="right__item">
+                <i class="fa fa-plane" aria-hidden="true"></i>
+                <p>TOURISTS</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="gallery">
+            <div class="gallery__header">
+                <hr>
+                <h2 class="gallery__title"> Instagram Shots</h2>
+                <a href="#">#escapium</a>
+            </div>
+            <div class="gallery__gallery">
+                <div class="pic1"><p><i class="fa fa-heart-o" aria-hidden="true"></i>45 <i class="fa fa-comment-o" aria-hidden="true"></i>64</p></div>
+                <div class="pic2"><p><i class="fa fa-heart-o" aria-hidden="true"></i>45 <i class="fa fa-comment-o" aria-hidden="true"></i>64</p> </div>
+                <div class="pic3"><p><i class="fa fa-heart-o" aria-hidden="true"></i>45 <i class="fa fa-comment-o" aria-hidden="true"></i>64</p> </div>
+                <div class="pic4"><p><i class="fa fa-heart-o" aria-hidden="true"></i>45 <i class="fa fa-comment-o" aria-hidden="true"></i>64</p> </div>
+                <div class="pic5"><p><i class="fa fa-heart-o" aria-hidden="true"></i>45 <i class="fa fa-comment-o" aria-hidden="true"></i>64</p> </div>
+                <div class="pic6"><p><i class="fa fa-heart-o" aria-hidden="true"></i>45 <i class="fa fa-comment-o" aria-hidden="true"></i>64</p> </div>
+                <div class="pic7"><p><i class="fa fa-heart-o" aria-hidden="true"></i>45 <i class="fa fa-comment-o" aria-hidden="true"></i>64</p> </div>
+                <div class="pic8"><p><i class="fa fa-heart-o" aria-hidden="true"></i>45 <i class="fa fa-comment-o" aria-hidden="true"></i>64</p> </div>
+            </div>
+
+            <div class="gallery__button">
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Follow On Instagram</a>
+            </div>
+        </div>
+        <main>
+            
+            <div id="map"></div>
+    
+            <div class="form">
+    
+                <h2>Contact Form</h2>
+                <div class="info">
+                    <input type="text" name="firstname" id="firstname" placeholder="Name"/>       
+     
+                     <input type="email" name="email" id="email" placeholder="Email Address"/>
+                </div>
+                <input type="textarea" name="msg" id="msg" placeholder="Your Message" />
+                
+                <button onclick="check()">Send Message</button>
+         
+                <section id="Success" style="visibility: hidden;">
+                    Formulaire Sent !
+                </section>
+            </div>
+        </main>
+        
+        <div class="Ready">
+            <div class="Ready__header">
+                <hr>
+                <h2 class="Ready__title"> Ready For The Escape ?</h2>
+                <p>Escape Room gives you the opportunity to have fun</p>
+                <a href="#">Book your escape</a>
+            </div>
+        </div>
+        
+        
+
+
+        <script async defer
+        src=
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyDDkUybIS8OzyDU9gVKqBrqUbO60ram-q0&callback=initMap">
+        </script>
+
+    <footer class="footer footer__grid">
+        <section class="footer__box address">
+            <div class="footer__head"><p>01</p><hr class="redline"></div>
+            <h3 class="footer__title white">Our Address</h3>
+            <p>
+                Escaperoom Ltd<br>
+                2390 Road Hill St., Suite 100 <br>
+                North Downtown, NY 82153 <br>
+                <br>
+                EMail: <a class="link white" href="mailto:info@escapium.com">info@escapium.com</a> <br>
+                Tel: +1800 900 1246
+            </p>
+        </section >
+        <section class="footer__box links">
+            <div class="footer__head"><p>02</p><hr class="redline"></div>
+            <h3 class="footer__title white">Usefull Links</h3>
+            <a href="" target="_balnk" class="link">About</a>
+            <a href="" target="_balnk" class="link">Gallery</a>
+            <a href="" target="_balnk" class="link">Plan an Event</a>
+            <a href="" target="_balnk" class="link">Pricing Packages</a>
+            <a href="" target="_balnk" class="link">FAQ</a>
+            <a href="" target="_balnk" class="link">Contact</a>
+        </section>
+
+        <section class="footer__box hours">
+            <div class="footer__head"><p>03</p><hr class="redline"></div>
+            <h3 class="footer__title white">Working Hours</h3>
+            <ul>
+                <li>Monday: 6pm-11pm</li>
+                <li>Tuesday: 5pm-11pm</li>
+                <li>Wednesday: Closed</li>
+                <li>Thursday: 6pm -11pm</li>
+                <li>Friday: 2pm-11pm</li>
+                <li>Saturday: 11am-11pm</li>
+                <li>Sunday: 11am-9pm</li>
+            </ul>
+        </section>
+        <section class="footer__box social">
+            <div class="footer__head"><p>04</p><hr class="redline"></div>
+            <h3 class="footer__title white">Social Links</h3>
+            <i class="sociallink white fab fa-facebook"></i>
+            <i class="sociallink white fab fa-twitter"></i>
+            <i class="sociallink white fa fa-google-plus-official"></i>
+            <i class="sociallink white fab fa-instagram"></i>
+            <i class="sociallink white fab fa-yelp"></i>
+            <i class="sociallink white fab fa-youtube"></i>
+            <i class="sociallink white fab fa-tiktok"></i>
+            <i class="sociallink white fa fa-tripadvisor"></i>
+        </section>
+        <section class="footer__box copyright">
+            <img class="logo" src="/resources/images/footer-logo.png" alt="Escapium Logo"><br>
+            <p class="notice">Copyright ©2022 Escapium | All Rights reserved</p>
+        </section>
+    </footer>
+</body>
+</html>

@@ -17,5 +17,3 @@ Consolidation challange after learning Javascript
 [BeCode Instructions](https://github.com/becodeorg/LIE-Hamilton-7/tree/main/01-main-course/01-the-field/06-project)
 
 ## **What language are used?**
-
-HTML, CSS,Sass, JS

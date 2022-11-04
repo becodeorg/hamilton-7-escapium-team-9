@@ -1,0 +1,264 @@
+@use "../base/_typographie.scss" as *;
+@use "../utilities/_mixins.scss" as *;
+@use "../utilities/_colors.scss" as *;
+@use "../utilities/_variables.scss" as *;
+@use "../layout/_flex.scss" as *;
+@use "../components/_forms.scss" as *;
+@use "../components/_How.scss" as *;
+@use "../components/_FAQ.scss" as *;
+@use "../components/_slider.scss" as *;
+@use "../components/_navbar.scss" as *;
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+  }
+  
+
+@media (min-width:769px){
+    .header__hero{
+    background-image: url(../images/slide-1.jpg);
+    background-position: center;
+    background-position: top;
+    .header__title{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 90px;
+        h1{
+            @include Montserat();
+            color: white; 
+            font-size: $desktop-font-size-h1;
+           
+            i{
+                color: red;
+            }  
+        }
+        .header__breadcrumb {
+            padding: 0 .5rem;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+             }
+            li:not(:last-child)::after {
+                display: inline-block;
+                margin: 0 .25rem;
+                content: ">";
+                padding-left: 10px;
+                
+            }
+            li{
+                @include Hind();
+                text-transform: uppercase;
+                font-size: 15px;
+                padding-right: 10px;
+                color : $global_font_color;
+                a{
+                    color:white;
+                    text-decoration: none;
+                }
+            }
+                            }
+                }
+    }
+    main{
+        display: flex !important; 
+        flex-direction: row;
+        background-color: $dark_background;
+        justify-content: center;
+    .GetInTouch{
+        background-color: $dark_background;
+        width: 30%;
+        .GetInTouch__header{
+            @include flexcolumn();
+           padding-left: 20px;
+            h2{
+                @include Montserat();
+                color:white;
+                padding-top: 50px;
+                margin: 0;
+            }
+            p{
+                @include Hind();
+                color:$global_font_color;
+                padding-top: 20px;
+                padding-bottom: 50px;
+                margin: 0;
+            }
+        }
+        .GetInTouch__info{
+            @include flexcolumn();
+           padding-left: 20px;
+           .info__com{
+            @include flexrow();
+            align-items: center;
+            padding-bottom: 30px;
+            i{
+                color: white;
+                font-size: 40px;
+            }
+            p{
+                @include Hind();
+                color:$global_font_color;
+                margin:0;
+                padding-left: 50px;
+                
+            }
+           
+           }
+           .info__mail{
+            @include flexrow();
+            align-items: center;
+            padding-bottom: 30px;
+            i{
+                color: white;
+                font-size: 40px;
+            }
+            p{
+                @include Hind();
+                color:white;
+                margin:0;
+                padding-left: 50px;
+            
+            }
+        }
+    }
+}
+}
+}
+
+@media (min-width:413px) and (max-width:768px){
+    main{
+        display: flex !important; 
+        flex-direction: row;
+    .GetInTouch{
+        background-color: $dark_background;
+        width: 50%;
+        .GetInTouch__header{
+            @include flexcolumn();
+           padding-left: 20px;
+            h2{
+                @include Montserat();
+                color:white;
+                padding-top: 50px;
+                margin: 0;
+            }
+            p{
+                @include Hind();
+                color:$global_font_color;
+                padding-top: 20px;
+                padding-bottom: 50px;
+                margin: 0;
+            }
+        }
+        .GetInTouch__info{
+            @include flexcolumn();
+           padding-left: 20px;
+           .info__com{
+            @include flexrow();
+            align-items: center;
+            padding-bottom: 30px;
+            i{
+                color: white;
+                font-size: 40px;
+            }
+            p{
+                @include Hind();
+                color:$global_font_color;
+                margin:0;
+                padding-left: 50px;
+                
+            }
+           
+           }
+           .info__mail{
+            @include flexrow();
+            align-items: center;
+            padding-bottom: 30px;
+            i{
+                color: white;
+                font-size: 40px;
+            }
+            p{
+                @include Hind();
+                color:white;
+                margin:0;
+                padding-left: 50px;
+            
+            }
+        }
+    }
+}
+}
+}
+
+@media (max-width:412px) {
+    .GetInTouch{
+        background-color: $dark_background;
+        .GetInTouch__header{
+            @include flexcolumn();
+           padding-left: 20px;
+            h2{
+                @include Montserat();
+                color:white;
+                padding-top: 50px;
+                margin: 0;
+            }
+            p{
+                @include Hind();
+                color:$global_font_color;
+                padding-top: 20px;
+                padding-bottom: 50px;
+                margin: 0;
+            }
+        }
+        .GetInTouch__info{
+            @include flexcolumn();
+           padding-left: 20px;
+           .info__com{
+            @include flexrow();
+            align-items: center;
+            padding-bottom: 30px;
+            i{
+                color: white;
+                font-size: 40px;
+            }
+            p{
+                @include Hind();
+                color:$global_font_color;
+                margin:0;
+                padding-left: 50px;
+                
+            }
+           
+           }
+           .info__mail{
+            @include flexrow();
+            align-items: center;
+            padding-bottom: 30px;
+            i{
+                color: white;
+                font-size: 40px;
+            }
+            p{
+                @include Hind();
+                color:white;
+                margin:0;
+                padding-left: 50px;
+            
+            }
+        }
+    }
+}
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+  }
+  }
+

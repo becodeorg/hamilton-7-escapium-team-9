@@ -1,0 +1,118 @@
+@use "../base/_typographie.scss" as *;
+@use "../utilities/_mixins.scss" as *;
+@use "../utilities/_colors.scss" as *;
+@use "../utilities/_variables.scss" as *;
+@use "../layout/_flex.scss" as *;
+@use "../components/_How.scss" as *;
+@use "../components/_FAQ.scss" as *;
+@use "../components/_slider.scss" as *;
+@use "../components/navbar" as *;
+@use "../pages/contact" as *;
+
+
+.container{
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    .carousel{
+        width: 100%;
+        position: relative;
+        .carousel-indicators{
+            @include flexcolumn();
+            align-items: flex-end;
+            position: absolute;
+            top:50%;
+            left: 88%;
+            width: 40%;
+            li{
+                width: 50px;
+                margin-top: 15px;
+                height: 5px;
+                transition: 0.2s ease;
+
+            }
+
+            .active{
+                width: 100px;
+            }    
+        }
+
+       .carousel-inner{
+        .item{
+           
+            .carousel-caption{
+                @include flexcolumn();
+                h1{
+                    @include Montserat();
+                    font-size: $desktop-font-size-h1;
+                    text-align: start;
+                }
+               a{
+                @include Montserat();
+                text-decoration: none;
+                color:$global-font-color !important;
+                font-size: 22px;
+                text-align: start;
+                transition: 0.3s ease-in-out;
+               }
+               a:hover{
+                color:$red !important;
+                transition: 0.3s ease-in-out;
+               }
+                
+
+            }
+        }
+       }
+    }
+}
+@media (min-width:413px) and (max-width:768px){
+    .container{
+        .carousel{
+            z-index: -999;
+            .carousel-indicators{
+                display: none;
+            }
+            .carousel-inner{
+                .item{
+                    .carousel-caption{
+                        @include flexcolumn();
+                        align-items: center ;
+                        h1{
+                            font-size: 50px;
+                            text-align:center;
+                        }
+                        a{
+                            font-size: $mobile-font-size-p ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  (max-width:413px){
+    .container{
+        .carousel{
+            z-index: -999;
+            .carousel-indicators{
+                display: none;
+            }
+            .carousel-inner{
+                .item{
+                    .carousel-caption{
+                        @include flexcolumn();
+                        align-items: center ;
+                        h1{
+                            font-size: $mobile-font-size-h1;
+                            text-align:center;
+                        }
+                        a{
+                            font-size: $mobile-font-size-p ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

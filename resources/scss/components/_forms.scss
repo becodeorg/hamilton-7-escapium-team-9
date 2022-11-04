@@ -1,0 +1,229 @@
+@use "../base/_typographie.scss" as *;
+@use "../utilities/_mixins.scss" as *;
+@use "../utilities/_colors.scss" as *;
+@use "../utilities/_variables.scss" as *;
+@use "../layout/_flex.scss" as *;
+
+@media (min-width:769px){
+    main{
+        padding-bottom: 100px;
+        .form{
+            background-color: $dark_background;    
+            @include flexcolumn();  
+            padding-left: 20px; 
+            text-decoration: none;
+            width: 30%;
+            h2{
+                @include Montserat();
+                color:white;
+                padding-top: 50px;
+                padding-bottom: 20px;
+                margin: 0;
+            }
+            .info{
+                @include flexrow();
+                justify-content: space-between;
+            input[type=text]{
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid $global_font_color;
+                padding-bottom: 20px;
+                margin-bottom: 50px;
+                @include Hind();
+                color: white;
+                width: 50%;
+            }
+            input[type=email]{
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid $global_font_color;
+                padding-bottom: 20px;
+                margin-left: 40px;
+                margin-bottom: 50px;
+                @include Hind();
+                color: white;
+                width:50%;
+            }
+        }
+            input[type=textarea]{
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid $global_font_color;
+                padding-bottom: 20px;
+                margin-bottom: 50px;
+                @include Hind();
+                color: white;
+    
+           
+            }
+            button{
+                @include Hind();
+                color:white;
+                background-color: $red;
+                padding: 15px;
+                border-radius: 50px;
+                border: none;
+                transition: 0.5s ease-in-out;
+            }
+            button:hover{
+                color:$red;
+                background-color: white;
+                padding: 15px;
+                border-radius: 50px;
+                border: 1px solid $red;
+                transition: 0.5s ease-in-out;
+            }
+            #Success{
+                color: white;
+                @include Hind();
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width:413px) and (max-width:768px){
+    main{
+        .form{
+            background-color: $dark_background;    
+            @include flexcolumn();  
+            padding-left: 20px; 
+            text-decoration: none;
+            width: 50%;
+            h2{
+                @include Montserat();
+                color:white;
+                padding-top: 50px;
+                padding-bottom: 20px;
+                margin: 0;
+            }
+            .info{
+                @include flexrow();
+            input[type=text]{
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid $global_font_color;
+                padding-bottom: 20px;
+                margin-bottom: 50px;
+                @include Hind();
+                color: white;
+            }
+            input[type=email]{
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid $global_font_color;
+                padding-bottom: 20px;
+                margin-left: 40px;
+                margin-bottom: 50px;
+                @include Hind();
+                color: white;
+            }
+        }
+            input[type=textarea]{
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid $global_font_color;
+                padding-bottom: 20px;
+                margin-bottom: 50px;
+                @include Hind();
+                color: white;
+    
+           
+            }
+            button{
+                @include Hind();
+                color:white;
+                background-color: $red;
+                padding: 15px;
+                border-radius: 50px;
+                border: none;
+                transition: 0.5s ease-in-out;
+            }
+            button:hover{
+                color:$red;
+                background-color: white;
+                padding: 15px;
+                border-radius: 50px;
+                border: 1px solid $red;
+                transition: 0.5s ease-in-out;
+            }
+            #Success{
+                color: white;
+                @include Hind();
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:412px) {
+    main{
+    .form{
+        background-color: $dark_background;    
+        @include flexcolumn();  
+        padding-left: 20px; 
+        text-decoration: none;
+        h2{
+            @include Montserat();
+            color:white;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            margin: 0;
+        }
+        .info{
+            @include flexcolumn();
+        input[type=text]{
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid $global_font_color;
+            padding-bottom: 20px;
+            margin-bottom: 50px;
+            @include Hind();
+            color: white;
+        }
+        input[type=email]{
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid $global_font_color;
+            padding-bottom: 20px;
+            margin-bottom: 50px;
+            @include Hind();
+            color: white;
+        }
+    }
+        input[type=textarea]{
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid $global_font_color;
+            padding-bottom: 20px;
+            margin-bottom: 50px;
+            @include Hind();
+            color: white;
+
+       
+        }
+        button{
+            @include Hind();
+            color:white;
+            background-color: $red;
+            padding: 15px;
+            border-radius: 50px;
+            border: none;
+            transition: 0.5s ease-in-out;
+        }
+        button:hover{
+            color:$red;
+            background-color: white;
+            padding: 15px;
+            border-radius: 50px;
+            border: 1px solid $red;
+            transition: 0.5s ease-in-out;
+        }
+        #Success{
+            color: white;
+            @include Hind();
+            padding-top: 20px;
+        }
+    }
+}
+}

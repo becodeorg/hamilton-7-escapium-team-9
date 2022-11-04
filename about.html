@@ -6,20 +6,347 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link href="resources/css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d6da04fe60.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/resources/js/index.js" defer></script>
 </head>
 <body>
-    <header>
+    <header class="header__second">
+        <nav class="navbar">
+            <ul>
+                <a href="/index.html"><img src="./resources/images/logo.png"></a>
+                <li class="navbar__item"><a class="links" href="/index.html">home</a></li>
+                <li class="navbar__item"><a class="links active" href="about.html">about</a></li>
+                <li class="navbar__item"><a class="links" href="#">features</a></li>
+                <li class="navbar__item"><a class="links" href="rooms.html">rooms</a></li>
+                <li class="navbar__item"><a class="links" href="#">booking</a></li>
+                <li class="navbar__item"><a class="links" href="blogs.html">blog</a></li>
+                <li class="navbar__item"><a class="links" href="contact.html">contacts</a></li>
+            </ul>
+            <ul class="navbar__button">
+                <li class="navbar__button"><a href="#">Book now</a></li>
+                <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                <li><i class="fa fa-user-circle-o" aria-hidden="true"></i></li>
+                <li class="navbar__sign"><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger-menu">
+            <a href="/index.html"><img src="./resources/images/logo.png"></a>
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+            
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li class="navbar__item"><a class="links active" href="index.html">home</a></li>
+              <li class="navbar__item"><a class="links" href="about.html">about</a></li>
+              <li class="navbar__item"><a class="links" href="#">features</a><i class="fa fa-plus" aria-hidden="true"></i></li>
+              <li class="navbar__item"><a class="links" href="rooms.html">rooms</a><i class="fa fa-plus" aria-hidden="true"></i></li>
+              <li class="navbar__item"><a class="links" href="#">booking</a><i class="fa fa-plus" aria-hidden="true"></i></li>
+              <li class="navbar__item"><a class="links" href="blogs.html">blog</a><i class="fa fa-plus" aria-hidden="true"></i> </li>
+              <li class="navbar__item"><a class="links" href="contact.html">contacts</a></li>
+              <li class="navbar__item"><a class="links" href="#">Book now</a></li>
+              <li class="navbar__item"><a class="links" href="#">Sign in</a></li>
+            </ul>
+            </ul>
+          </div>
+        </header>
+        <div class="header__hero">
         <div class="header__title">
             <h1>about<i>.</i></h1>
 
             <nav aria-label="Breadcrumb" class="header__breadcrumb">
                 <ul>
-                    <li><a href="#">Escapium</a></li>                    
+                    <li><a href="#">Home</a></li>                    
                     <li><span aria-current="page">About</span></li>
                 </ul>
             </nav>
         </div>
-    </header>
+        </div>
     
+
+    <div class="How">
+        <div class="How__header">
+            <hr>
+            <h2 class="How__title"> How to play</h2>
+        </div>
+
+        <div class="How__blocs">
+            <div class="How__bloc">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <h3>Who should play ?</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus, quo quaerat placeat natus facilis tempora! Nulla placeat inventore </p>
+            </div>
+
+            <div class="How__bloc">
+                <i class="fa fa-flask" aria-hidden="true"></i>
+                <h3>Who should play ?</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus, quo quaerat placeat natus facilis tempora! Nulla placeat inventore </p>
+            </div>
+
+            <div class="How__bloc">
+                <i class="fa fa-certificate" aria-hidden="true"></i>
+                <h3>Who should play ?</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus, quo quaerat placeat natus facilis tempora! Nulla placeat inventore </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="video">
+        <!-- <video controls poster="/resources/images/video-placeholder.jpg"> -->
+            <div  class="placeholder"></div>
+            <a href="#" onclick="toggle();"><img  class ="play" src="./resources/images/red-play-button-icon.webp"></a>
+
+            <div class="video1">
+            <video src="./resources/images/video.mp4" controls="true">
+         
+          </video>
+          <img src="./resources/images/close.png" onclick="toggle();" class="close" >
+        </div>
+         
+          
+          
+    </div>
+
+    <div class="certificate">
+        <div class="certificate__header">
+            <hr>
+            <h2 class="certificate__title"> Certificates</h2>
+        </div>
+
+        <div class="certificate__bloc">
+            <img src="./resources/images/certificate-1.jpg">
+            <img src="./resources/images/certificate-2.jpg">
+            <img src="./resources/images/certificate-3.jpg">
+            <img src="./resources/images/certificate-4.jpg">
+        </div>
+    </div>
+
+    <div class="team">
+        <div class="team__header">
+            <hr>
+            <h2 class="team__title"> Our team</h2>
+        </div>
+
+        <div class="team__bloc">
+            <div class="bloc__member">
+                <img src="./resources/images/member-photo-1.jpg">
+                <h2>Stanley Hudson</h2>
+                <p>Co-creator</p>
+            </div>
+            <div class="bloc__member">
+                <img src="./resources/images/member-photo-2.jpg">
+                <h2>Mona Sterling</h2>
+                <p>Co-creator</p>
+            </div>
+            <div class="bloc__member">
+                <img src="./resources/images/member-photo-3.jpg">
+                <h2>Trudy Campbell</h2>
+                <p>Co-creator</p>
+            </div>
+     
+        </div>
+    </div>
+
+    <div class="WhatPeopleSay">
+        <div class="WhatPeopleSay__header">
+            <hr>
+            <h2 class="WhatPeopleSay__title"> What people say</h2>
+            <a href="#">Read all testimonials</a>
+        </div>
+            
+              
+<div class="slideshow-container">
+
+    
+    <div class="WhatPeopleSay__bloc">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit distinctio labore iusto iste mollitia, vero, alias hic nobis, aut rerum numquam sunt blanditiis voluptatibus doloremque expedita quos maxime culpa? Eaque!</p>
+        <img src="./resources/images/comment-avatar-2.png">
+        <p class="bloc__author">Tiffany</p>
+    </div>
+  
+    <div class="WhatPeopleSay__bloc">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit distinctio labore iusto iste mollitia, vero, alias hic nobis, aut rerum numquam sunt blanditiis voluptatibus doloremque expedita quos maxime culpa? Eaque!</p>
+        <img src="./resources/images/comment-avatar-1.png">
+        <p class="bloc__author">Ron</p>
+    </div>
+  
+    <div class="WhatPeopleSay__bloc">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit distinctio labore iusto iste mollitia, vero, alias hic nobis, aut rerum numquam sunt blanditiis voluptatibus doloremque expedita quos maxime culpa? Eaque!</p>
+        <img src="./resources/images/comment-avatar-2.png">
+        <p class="bloc__author">Bobette</p>
+    </div>
+  
+   
+    <a class="prev" onclick="plusSlides(-1)"> ← </a>
+    <a class="next" onclick="plusSlides(1)"> → </a>
+  </div>
+  
+<footer class="footer footer__grid">
+        <section class="footer__box address">
+            <div class="footer__head"><p>01</p><hr class="redline"></div>
+            <h3 class="footer__title white">Our Address</h3>
+            <p>
+                Escaperoom Ltd<br>
+                2390 Road Hill St., Suite 100 <br>
+                North Downtown, NY 82153 <br>
+                <br>
+                EMail: <a class="link white" href="mailto:info@escapium.com">info@escapium.com</a> <br>
+                Tel: +1800 900 1246
+            </p>
+        </section >
+        <section class="footer__box links">
+            <div class="footer__head"><p>02</p><hr class="redline"></div>
+            <h3 class="footer__title white">Usefull Links</h3>
+            <a href="" target="_balnk" class="link">About</a>
+            <a href="" target="_balnk" class="link">Gallery</a>
+            <a href="" target="_balnk" class="link">Plan an Event</a>
+            <a href="" target="_balnk" class="link">Pricing Packages</a>
+            <a href="" target="_balnk" class="link">FAQ</a>
+            <a href="" target="_balnk" class="link">Contact</a>
+        </section>
+
+        <section class="footer__box hours">
+            <div class="footer__head"><p>03</p><hr class="redline"></div>
+            <h3 class="footer__title white">Working Hours</h3>
+            <ul>
+                <li>Monday: 6pm-11pm</li>
+                <li>Tuesday: 5pm-11pm</li>
+                <li>Wednesday: Closed</li>
+                <li>Thursday: 6pm -11pm</li>
+                <li>Friday: 2pm-11pm</li>
+                <li>Saturday: 11am-11pm</li>
+                <li>Sunday: 11am-9pm</li>
+            </ul>
+        </section>
+        <section class="footer__box social">
+            <div class="footer__head"><p>04</p><hr class="redline"></div>
+            <h3 class="footer__title white">Social Links</h3>
+            <i class="sociallink white fab fa-facebook"></i>
+            <i class="sociallink white fab fa-twitter"></i>
+            <i class="sociallink white fa fa-google-plus-official"></i>
+            <i class="sociallink white fab fa-instagram"></i>
+            <i class="sociallink white fab fa-yelp"></i>
+            <i class="sociallink white fab fa-youtube"></i>
+            <i class="sociallink white fab fa-tiktok"></i>
+            <i class="sociallink white fa fa-tripadvisor"></i>
+        </section>
+        <section class="footer__box copyright">
+            <img class="logo" src="/resources/images/footer-logo.png" alt="Escapium Logo"><br>
+            <p class="notice">Copyright ©2022 Escapium | All Rights reserved</p>
+        </section>
+    </footer>
+            
+      
+       
+
+        
+    </div>
+
+    <div class="FAQ">
+        <div class="FAQ__header">
+            <hr>
+            <h2 class="FAQ__title"> FAQs</h2>
+            <p>If you question isn't answered here, feel free to contact us</p>
+        </div>
+        <div class="accordion-div">
+        <button class="accordion"><span class="faq__question-heading">What is an escape room ?</span></button>
+        <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion"><span class="faq__question-heading">Will I be locked in a room ?</span></button>
+        <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion"><span class="faq__question-heading">How long does the whole experience take ?</span></button>
+        <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>    
+        </div>
+
+        <button class="accordion"><span class="faq__question-heading">Can I play more than one game ?</span></button>
+        <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>    
+        </div>
+
+        <button class="accordion"><span class="faq__question-heading">Will other people be in the room with us ?</span></button>
+        <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>    
+        </div>
+
+        <button class="accordion"><span class="faq__question-heading">Do I need ton bring anything ?</span></button>
+        <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>    
+        </div>
+
+         <button class="accordion"><span class="faq__question-heading">Is there an age limit ?</span></button>
+        <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>    
+        </div>
+        </div>
+
+
+    </div>
+  
+
+    </header>
+
+    <footer class="footer footer__grid">
+        <section class="footer__box address">
+            <div class="footer__head"><p>01</p><hr class="redline"></div>
+            <h3 class="footer__title white">Our Address</h3>
+            <p>
+                Escaperoom Ltd<br>
+                2390 Road Hill St., Suite 100 <br>
+                North Downtown, NY 82153 <br>
+                <br>
+                EMail: <a class="link white" href="mailto:info@escapium.com">info@escapium.com</a> <br>
+                Tel: +1800 900 1246
+            </p>
+        </section >
+        <section class="footer__box links">
+            <div class="footer__head"><p>02</p><hr class="redline"></div>
+            <h3 class="footer__title white">Usefull Links</h3>
+            <a href="" target="_balnk" class="link">About</a>
+            <a href="" target="_balnk" class="link">Gallery</a>
+            <a href="" target="_balnk" class="link">Plan an Event</a>
+            <a href="" target="_balnk" class="link">Pricing Packages</a>
+            <a href="" target="_balnk" class="link">FAQ</a>
+            <a href="" target="_balnk" class="link">Contact</a>
+        </section>
+
+        <section class="footer__box hours">
+            <div class="footer__head"><p>03</p><hr class="redline"></div>
+            <h3 class="footer__title white">Working Hours</h3>
+            <ul>
+                <li>Monday: 6pm-11pm</li>
+                <li>Tuesday: 5pm-11pm</li>
+                <li>Wednesday: Closed</li>
+                <li>Thursday: 6pm -11pm</li>
+                <li>Friday: 2pm-11pm</li>
+                <li>Saturday: 11am-11pm</li>
+                <li>Sunday: 11am-9pm</li>
+            </ul>
+        </section>
+        <section class="footer__box social">
+            <div class="footer__head"><p>04</p><hr class="redline"></div>
+            <h3 class="footer__title white">Social Links</h3>
+            <i class="sociallink white fab fa-facebook"></i>
+            <i class="sociallink white fab fa-twitter"></i>
+            <i class="sociallink white fa fa-google-plus-official"></i>
+            <i class="sociallink white fab fa-instagram"></i>
+            <i class="sociallink white fab fa-yelp"></i>
+            <i class="sociallink white fab fa-youtube"></i>
+            <i class="sociallink white fab fa-tiktok"></i>
+            <i class="sociallink white fa fa-tripadvisor"></i>
+        </section>
+        <section class="footer__box copyright">
+            <img class="logo" src="/resources/images/footer-logo.png" alt="Escapium Logo"><br>
+            <p class="notice">Copyright ©2022 Escapium | All Rights reserved</p>
+        </section>
+    </footer>
 </body>
 </html>

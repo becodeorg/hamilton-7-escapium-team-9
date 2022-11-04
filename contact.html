@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resources/css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d6da04fe60.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./resources/js/index.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async="false" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDkUybIS8OzyDU9gVKqBrqUbO60ram-q0-39Fxo&libraries=places&callback=initMap"></script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header class="header__second">
+        <nav class="navbar">
+            <ul>
+                <a href="/index.html"><img src="./resources/images/logo.png"></a>
+                <li class="navbar__item"><a class="links" href="/index.html">home</a></li>
+                <li class="navbar__item"><a class="links" href="about.html">about</a></li>
+                <li class="navbar__item"><a class="links" href="#">features</a></li>
+                <li class="navbar__item"><a class="links" href="rooms.html">rooms</a></li>
+                <li class="navbar__item"><a class="links" href="#">booking</a></li>
+                <li class="navbar__item"><a class="links" href="blogs.html">blog</a></li>
+                <li class="navbar__item"><a class="links active" href="contact.html">contacts</a></li>
+            </ul>
+            <ul class="navbar__button">
+                <li class="navbar__button"><a href="#">Book now</a></li>
+                <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                <li><i class="fa fa-user-circle-o" aria-hidden="true"></i></li>
+                <li class="navbar__sign"><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger-menu">
+            <img src="./resources/images/logo.png">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+            
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li class="navbar__item"><a class="links active" href="index.html">home</a></li>
+              <li class="navbar__item"><a class="links" href="about.html">about</a></li>
+              <li class="navbar__item"><a class="links" href="#">features</a><i class="fa fa-plus" aria-hidden="true"></i></li>
+              <li class="navbar__item"><a class="links" href="rooms.html">rooms</a><i class="fa fa-plus" aria-hidden="true"></i></li>
+              <li class="navbar__item"><a class="links" href="#">booking</a><i class="fa fa-plus" aria-hidden="true"></i></li>
+              <li class="navbar__item"><a class="links" href="blogs.html">blog</a><i class="fa fa-plus" aria-hidden="true"></i> </li>
+              <li class="navbar__item"><a class="links" href="contact.html">contacts</a></li>
+              <li class="navbar__item"><a class="links" href="#">Book now</a></li>
+              <li class="navbar__item"><a class="links" href="#">Sign in</a></li>
+            </ul>
+            </ul>
+          </div>
+        </header>
+          <div class="header__hero">
+        <div class="header__title">
+            <h1>contacts<i>.</i></h1>
+
+            <nav aria-label="Breadcrumb" class="header__breadcrumb">
+                <ul>
+                    <li><a href="#">Home</a></li>                    
+                    <li><span aria-current="page">contact</span></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    
+    <main>
+        <div class="GetInTouch">
+            <div class="GetInTouch__header">
+                <h2>Get In Touch</h2>
+                <p>If you are interested in working with us, please get in touch</p>
+            </div>
+
+            <div class="GetInTouch__info">
+                <div class="info__com">
+                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                    <p>2390 RoadHill St, suite 100 North Donwtown,ny 82153</p>
+                </div>
+
+                <div class="info__com">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <p>+1800 900 1248</p>
+                </div>
+
+                <div class="info__mail">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <p>info@escapium.com</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form">
+
+            <h2>Contact Form</h2>
+            <div class="info">
+                <input type="text" name="firstname" id="firstname" placeholder="Name"/>       
+ 
+                 <input type="email" name="email" id="email" placeholder="Email Address"/>
+            </div>
+            <input type="textarea" name="msg" id="msg" placeholder="Your Message" />
+            
+            <button onclick="check()">Send Message</button>
+     
+            <section id="Success" style="visibility: hidden;">
+                Formulaire Sent !
+            </section>
+        </div>
+    </main>
+    <div id="map"></div>
+    
+    <script async defer
+    src=
+"https://maps.googleapis.com/maps/api/js?key=AIzaSyDDkUybIS8OzyDU9gVKqBrqUbO60ram-q0&callback=initMap">
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <footer class="footer footer__grid">
+        <section class="footer__box address">
+            <div class="footer__head"><p>01</p><hr class="redline"></div>
+            <h3 class="footer__title white">Our Address</h3>
+            <p>
+                Escaperoom Ltd<br>
+                2390 Road Hill St., Suite 100 <br>
+                North Downtown, NY 82153 <br>
+                <br>
+                EMail: <a class="link white" href="mailto:info@escapium.com">info@escapium.com</a> <br>
+                Tel: +1800 900 1246
+            </p>
+        </section >
+        <section class="footer__box links">
+            <div class="footer__head"><p>02</p><hr class="redline"></div>
+            <h3 class="footer__title white">Usefull Links</h3>
+            <a href="" target="_balnk" class="link">About</a>
+            <a href="" target="_balnk" class="link">Gallery</a>
+            <a href="" target="_balnk" class="link">Plan an Event</a>
+            <a href="" target="_balnk" class="link">Pricing Packages</a>
+            <a href="" target="_balnk" class="link">FAQ</a>
+            <a href="" target="_balnk" class="link">Contact</a>
+        </section>
+
+        <section class="footer__box hours">
+            <div class="footer__head"><p>03</p><hr class="redline"></div>
+            <h3 class="footer__title white">Working Hours</h3>
+            <ul>
+                <li>Monday: 6pm-11pm</li>
+                <li>Tuesday: 5pm-11pm</li>
+                <li>Wednesday: Closed</li>
+                <li>Thursday: 6pm -11pm</li>
+                <li>Friday: 2pm-11pm</li>
+                <li>Saturday: 11am-11pm</li>
+                <li>Sunday: 11am-9pm</li>
+            </ul>
+        </section>
+        <section class="footer__box social">
+            <div class="footer__head"><p>04</p><hr class="redline"></div>
+            <h3 class="footer__title white">Social Links</h3>
+            <i class="sociallink white fab fa-facebook"></i>
+            <i class="sociallink white fab fa-twitter"></i>
+            <i class="sociallink white fa fa-google-plus-official"></i>
+            <i class="sociallink white fab fa-instagram"></i>
+            <i class="sociallink white fab fa-yelp"></i>
+            <i class="sociallink white fab fa-youtube"></i>
+            <i class="sociallink white fab fa-tiktok"></i>
+            <i class="sociallink white fa fa-tripadvisor"></i>
+        </section>
+        <section class="footer__box copyright">
+            <img class="logo" src="/resources/images/footer-logo.png" alt="Escapium Logo"><br>
+            <p class="notice">Copyright ©2022 Escapium | All Rights reserved</p>
+        </section>
+    </footer>
+</body>
+</html>

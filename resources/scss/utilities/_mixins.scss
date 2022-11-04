@@ -1,8 +1,17 @@
 @use "../base/_typographie.scss";
+@use "../utilities/_variables.scss" as *;
+@use "./colors" as *; 
 
 
 
 @mixin Montserat{
-    font-family: "Montserrat";
+    font-family: $headings-font;
+    font-weight: bold;
+    
+}
+@mixin Hind{
+    font-family: $paragraphs-font;
+    
+    font-family: "Montserat";
     
 }
