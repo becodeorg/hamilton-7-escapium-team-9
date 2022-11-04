@@ -1,10 +1,10 @@
-/* Error: Expected expression.
- *   ,
- * 6 |     background-color: ;
- *   |                       ^
- *   '
- *   resources/scss/pages/_blogs.scss 6:23  @use
- *   resources/scss/style.scss 1:1          root stylesheet */
+/* Error: Undefined mixin.
+ *     ,
+ * 301 |         @include flexcolumn();
+ *     |         ^^^^^^^^^^^^^^^^^^^^^
+ *     '
+ *   resources/scss/pages/_blogs.scss 301:9  @use
+ *   resources/scss/style.scss 2:1           root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 6 \2502      background-color: ;\a   \2502                        ^\a   \2575 \a   resources/scss/pages/_blogs.scss 6:23  @use\a   resources/scss/style.scss 1:1          root stylesheet";
+  content: "Error: Undefined mixin.\a     \2577 \a 301 \2502          @include flexcolumn();\a     \2502          ^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   resources/scss/pages/_blogs.scss 301:9  @use\a   resources/scss/style.scss 2:1           root stylesheet";
 }
