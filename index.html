@@ -7,6 +7,9 @@
     <link href="resources/css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d6da04fe60.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/resources/js/index.js" defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Homepage</title>
 </head>
 <body>
@@ -52,7 +55,7 @@
                 </ul>
               </div>
         </header>
-        <div class="carousel">
+        <!-- <div class="carousel">
             <div class="slides">
                 <div class="slide1"></div>
                 <div class="slide2"></div>
@@ -65,8 +68,62 @@
                 <a onclick="carousel3()">Change</a>
                 <a onclick="carousel4()">Change</a>
             </div>
-        </div>
+        </div> -->
+        <div class="container">
+          
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li class="one active" data-target="#myCarousel" data-slide-to="0" ></li>
+                <li class="two" data-target="#myCarousel" data-slide-to="1"></li>
+                <li class="three" data-target="#myCarousel" data-slide-to="2"></li>
+                <li class="four" data-target="#myCarousel" data-slide-to="3"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+          
+                <div class="item active">
+                  <img src="/resources/images/slide-4.jpg" alt="Los Angeles" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h1>Escape <br>in 60 mins ?</h1>
+                   <a href="#">View our rooms</a>
+                  </div>
+                </div>
+          
+                <div class="item">
+                  <img src="/resources/images/slide-3.jpg" alt="Chicago" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h1>You Are <br>Locked In !</h1>
+                   <a href="#">View our rooms</a>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <img src="/resources/images/slide-2.jpg" alt="New York" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h1>Escape <br>in 60 mins ?</h1>
+                   <a href="#">View our rooms</a>
+                  </div>
+                </div>
+
+                <div class="item">
+                    <img src="/resources/images/slide-1.jpg" alt="New York" style="width:100%;">
+                    <div class="carousel-caption">
+                      <h1>The Clock <br> Is Ticking...</h1>
+                   <a href="#">View our rooms</a>
+                    </div>
+                  </div>
+            
+              </div>
+          
+              <!-- Left and right controls -->
+              
+            </div>
+          </div>
+          
         
+
 
         <div class="featuredRooms">
             <div class="featuredRooms__header">

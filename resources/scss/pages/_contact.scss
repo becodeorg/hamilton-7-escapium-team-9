@@ -67,7 +67,8 @@
                 }
     }
     main{
-        @include flexrow();
+        display: flex !important; 
+        flex-direction: row;
         background-color: $dark_background;
         justify-content: center;
     .GetInTouch{
@@ -133,7 +134,8 @@
 
 @media (min-width:413px) and (max-width:768px){
     main{
-        @include flexrow();
+        display: flex !important; 
+        flex-direction: row;
     .GetInTouch{
         background-color: $dark_background;
         width: 50%;

@@ -312,50 +312,52 @@ function initMap() {
 })(jQuery)
 
 //CAROUSEL
-function carousel(){
-  var slide1 = document.querySelector(".slide1");
-  var slide2 = document.querySelector(".slide2");
-  var slide3 = document.querySelector(".slide3");
-  var slide4 = document.querySelector(".slide4");
+// function carousel(){
+//   var slide1 = document.querySelector(".slide1");
+//   var slide2 = document.querySelector(".slide2");
+//   var slide3 = document.querySelector(".slide3");
+//   var slide4 = document.querySelector(".slide4");
 
-  slide2.classList.replace("active", null);
-  slide3.classList.replace("active", null);
-  slide4.classList.replace("active", null);
-  slide1.classList.toggle("active");
-}
-function carousel2(){
-  var slide1 = document.querySelector(".slide1");
-  var slide2 = document.querySelector(".slide2");
-  var slide3 = document.querySelector(".slide3");
-  var slide4 = document.querySelector(".slide4");
+//   slide2.classList.replace("active", null);
+//   slide3.classList.replace("active", null);
+//   slide4.classList.replace("active", null);
+//   slide1.classList.toggle("active");
+// }
+// function carousel2(){
+//   var slide1 = document.querySelector(".slide1");
+//   var slide2 = document.querySelector(".slide2");
+//   var slide3 = document.querySelector(".slide3");
+//   var slide4 = document.querySelector(".slide4");
   
-  slide1.classList.replace("active", null);
-  slide3.classList.replace("active", null);
-  slide4.classList.replace("active", null);
-  slide2.classList.toggle("active");
+//   slide1.classList.replace("active", null);
+//   slide3.classList.replace("active", null);
+//   slide4.classList.replace("active", null);
+//   slide2.classList.toggle("active");
 
-}
-function carousel3(){
-  var slide1 = document.querySelector(".slide1");
-  var slide2 = document.querySelector(".slide2");
-  var slide3 = document.querySelector(".slide3");
-  var slide4 = document.querySelector(".slide4");
+// }
+// function carousel3(){
+//   var slide1 = document.querySelector(".slide1");
+//   var slide2 = document.querySelector(".slide2");
+//   var slide3 = document.querySelector(".slide3");
+//   var slide4 = document.querySelector(".slide4");
   
-  slide1.classList.replace("active", null);
-  slide2.classList.replace("active", null);
-  slide4.classList.replace("active", null);
-  slide3.classList.toggle("active");
+//   slide1.classList.replace("active", null);
+//   slide2.classList.replace("active", null);
+//   slide4.classList.replace("active", null);
+//   slide3.classList.toggle("active");
 
-}
-function carousel4(){
-  var slide1 = document.querySelector(".slide1");
-  var slide2 = document.querySelector(".slide2");
-  var slide3 = document.querySelector(".slide3");
-  var slide4 = document.querySelector(".slide4");
+// }
+// function carousel4(){
+//   var slide1 = document.querySelector(".slide1");
+//   var slide2 = document.querySelector(".slide2");
+//   var slide3 = document.querySelector(".slide3");
+//   var slide4 = document.querySelector(".slide4");
   
-  slide1.classList.replace("active", null);
-  slide2.classList.replace("active", null);
-  slide3.classList.replace("active", null);
-  slide4.classList.toggle("active");
+//   slide1.classList.replace("active", null);
+//   slide2.classList.replace("active", null);
+//   slide3.classList.replace("active", null);
+//   slide4.classList.toggle("active");
 
-}
+// }
+
+  

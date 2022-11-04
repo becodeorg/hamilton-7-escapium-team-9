@@ -39,6 +39,7 @@ body{
             @include flexrow();
             justify-content: space-between;
             height: 120px;
+            margin-bottom: 0;
             ul{
                 @include flexrow();
                 align-items: center;
