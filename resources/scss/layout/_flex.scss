@@ -1,14 +1,12 @@
-<<<<<<< HEAD
 @mixin flexcolumn{
     display: flex;
     flex-direction: column;
     
 }
-@mixin flexrow{
+@mixin flexrow {
     display: flex;
     flex-direction: row;
-    
-=======
+}
 @mixin center{
     display: flex;
     align-items: center;
@@ -23,5 +21,4 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
->>>>>>> footer
 }
