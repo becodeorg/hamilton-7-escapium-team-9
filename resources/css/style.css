@@ -2493,7 +2493,7 @@ body {
     padding-left: 10px;
   }
   .blog__posts .blogs .blog .posts__post .post__pic1 {
-    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../resources/images/room-7.jpg);
+    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../images/room-7.jpg);
     background-size: 600px;
     width: 90%;
     height: 220px;
@@ -2520,7 +2520,7 @@ body {
     padding-left: 10px;
   }
   .blog__posts .blogs .blog .posts__post .post__pic2 {
-    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../resources/images/post-img-2.jpg);
+    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../images/post-img-2.jpg);
     background-size: 600px;
     width: 90%;
     height: 220px;
@@ -2598,7 +2598,7 @@ body {
     z-index: -1;
     width: 80%;
     height: 400px;
-    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgb(34, 34, 34) 100%), url(../resources/images/slide-3.jpg);
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgb(34, 34, 34) 100%), url(../images/slide-3.jpg);
   }
   .WhoCanPlay .WhoCanPlay__left p {
     font-family: "Montserrat";
@@ -2680,7 +2680,7 @@ body {
   }
   .gallery .gallery__gallery .pic1 {
     grid-area: 1/1/2/2;
-    background-image: url(../resources/images/gallery-1.jpg);
+    background-image: url(../images/gallery-1.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -2693,7 +2693,7 @@ body {
     -webkit-box-shadow: inset 1px 0px 0px 11px #F60B0E;
     box-shadow: inset 1px 0px 0px 11px #F60B0E;
     transition: 0.5s ease-in-out;
-    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../resources/images/gallery-1.jpg);
+    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../images/gallery-1.jpg);
     position: relative;
   }
   .gallery .gallery__gallery .pic1:hover p {
@@ -2709,7 +2709,7 @@ body {
   }
   .gallery .gallery__gallery .pic2 {
     grid-area: 1/2/2/3;
-    background-image: url(../resources/images/gallery-2.jpg);
+    background-image: url(../images/gallery-2.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -2722,7 +2722,7 @@ body {
     -webkit-box-shadow: inset 1px 0px 0px 11px #F60B0E;
     box-shadow: inset 1px 0px 0px 11px #F60B0E;
     transition: 0.5s ease-in-out;
-    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../hamilton-7-escapium-team-9/resources/images/gallery-2.jpg);
+    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../images/gallery-2.jpg);
     position: relative;
   }
   .gallery .gallery__gallery .pic2:hover p {
@@ -2738,7 +2738,7 @@ body {
   }
   .gallery .gallery__gallery .pic3 {
     grid-area: 1/3/2/4;
-    background-image: url(../resources/images/gallery-3.jpg);
+    background-image: url(../images/gallery-3.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -2751,7 +2751,7 @@ body {
     -webkit-box-shadow: inset 1px 0px 0px 11px #F60B0E;
     box-shadow: inset 1px 0px 0px 11px #F60B0E;
     transition: 0.5s ease-in-out;
-    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../resources/images/gallery-3.jpg);
+    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../images/gallery-3.jpg);
     position: relative;
   }
   .gallery .gallery__gallery .pic3:hover p {
@@ -2767,7 +2767,7 @@ body {
   }
   .gallery .gallery__gallery .pic4 {
     grid-area: 1/4/2/5;
-    background-image: url(../resources/images/gallery-4.jpg);
+    background-image: url(../images/gallery-4.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -2780,7 +2780,7 @@ body {
     -webkit-box-shadow: inset 1px 0px 0px 11px #F60B0E;
     box-shadow: inset 1px 0px 0px 11px #F60B0E;
     transition: 0.5s ease-in-out;
-    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../resources/images/gallery-4.jpg);
+    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../images/gallery-4.jpg);
     position: relative;
   }
   .gallery .gallery__gallery .pic4:hover p {
@@ -2796,7 +2796,7 @@ body {
   }
   .gallery .gallery__gallery .pic5 {
     grid-area: 2/1/3/2;
-    background-image: url(../resources/images/gallery-5.jpg);
+    background-image: url(../images/gallery-5.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -2809,7 +2809,7 @@ body {
     -webkit-box-shadow: inset 1px 0px 0px 11px #F60B0E;
     box-shadow: inset 1px 0px 0px 11px #F60B0E;
     transition: 0.5s ease-in-out;
-    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../resources/images/gallery-5.jpg);
+    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../images/gallery-5.jpg);
     position: relative;
   }
   .gallery .gallery__gallery .pic5:hover p {
@@ -2825,7 +2825,7 @@ body {
   }
   .gallery .gallery__gallery .pic6 {
     grid-area: 2/2/3/3;
-    background-image: url(../resources/images/gallery-6.jpg);
+    background-image: url(../images/gallery-6.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -2838,7 +2838,7 @@ body {
     -webkit-box-shadow: inset 1px 0px 0px 11px #F60B0E;
     box-shadow: inset 1px 0px 0px 11px #F60B0E;
     transition: 0.5s ease-in-out;
-    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../resources/images/gallery-6.jpg);
+    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../images/gallery-6.jpg);
     position: relative;
   }
   .gallery .gallery__gallery .pic6:hover p {
@@ -2854,7 +2854,7 @@ body {
   }
   .gallery .gallery__gallery .pic7 {
     grid-area: 2/3/3/4;
-    background-image: url(../resources/images/gallery-7.jpg);
+    background-image: url(../images/gallery-7.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -2867,7 +2867,7 @@ body {
     -webkit-box-shadow: inset 1px 0px 0px 11px #F60B0E;
     box-shadow: inset 1px 0px 0px 11px #F60B0E;
     transition: 0.5s ease-in-out;
-    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../resources/images/gallery-7.jpg);
+    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../images/gallery-7.jpg);
     position: relative;
   }
   .gallery .gallery__gallery .pic7:hover p {
@@ -2883,7 +2883,7 @@ body {
   }
   .gallery .gallery__gallery .pic8 {
     grid-area: 2/4/3/5;
-    background-image: url(../resources/images/gallery-8.jpg);
+    background-image: url(../images/gallery-8.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -2896,7 +2896,7 @@ body {
     -webkit-box-shadow: inset 1px 0px 0px 11px #F60B0E;
     box-shadow: inset 1px 0px 0px 11px #F60B0E;
     transition: 0.5s ease-in-out;
-    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../resources/images/gallery-8.jpg);
+    background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../images/gallery-8.jpg);
     position: relative;
   }
   .gallery .gallery__gallery .pic8:hover p {
@@ -3352,7 +3352,7 @@ body {
     align-items: center;
   }
   .blog__posts .blogs .blog .posts__post .post__pic {
-    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../resources/images/room-9.jpg);
+    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../images/room-9.jpg);
     background-size: 600px;
     width: 90%;
     height: 220px;
@@ -3379,7 +3379,7 @@ body {
     padding-left: 10px;
   }
   .blog__posts .blogs .blog .posts__post .post__pic1 {
-    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../resources/images/room-7.jpg);
+    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../images/room-7.jpg);
     background-size: 600px;
     width: 90%;
     height: 220px;
@@ -3406,7 +3406,7 @@ body {
     padding-left: 10px;
   }
   .blog__posts .blogs .blog .posts__post .post__pic2 {
-    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../resources/images/post-img-2.jpg);
+    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../images/post-img-2.jpg);
     background-size: 600px;
     width: 90%;
     height: 220px;
@@ -3481,7 +3481,7 @@ body {
     z-index: -1;
     width: 80%;
     height: 100%;
-    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgb(34, 34, 34) 100%), url(../resources/images/slide-3.jpg);
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgb(34, 34, 34) 100%), url(../images/slide-3.jpg);
   }
   .WhoCanPlay .WhoCanPlay__left {
     display: none;
@@ -3553,7 +3553,7 @@ body {
   }
   .gallery .gallery__gallery .pic1 {
     grid-area: 1/1/2/2;
-    background-image: url(../resources/images/gallery-1.jpg);
+    background-image: url(../images/gallery-1.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -3563,7 +3563,7 @@ body {
   }
   .gallery .gallery__gallery .pic2 {
     grid-area: 1/2/2/3;
-    background-image: url(../resources/images/gallery-2.jpg);
+    background-image: url(../images/gallery-2.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -3573,7 +3573,7 @@ body {
   }
   .gallery .gallery__gallery .pic3 {
     grid-area: 2/1/3/2;
-    background-image: url(../resources/images/gallery-3.jpg);
+    background-image: url(../images/gallery-3.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -3583,7 +3583,7 @@ body {
   }
   .gallery .gallery__gallery .pic4 {
     grid-area: 2/2/3/3;
-    background-image: url(../resources/images/gallery-4.jpg);
+    background-image: url(../images/gallery-4.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -3593,7 +3593,7 @@ body {
   }
   .gallery .gallery__gallery .pic5 {
     grid-area: 3/1/4/2;
-    background-image: url(../resources/images/gallery-5.jpg);
+    background-image: url(../images/gallery-5.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -3603,7 +3603,7 @@ body {
   }
   .gallery .gallery__gallery .pic6 {
     grid-area: 3/2/4/3;
-    background-image: url(../resources/images/gallery-6.jpg);
+    background-image: url(../images/gallery-6.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -3613,7 +3613,7 @@ body {
   }
   .gallery .gallery__gallery .pic7 {
     grid-area: 4/1/5/2;
-    background-image: url(../resources/images/gallery-7.jpg);
+    background-image: url(../images/gallery-7.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -3623,7 +3623,7 @@ body {
   }
   .gallery .gallery__gallery .pic8 {
     grid-area: 4/2/5/3;
-    background-image: url(../resources/images/gallery-8.jpg);
+    background-image: url(../images/gallery-8.jpg);
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -4061,7 +4061,7 @@ body {
     align-items: center;
   }
   .blog__posts .posts__post .post__pic {
-    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../resources/images/room-9.jpg);
+    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../images/room-9.jpg);
     background-size: 600px;
     width: 90%;
     height: 370px;
@@ -4088,7 +4088,7 @@ body {
     padding-left: 10px;
   }
   .blog__posts .posts__post .post__pic1 {
-    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../resources/images/room-7.jpg);
+    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../images/room-7.jpg);
     background-size: 600px;
     width: 90%;
     height: 370px;
@@ -4115,7 +4115,7 @@ body {
     padding-left: 10px;
   }
   .blog__posts .posts__post .post__pic2 {
-    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../resources/images/post-img-2.jpg);
+    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../images/post-img-2.jpg);
     background-size: 600px;
     width: 90%;
     height: 370px;
@@ -4189,7 +4189,7 @@ body {
     z-index: -1;
     width: 80%;
     height: 100%;
-    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgb(34, 34, 34) 100%), url(../resources/images/slide-3.jpg);
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgb(34, 34, 34) 100%), url(../images/slide-3.jpg);
   }
   .WhoCanPlay .WhoCanPlay__left {
     display: none;
@@ -4261,7 +4261,7 @@ body {
   }
   .gallery .gallery__gallery .pic1 {
     grid-area: 1/1/2/2;
-    background-image: url(../resources/images/gallery-1.jpg);
+    background-image: url(../images/gallery-1.jpg);
     background-size: cover;
     width: 100%;
     height: 200px;
@@ -4271,7 +4271,7 @@ body {
   }
   .gallery .gallery__gallery .pic2 {
     grid-area: 1/2/2/3;
-    background-image: url(../resources/images/gallery-2.jpg);
+    background-image: url(../images/gallery-2.jpg);
     background-size: cover;
     width: 100%;
     height: 200px;
@@ -4281,7 +4281,7 @@ body {
   }
   .gallery .gallery__gallery .pic3 {
     grid-area: 2/1/3/2;
-    background-image: url(../resources/images/gallery-3.jpg);
+    background-image: url(../images/gallery-3.jpg);
     background-size: cover;
     width: 100%;
     height: 200px;
@@ -4291,7 +4291,7 @@ body {
   }
   .gallery .gallery__gallery .pic4 {
     grid-area: 2/2/3/3;
-    background-image: url(../resources/images/gallery-4.jpg);
+    background-image: url(../images/gallery-4.jpg);
     background-size: cover;
     width: 100%;
     height: 200px;
@@ -4301,7 +4301,7 @@ body {
   }
   .gallery .gallery__gallery .pic5 {
     grid-area: 3/1/4/2;
-    background-image: url(../resources/images/gallery-5.jpg);
+    background-image: url(../images/gallery-5.jpg);
     background-size: cover;
     width: 100%;
     height: 200px;
@@ -4311,7 +4311,7 @@ body {
   }
   .gallery .gallery__gallery .pic6 {
     grid-area: 3/2/4/3;
-    background-image: url(../resources/images/gallery-6.jpg);
+    background-image: url(../images/gallery-6.jpg);
     background-size: cover;
     width: 100%;
     height: 200px;
@@ -4321,7 +4321,7 @@ body {
   }
   .gallery .gallery__gallery .pic7 {
     grid-area: 4/1/5/2;
-    background-image: url(../resources/images/gallery-7.jpg);
+    background-image: url(../images/gallery-7.jpg);
     background-size: cover;
     width: 100%;
     height: 200px;
@@ -4331,7 +4331,7 @@ body {
   }
   .gallery .gallery__gallery .pic8 {
     grid-area: 4/2/5/3;
-    background-image: url(../../resources/images/gallery-8.jpg);
+    background-image: url(../images/gallery-8.jpg);
     background-size: cover;
     width: 100%;
     height: 200px;
