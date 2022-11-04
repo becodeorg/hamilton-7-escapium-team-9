@@ -12,6 +12,14 @@
 @mixin Hind{
     font-family: $paragraphs-font;
     
-    font-family: "Montserat";
+    font-family: "Hind";
     
 }
+@use "../utilities/variables";
+
+@mixin Montserrat{
+    font-family: "Montserrat";
+}
+
+
+
