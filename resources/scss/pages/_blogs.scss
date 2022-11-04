@@ -296,26 +296,10 @@ body{
 }
 .gallery{
     background-color: $darkest-background;
-    .gallery__header{ 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 70px;
-        padding-bottom: 100px; 
-        hr{
-            padding: 0;
-            margin: 0;
-            width:2%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .gallery__title{
-            @include Montserrat();
-            color:white;  
-            font-size: $mobile-font-size-h2;      
-            padding-top: 30px;   
-            text-transform: capitalize;
-        }
+    h1  h1{
+        font-size: 30px;
+        font-weight: $blogs-font-weight-h1;
+    }
         a{
             @include Montserrat();
             text-decoration: none;
@@ -429,7 +413,7 @@ body{
     }
 
 }
-}
+
 
 .blogs__archive {
     @include Montserrat();
@@ -1000,6 +984,8 @@ margin-right: auto;
         grid-template-rows: 1fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        margin-inline: 15em;
+        margin-block: 10em;
     
     }
     .line {
@@ -1231,26 +1217,10 @@ margin-right: auto;
     
     .gallery{
         background-color: $darkest-background;
-        .gallery__header{ 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 70px;
-            padding-bottom: 100px; 
-            hr{
-                padding: 0;
-                margin: 0;
-                width:2%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .gallery__title{
-                @include Montserrat();
-                color:white;  
-                font-size: $desktop-font-size-h2;      
-                padding-top: 30px;   
-                text-transform: capitalize;
-            }
+        h1{
+            font-size: 30px;
+            font-weight: $blogs-font-weight-h1;
+        }
             a{
                 @include Montserrat();
                 text-decoration: none;
@@ -1263,11 +1233,10 @@ margin-right: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    width:75%;
-    margin-left: auto;
-    margin-right: auto;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        margin-left: auto;
+        margin-right: auto;
         .pic1 { 
             grid-area: 1 / 1 / 2 / 2;
             background-image: url(../images/gallery-1.jpg);
@@ -1278,7 +1247,7 @@ margin-right: auto;
             p{
                 opacity: 0;
             }
-         }
+        }
          .pic1:hover{
             -webkit-box-shadow: inset 1px 0px 0px 11px $red; 
             box-shadow: inset 1px 0px 0px 11px $red;
@@ -1524,4 +1493,3 @@ margin-right: auto;
                 }
         }
     }
-}

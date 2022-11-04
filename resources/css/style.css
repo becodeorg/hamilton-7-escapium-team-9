@@ -291,35 +291,19 @@ body {
 .gallery {
   background-color: #1B1B1B;
 }
-.gallery .gallery__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 70px;
-  padding-bottom: 100px;
+.gallery h1 h1 {
+  font-size: 30px;
+  font-weight: bold;
 }
-.gallery .gallery__header hr {
-  padding: 0;
-  margin: 0;
-  width: 2%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.gallery .gallery__header .gallery__title {
-  font-family: "Montserrat";
-  color: white;
-  font-size: 18px;
-  padding-top: 30px;
-  text-transform: capitalize;
-}
-.gallery .gallery__header a {
+.gallery a {
   font-family: "Montserrat";
   text-decoration: none;
   color: #F60B0E;
   font-size: 12px;
   border-bottom: 1px solid #F60B0E;
 }
-.gallery .gallery__gallery {
+
+.gallery__gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -328,7 +312,7 @@ body {
   width: 90%;
   margin-inline: 1em;
 }
-.gallery .gallery__gallery .pic1 {
+.gallery__gallery .pic1 {
   grid-area: 1/1/2/2;
   background-image: url(../images/gallery-1.jpg);
   background-size: cover;
@@ -336,10 +320,10 @@ body {
   width: 100%;
   height: 90px;
 }
-.gallery .gallery__gallery .pic1 p {
+.gallery__gallery .pic1 p {
   opacity: 0;
 }
-.gallery .gallery__gallery .pic2 {
+.gallery__gallery .pic2 {
   grid-area: 1/2/2/3;
   background-image: url(../images/gallery-2.jpg);
   background-size: cover;
@@ -347,10 +331,10 @@ body {
   width: 100%;
   height: 90px;
 }
-.gallery .gallery__gallery .pic2 p {
+.gallery__gallery .pic2 p {
   opacity: 0;
 }
-.gallery .gallery__gallery .pic3 {
+.gallery__gallery .pic3 {
   grid-area: 1/3/2/4;
   background-image: url(../images/gallery-3.jpg);
   background-size: cover;
@@ -358,10 +342,10 @@ body {
   width: 100%;
   height: 90px;
 }
-.gallery .gallery__gallery .pic3 p {
+.gallery__gallery .pic3 p {
   opacity: 0;
 }
-.gallery .gallery__gallery .pic4 {
+.gallery__gallery .pic4 {
   grid-area: 2/1/3/2;
   background-image: url(../images/gallery-4.jpg);
   background-size: cover;
@@ -369,10 +353,10 @@ body {
   width: 100%;
   height: 90px;
 }
-.gallery .gallery__gallery .pic4 p {
+.gallery__gallery .pic4 p {
   opacity: 0;
 }
-.gallery .gallery__gallery .pic5 {
+.gallery__gallery .pic5 {
   grid-area: 2/2/3/3;
   background-image: url(../images/gallery-5.jpg);
   background-size: cover;
@@ -380,10 +364,10 @@ body {
   width: 100%;
   height: 90px;
 }
-.gallery .gallery__gallery .pic5 p {
+.gallery__gallery .pic5 p {
   opacity: 0;
 }
-.gallery .gallery__gallery .pic6 {
+.gallery__gallery .pic6 {
   grid-area: 2/3/3/4;
   background-image: url(../images/gallery-6.jpg);
   background-size: cover;
@@ -391,17 +375,18 @@ body {
   width: 100%;
   height: 90px;
 }
-.gallery .gallery__gallery .pic6 p {
+.gallery__gallery .pic6 p {
   opacity: 0;
 }
-.gallery .gallery__button {
+
+.gallery__button {
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.gallery .gallery__button a {
+.gallery__button a {
   font-family: "Montserrat";
   text-decoration: none;
   color: white;
@@ -902,6 +887,8 @@ body {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    margin-inline: 15em;
+    margin-block: 10em;
   }
   .line {
     width: 35px;
@@ -1085,45 +1072,27 @@ body {
   .gallery {
     background-color: #1B1B1B;
   }
-  .gallery .gallery__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 70px;
-    padding-bottom: 100px;
+  .gallery h1 {
+    font-size: 30px;
+    font-weight: bold;
   }
-  .gallery .gallery__header hr {
-    padding: 0;
-    margin: 0;
-    width: 2%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .gallery .gallery__header .gallery__title {
-    font-family: "Montserrat";
-    color: white;
-    font-size: 20px;
-    padding-top: 30px;
-    text-transform: capitalize;
-  }
-  .gallery .gallery__header a {
+  .gallery a {
     font-family: "Montserrat";
     text-decoration: none;
     color: #F60B0E;
     font-size: 20px;
     border-bottom: 1px solid #F60B0E;
   }
-  .gallery .gallery__gallery {
+  .gallery__gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 15px;
     grid-row-gap: 15px;
-    width: 75%;
     margin-left: auto;
     margin-right: auto;
   }
-  .gallery .gallery__gallery .pic1 {
+  .gallery__gallery .pic1 {
     grid-area: 1/1/2/2;
     background-image: url(../images/gallery-1.jpg);
     background-size: cover;
@@ -1131,17 +1100,17 @@ body {
     height: 250px;
     transition: 0.5s ease-in-out;
   }
-  .gallery .gallery__gallery .pic1 p {
+  .gallery__gallery .pic1 p {
     opacity: 0;
   }
-  .gallery .gallery__gallery .pic1:hover {
+  .gallery__gallery .pic1:hover {
     -webkit-box-shadow: inset 1px 0px 0px 11px #F60B0E;
     box-shadow: inset 1px 0px 0px 11px #F60B0E;
     transition: 0.5s ease-in-out;
     background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../images/gallery-1.jpg);
     position: relative;
   }
-  .gallery .gallery__gallery .pic1:hover p {
+  .gallery__gallery .pic1:hover p {
     position: absolute;
     top: 35%;
     left: 23%;
@@ -1151,7 +1120,7 @@ body {
     font-family: "Montserrat";
     transition: 0.5s ease-in-out;
   }
-  .gallery .gallery__gallery .pic2 {
+  .gallery__gallery .pic2 {
     grid-area: 1/2/2/3;
     background-image: url(../images/gallery-2.jpg);
     background-size: cover;
@@ -1159,17 +1128,17 @@ body {
     height: 250px;
     transition: 0.5s ease-in-out;
   }
-  .gallery .gallery__gallery .pic2 p {
+  .gallery__gallery .pic2 p {
     opacity: 0;
   }
-  .gallery .gallery__gallery .pic2:hover {
+  .gallery__gallery .pic2:hover {
     -webkit-box-shadow: inset 1px 0px 0px 11px #F60B0E;
     box-shadow: inset 1px 0px 0px 11px #F60B0E;
     transition: 0.5s ease-in-out;
     background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../images/gallery-2.jpg);
     position: relative;
   }
-  .gallery .gallery__gallery .pic2:hover p {
+  .gallery__gallery .pic2:hover p {
     position: absolute;
     top: 35%;
     left: 23%;
@@ -1179,7 +1148,7 @@ body {
     font-family: "Montserrat";
     transition: 0.5s ease-in-out;
   }
-  .gallery .gallery__gallery .pic3 {
+  .gallery__gallery .pic3 {
     grid-area: 1/3/2/4;
     background-image: url(../images/gallery-3.jpg);
     background-size: cover;
@@ -1187,17 +1156,17 @@ body {
     height: 250px;
     transition: 0.5s ease-in-out;
   }
-  .gallery .gallery__gallery .pic3 p {
+  .gallery__gallery .pic3 p {
     opacity: 0;
   }
-  .gallery .gallery__gallery .pic3:hover {
+  .gallery__gallery .pic3:hover {
     -webkit-box-shadow: inset 1px 0px 0px 11px #F60B0E;
     box-shadow: inset 1px 0px 0px 11px #F60B0E;
     transition: 0.5s ease-in-out;
     background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../images/gallery-3.jpg);
     position: relative;
   }
-  .gallery .gallery__gallery .pic3:hover p {
+  .gallery__gallery .pic3:hover p {
     position: absolute;
     top: 35%;
     left: 23%;
@@ -1207,7 +1176,7 @@ body {
     font-family: "Montserrat";
     transition: 0.5s ease-in-out;
   }
-  .gallery .gallery__gallery .pic4 {
+  .gallery__gallery .pic4 {
     grid-area: 2/1/3/2;
     background-image: url(../images/gallery-4.jpg);
     background-size: cover;
@@ -1215,17 +1184,17 @@ body {
     height: 250px;
     transition: 0.5s ease-in-out;
   }
-  .gallery .gallery__gallery .pic4 p {
+  .gallery__gallery .pic4 p {
     opacity: 0;
   }
-  .gallery .gallery__gallery .pic4:hover {
+  .gallery__gallery .pic4:hover {
     -webkit-box-shadow: inset 1px 0px 0px 11px #F60B0E;
     box-shadow: inset 1px 0px 0px 11px #F60B0E;
     transition: 0.5s ease-in-out;
     background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../images/gallery-4.jpg);
     position: relative;
   }
-  .gallery .gallery__gallery .pic4:hover p {
+  .gallery__gallery .pic4:hover p {
     position: absolute;
     top: 35%;
     left: 23%;
@@ -1235,7 +1204,7 @@ body {
     font-family: "Montserrat";
     transition: 0.5s ease-in-out;
   }
-  .gallery .gallery__gallery .pic5 {
+  .gallery__gallery .pic5 {
     grid-area: 2/2/3/3;
     background-image: url(../images/gallery-5.jpg);
     background-size: cover;
@@ -1243,17 +1212,17 @@ body {
     height: 250px;
     transition: 0.5s ease-in-out;
   }
-  .gallery .gallery__gallery .pic5 p {
+  .gallery__gallery .pic5 p {
     opacity: 0;
   }
-  .gallery .gallery__gallery .pic5:hover {
+  .gallery__gallery .pic5:hover {
     -webkit-box-shadow: inset 1px 0px 0px 11px #F60B0E;
     box-shadow: inset 1px 0px 0px 11px #F60B0E;
     transition: 0.5s ease-in-out;
     background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../images/gallery-5.jpg);
     position: relative;
   }
-  .gallery .gallery__gallery .pic5:hover p {
+  .gallery__gallery .pic5:hover p {
     position: absolute;
     top: 35%;
     left: 23%;
@@ -1263,7 +1232,7 @@ body {
     font-family: "Montserrat";
     transition: 0.5s ease-in-out;
   }
-  .gallery .gallery__gallery .pic6 {
+  .gallery__gallery .pic6 {
     grid-area: 2/3/3/4;
     background-image: url(../images/gallery-6.jpg);
     background-size: cover;
@@ -1271,17 +1240,17 @@ body {
     height: 250px;
     transition: 0.5s ease-in-out;
   }
-  .gallery .gallery__gallery .pic6 p {
+  .gallery__gallery .pic6 p {
     opacity: 0;
   }
-  .gallery .gallery__gallery .pic6:hover {
+  .gallery__gallery .pic6:hover {
     -webkit-box-shadow: inset 1px 0px 0px 11px #F60B0E;
     box-shadow: inset 1px 0px 0px 11px #F60B0E;
     transition: 0.5s ease-in-out;
     background-image: linear-gradient(270deg, rgba(34, 34, 34, 0.7) 0%, rgba(34, 34, 34, 0.7) 100%), url(../images/gallery-6.jpg);
     position: relative;
   }
-  .gallery .gallery__gallery .pic6:hover p {
+  .gallery__gallery .pic6:hover p {
     position: absolute;
     top: 35%;
     left: 23%;
@@ -1291,14 +1260,14 @@ body {
     font-family: "Montserrat";
     transition: 0.5s ease-in-out;
   }
-  .gallery .gallery__button {
+  .gallery__button {
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .gallery .gallery__button a {
+  .gallery__button a {
     font-family: "Montserrat";
     text-decoration: none;
     color: white;
@@ -1310,52 +1279,54 @@ body {
     border-radius: 40px;
     font-size: 15px;
   }
-  .gallery .gallery__button a:hover {
+  .gallery__button a:hover {
     background-color: #717171;
   }
-  .blogs__archive {
-    font-family: "Montserrat";
-    padding-left: 3em;
-    padding-block: 2em;
-    color: #fefefe;
-  }
-  .blogs__archive h1 {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .blogs__archive .blogs__archive-month {
-    margin-bottom: 2em;
-  }
-  .blogs__archive .blogs__archive-month a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #717171;
-  }
-  .blogs__archive .blogs__archive-month li {
-    text-transform: uppercase;
-    word-spacing: 5px;
-    line-height: 45px;
-  }
-  .button_round {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .button_round .round_page {
-    margin: 1em;
-    background-color: #222222;
-    border-radius: 100%;
-    border: 2px solid;
-    color: #fefefe;
-    border-color: #717171;
-    box-shadow: none;
-    padding: 1.5em;
-    font-weight: bold;
-  }
-  .button_round .round_page .active {
-    background-color: #F60B0E;
-  }
 }
+.blogs__archive {
+  font-family: "Montserrat";
+  padding-left: 3em;
+  padding-block: 2em;
+  color: #fefefe;
+}
+.blogs__archive h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.blogs__archive .blogs__archive-month {
+  margin-bottom: 2em;
+}
+.blogs__archive .blogs__archive-month a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #717171;
+}
+.blogs__archive .blogs__archive-month li {
+  text-transform: uppercase;
+  word-spacing: 5px;
+  line-height: 45px;
+}
+
+.button_round {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.button_round .round_page {
+  margin: 1em;
+  background-color: #222222;
+  border-radius: 100%;
+  border: 2px solid;
+  color: #fefefe;
+  border-color: #717171;
+  box-shadow: none;
+  padding: 1.5em;
+  font-weight: bold;
+}
+.button_round .round_page .active {
+  background-color: #F60B0E;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
