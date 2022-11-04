@@ -946,7 +946,7 @@ body {
     opacity: 1;
   }
   .video .placeholder {
-    background-image: url("../../resources/images/video-placeholder.jpg");
+    background-image: url(../images/video-placeholder.jpg);
     width: 100%;
     min-height: 500px;
     position: relative;
@@ -1171,7 +1171,7 @@ body {
     opacity: 1;
   }
   .video .placeholder {
-    background-image: url("../../resources/images/video-placeholder.jpg");
+    background-image: url(../images/video-placeholder.jpg);
     width: 100%;
     min-height: 300px;
     position: relative;
@@ -1387,7 +1387,7 @@ body {
     opacity: 1;
   }
   .video .placeholder {
-    background-image: url("../../resources/images/video-placeholder.jpg");
+    background-image: url(../images/video-placeholder.jpg);
     width: 100%;
     min-height: 200px;
     position: relative;
