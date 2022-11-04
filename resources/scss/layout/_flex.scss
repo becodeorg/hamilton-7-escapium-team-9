@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @mixin flexcolumn{
     display: flex;
     flex-direction: column;
@@ -7,4 +8,20 @@
     display: flex;
     flex-direction: row;
     
+=======
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex_column{
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+>>>>>>> footer
 }

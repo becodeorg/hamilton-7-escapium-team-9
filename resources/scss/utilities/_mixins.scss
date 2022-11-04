@@ -1,9 +1,14 @@
 @use "../base/_typographie.scss";
+<<<<<<< HEAD
 @use "../utilities/_variables.scss" as *;
+=======
+@use "./colors" as *; 
+>>>>>>> footer
 
 
 
 @mixin Montserat{
+<<<<<<< HEAD
     font-family: $headings-font;
     font-weight: bold;
     
@@ -11,4 +16,28 @@
 @mixin Hind{
     font-family: $paragraphs-font;
     
+=======
+    font-family: "Montserat";
+    
+}
+
+@mixin Hind{
+    font-family:"Hind";
+}
+
+@mixin nolinkchange{
+    text-decoration: none;
+    color:$global_font_color;
+}
+
+@mixin hidesocial{
+    .fa-tripadvisor .fa-google-plus-official{
+    visibility: hidden;
+    }
+}
+
+@mixin transparent-background{
+    opacity: 0.75;
+    background-color: $darkest_background;
+>>>>>>> footer
 }
