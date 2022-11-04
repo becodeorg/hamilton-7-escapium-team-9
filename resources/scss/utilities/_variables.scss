@@ -1,7 +1,18 @@
+<<<<<<< HEAD
 @use "../base/_typographie.scss";
 
 $headings-font: 'Montserrat';
 $paragraphs-font: 'Hind';
+=======
+//variables for screen widht in media querrys
+
+$desktop-min-width: 769px;
+$mobile-max-width: 412px;
+$tablet-max-width: 768px;
+
+$footer-padding: 1rem;
+$spaceing_lines: 0,5rem;
+>>>>>>> footer
 
 $mobile-font-size-h1: 32px;
 $mobile-font-size-h2: 19px;

@@ -1,0 +1,133 @@
+@use "../utilities/colors" as *;
+@use "../utilities/variables" as *;
+@use "./grid" as *;
+@use "../utilities/mixins" as *;
+@use "./flex"as *;
+
+
+.footer{
+
+    background-image:url(../images/slide-3.jpg);
+    font-family: "Hind";
+    color: $global_font_color;
+
+    .white{
+        color: $white_title;}
+    .footer__title{
+        font-family: "Monserrat";
+        font-weight: 700;
+        text-align: left;
+        padding: $footer-padding;
+        padding-left: 0rem;
+    }
+    .footer__box{
+        @include transparent-background;
+
+        padding: 10px;
+
+        .footer__head{
+            @include flex_row;
+            padding: $footer-padding;
+            padding-left: 0rem;
+            .redline{
+                height: 1px;
+                width: 30px;
+                margin-right:80%;
+                background-color: $red;
+                border: none;
+            }
+            p{
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .copyright{
+        @include flex_column;
+        @include center;
+
+    }
+
+    .links{
+        @include flex_column;
+    }
+    
+    .link{
+        padding-bottom: $spaceing_lines;
+        @include nolinkchange;
+        &:visited{
+            color: $red;
+        }
+
+        
+
+    
+}
+    .hours{
+        ul{
+            *{
+        padding-bottom: $spaceing_lines;
+    }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: $mobile-max-width) {
+    .footer__grid{
+    @include grid_1_5_footer;
+}
+.footer{
+    font-size: $mobile-font-size-p;
+    .footer__title{
+        font-size: $mobile-font-size-h3
+    }
+    .sociallink{
+        font-size: $mobile-font-size-h3;
+    }
+
+}
+@include hidesocial;
+    
+
+}
+
+@media only screen and (min-width:413px) and (max-width:$tablet-max-width){
+    .footer__grid{
+    @include grid_4_2_footer;
+    
+}
+.footer{
+    font-size: $desktop-font-size-p;
+    .footer__title{
+        font-size: $desktop-font-size-h3
+    }
+
+}
+
+@include hidesocial;
+}
+
+
+
+@media only screen and (min-width: $desktop-min-width) {
+    .footer__grid{
+    @include grid_4_2_footer;
+}
+.footer{
+    font-size: $desktop-font-size-p;
+    .footer__title{
+        font-size: $desktop-font-size-h3;
+
+    }
+    .sociallink{
+        font-size: $desktop-font-size-h3;
+    }
+
+
+}
+
+
+}
+
